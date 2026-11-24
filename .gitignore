@@ -1,0 +1,22 @@
+# Secrets
+.env
+.env.*
+
+# Données téléchargées et base de travail (plusieurs Go, contenu public mais nominatif)
+data/
+
+# Sorties brutes : contiennent des noms de personnes physiques, jamais publiées.
+# Seuls les agrégats de resultats/ sont versionnés (voir scripts/99_exporter_public.py).
+out/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Rapport PDF des nouvelles bases : il cite des personnes physiques et ses chiffres sont écrits en dur.
+# Remplacé, pour la publication, par docs/RAPPORT.md (agrégats seulement).
+scripts/25_rapport_nouvelles_bases.py
+# Sauvegardes locales
+data/arbitrage.sauvegarde*/

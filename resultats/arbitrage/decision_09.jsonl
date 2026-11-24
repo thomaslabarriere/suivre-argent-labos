@@ -1,0 +1,197 @@
+{"id": 3030, "choix": "rna:W759000002", "confiance": "moyenne", "nom_propose": null, "raison": "Même société savante, nom complet exact ; doublon SIREN actif possible"}
+{"id": 3031, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre Hospitalier Universitaire Grenoble Alpes", "raison": "CHUGA = CHU Grenoble Alpes ; les SCI Michallon sont des sociétés immobilières annexes"}
+{"id": 3033, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Seul mot commun FORMATION ; aucun candidat ne porte le nom UC"}
+{"id": 3036, "choix": "siren:263500076", "confiance": "haute", "nom_propose": null, "raison": "CHU de Rennes = centre hospitalier universitaire de Pontchaillou, 86.10Z, dept 35"}
+{"id": 3037, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "Hôpital Bichat est un site de l'AP-HP ; rattachement à l'entité principale"}
+{"id": 3040, "choix": "aucun", "confiance": "haute", "nom_propose": "Assistance Publique - Hôpitaux de Paris", "raison": "GHU Henri Mondor relève de l'AP-HP ; aucun candidat dans le lot"}
+{"id": 3041, "choix": "rna:W751046979", "confiance": "haute", "nom_propose": null, "raison": "Nom exact de la société savante, association RNA active, dept 75"}
+{"id": 3043, "choix": "siren:264200304", "confiance": "moyenne", "nom_propose": null, "raison": "Hôpital de la Charité, Saint-Étienne (42000) : seul CHU hospitalier du département"}
+{"id": 3044, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Sigle ERERIF non identifié ; aucun candidat"}
+{"id": 3046, "choix": "siren:260100045", "confiance": "haute", "nom_propose": null, "raison": "Centre hospitalier de Fleyriat, établissement public 86.10Z, dept 01"}
+{"id": 3047, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Plusieurs entités Alliance Healthcare possibles ; Alphega non tranché"}
+{"id": 3048, "choix": "siren:180036048", "confiance": "haute", "nom_propose": null, "raison": "Agent comptable secondaire rattaché à l'INSERM, dept 33 cohérent"}
+{"id": 3049, "choix": "siren:412111692", "confiance": "haute", "nom_propose": null, "raison": "EURO PHARMAT = EUROPHARMAT sans espace, association active, dept 31"}
+{"id": 3050, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "SRT non retrouvée ; seul candidat sans lien de nom"}
+{"id": 3051, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom exact mais deux sociétés hors département ; trop incertain"}
+{"id": 3052, "choix": "siren:316607902", "confiance": "haute", "nom_propose": null, "raison": "Sigle SNFMI exact, société nationale, 72.19Z, active, dept 76"}
+{"id": 3053, "choix": "rna:W922018739", "confiance": "haute", "nom_propose": null, "raison": "Nom exact de l'association, active, même département 92"}
+{"id": 3055, "choix": "siren:428822852", "confiance": "haute", "nom_propose": null, "raison": "EFS national et ses sites régionaux ; établissement public, dept 59"}
+{"id": 3057, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "NEX&COM absent des candidats ; seuls AGENCY et COM en commun"}
+{"id": 3058, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "Hôpital Broca rattaché à l'AP-HP, dept 75 cohérent"}
+{"id": 3059, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "IFTAC non identifiée ; aucun candidat"}
+{"id": 3061, "choix": "siren:852293653", "confiance": "moyenne", "nom_propose": null, "raison": "Nom déclaré explicite : la fondation, et non le centre hospitalier"}
+{"id": 3065, "choix": "siren:180036048", "confiance": "haute", "nom_propose": null, "raison": "INSERM Délégation Régionale Paris 7 rattachée à l'INSERM"}
+{"id": 3066, "choix": "rna:W751191424", "confiance": "moyenne", "nom_propose": null, "raison": "ITAC-CME est le programme de l'association GFTC ; nom_rapproche correspond"}
+{"id": 3067, "choix": "siren:833147622", "confiance": "haute", "nom_propose": null, "raison": "ARMDC est l'acronyme exact de l'association cardiologie candidate"}
+{"id": 3068, "choix": "siren:788214963", "confiance": "haute", "nom_propose": null, "raison": "Institut régional du cancer de Montpellier, sigle ICM, 86.10Z, dept 34"}
+{"id": 3069, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Candidats sont des associations satellites ou homonymes ; fondation non trouvée"}
+{"id": 3070, "choix": "rna:W691082375", "confiance": "haute", "nom_propose": null, "raison": "Nom exact IRCS ; IRCCS est une autre association"}
+{"id": 3072, "choix": "rna:W751159280", "confiance": "haute", "nom_propose": null, "raison": "Nom exact du collectif, association RNA active, dept 92"}
+{"id": 3073, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "CPIAS Bretagne non retrouvé ; candidats sans lien de nom"}
+{"id": 3074, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "GFM est un groupe distinct ; seul candidat AP-HP sans lien de nom"}
+{"id": 3076, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre Hospitalier Intercommunal Toulon La Seyne-sur-Mer", "raison": "GHI Toulon La Seyne est le CH intercommunal ; candidats sans rapport"}
+{"id": 3077, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre Hospitalier Universitaire Grenoble Alpes", "raison": "CHU Grenoble La Tronche ; aucun candidat hospitalier dans le lot"}
+{"id": 3079, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "GRPSO absent ; ARP possible mais lien de nom non établi"}
+{"id": 3082, "choix": "rna:W802018450", "confiance": "haute", "nom_propose": null, "raison": "Sigle IRPU exact, association active, dept 80"}
+{"id": 3084, "choix": "siren:391752987", "confiance": "moyenne", "nom_propose": null, "raison": "Nom exact et forme SARL déclarée ; homonyme SAS écarté"}
+{"id": 3085, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom déclaré NA ; aucun candidat"}
+{"id": 3086, "choix": "siren:267400026", "confiance": "haute", "nom_propose": null, "raison": "Centre hospitalier Annecy Genevois, établissement public 86.10Z, dept 74"}
+{"id": 3087, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom exact mais candidat hors département ; doute"}
+{"id": 3088, "choix": "siren:407836949", "confiance": "haute", "nom_propose": null, "raison": "Qiagen France, filiale française de Qiagen, dept 91 cohérent"}
+{"id": 3090, "choix": "siren:262100076", "confiance": "haute", "nom_propose": null, "raison": "Trésorerie CHU rattachée au CHU de Dijon, dept 21"}
+{"id": 3093, "choix": "siren:472800531", "confiance": "haute", "nom_propose": null, "raison": "Polyclinique Saint-Roch SAS 86.10Z dept 34 ; l'association est annexe"}
+{"id": 3094, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Sigle ITG commun à cinq sociétés ; aucun lien de nom"}
+{"id": 3095, "choix": "siren:353360415", "confiance": "haute", "nom_propose": null, "raison": "Sigle IMPS exact, nom MEDES Institut Médecine Physiologie Spatiale, dept 31"}
+{"id": 3096, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "ADHEC absent ; candidats hors département sans lien de nom"}
+{"id": 3099, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "IDD absent ; seul mot commun EXPERT"}
+{"id": 3100, "choix": "siren:267400026", "confiance": "haute", "nom_propose": null, "raison": "Centre hospitalier Annecy Genevois active ; doublon inactif écarté"}
+{"id": 3101, "choix": "siren:419424650", "confiance": "moyenne", "nom_propose": null, "raison": "Sigle SFGM TC et nom proche ; NAF 72.11Z recherche"}
+{"id": 3104, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Hôpital Marie-Lannelongue : candidats homonymes ou annexes, entité hospitalière absente"}
+{"id": 3110, "choix": "aucun", "confiance": "haute", "nom_propose": "Assistance Publique - Hôpitaux de Paris", "raison": "Pitié-Salpêtrière est un hôpital de l'AP-HP ; aucun candidat AP-HP"}
+{"id": 3111, "choix": "aucun", "confiance": "haute", "nom_propose": "Institut National de la Santé et de la Recherche Médicale", "raison": "INSERM Délégation Auvergne-Rhône-Alpes ; aucun candidat INSERM dans la liste"}
+{"id": 3113, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "ISFRI non identifiée ; aucun candidat"}
+{"id": 3120, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom exact deux fois, SAS 73.12Z et SARL 73.11Z ; trop incertain"}
+{"id": 3121, "choix": "siren:830927117", "confiance": "haute", "nom_propose": null, "raison": "Nom TAMING HEALTH CARE exact, seul candidat le portant, actif, dept 92"}
+{"id": 3123, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Groupe cardiologie Alsace absent ; candidats sans rapport de nom"}
+{"id": 3124, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "The Brand Gym Limited sans candidat ; adresse étrangère"}
+{"id": 3126, "choix": "aucun", "confiance": "haute", "nom_propose": "Hôpital d'Instruction des Armées Sainte-Anne", "raison": "Hôpital militaire de Toulon ; candidats sont des amicales et associations annexes"}
+{"id": 3128, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Association tumeurs du rein absente ; seul candidat sur tumeurs de l'enfant"}
+{"id": 3130, "choix": "siren:268708518", "confiance": "haute", "nom_propose": null, "raison": "CHU de Limoges, sigle CHU, 86.10Z, dept 87, adresse cohérente"}
+{"id": 3133, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Axelys Santé absent ; candidats homonymes en santé sans lien de nom"}
+{"id": 3135, "choix": "siren:352890412", "confiance": "haute", "nom_propose": null, "raison": "CEMKA SAS, études de marché 73.20Z ; la SCI est une annexe immobilière"}
+{"id": 3136, "choix": "siren:410662779", "confiance": "moyenne", "nom_propose": null, "raison": "Syneos Health France, CRO 72.19Z, actif, dept 92 ; nom proche"}
+{"id": 3137, "choix": "siren:784257164", "confiance": "haute", "nom_propose": null, "raison": "Institut Curie (René Huguenin), fondation hospitalière 86.10Z, dept 92"}
+{"id": 3139, "choix": "siren:929918845", "confiance": "haute", "nom_propose": null, "raison": "Sigle SFSEP = Société francophone de la sclérose en plaques, active"}
+{"id": 3140, "choix": "siren:414810820", "confiance": "haute", "nom_propose": null, "raison": "Nom A.E.C. PARTNERS exact, conseil 70.22Z, dept 75"}
+{"id": 3141, "choix": "aucun", "confiance": "haute", "nom_propose": "Assistance Publique - Hôpitaux de Paris", "raison": "APHP explicite ; candidats sont des associations étudiantes homonymes"}
+{"id": 3142, "choix": "siren:531661866", "confiance": "moyenne", "nom_propose": null, "raison": "Future Thinking France, nom exact, dept 75 ; inactive mais plausible"}
+{"id": 3144, "choix": "siren:199406083", "confiance": "haute", "nom_propose": null, "raison": "ENVA établissement public, dept 94 ; l'imprimerie est une annexe"}
+{"id": 3145, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "AGU absent ; candidats AF, AD, AH FORMATION sans lien certain"}
+{"id": 3146, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "GFHT absent ; SFTH possible société mère mais lien non établi"}
+{"id": 3149, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "GH de Gonesse absent ; candidats sont des SCI et GIE annexes"}
+{"id": 3150, "choix": "siren:193301538", "confiance": "moyenne", "nom_propose": null, "raison": "Université Bordeaux 4 nommée ; inactive mais le SAS immobilier est annexe"}
+{"id": 3151, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "Hôpital Lariboisière rattaché à l'AP-HP, dept 75"}
+{"id": 3153, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "CACIC SAS hors département ; l'autre candidat est un nom tronqué incertain"}
+{"id": 3154, "choix": "siren:924715675", "confiance": "moyenne", "nom_propose": null, "raison": "Nom exact France PCI, association active, dept 28 ; doublon RNA équivalent"}
+{"id": 3155, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre Hospitalier Universitaire du Mans", "raison": "CHU du Mans à l'adresse avenue Rubillard ; aucun candidat hospitalier"}
+{"id": 3156, "choix": "siren:788060465", "confiance": "haute", "nom_propose": null, "raison": "Charles River Laboratories Evreux, site rue de Pacy, dept 27"}
+{"id": 3157, "choix": "siren:818650533", "confiance": "haute", "nom_propose": null, "raison": "FINACTION SARL exact, forme et conseil 70.22Z, dept 75"}
+{"id": 3160, "choix": "aucun", "confiance": "haute", "nom_propose": "Fondation Ophtalmologique Adolphe de Rothschild", "raison": "Fondation hospitalière de la rue Manin ; candidats sont des annexes ou homonymes"}
+{"id": 3161, "choix": "siren:401641725", "confiance": "haute", "nom_propose": null, "raison": "OPEN'ACT = OPENACT, SAS conseil 70.22Z, dept 75"}
+{"id": 3162, "choix": "siren:200063477", "confiance": "haute", "nom_propose": null, "raison": "Centre hospitalier de Meaux relève du GHEF, sigle GHEF, 86.10Z"}
+{"id": 3163, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "ATERHIT absent des candidats ; aucun lien vérifiable"}
+{"id": 3164, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom de personne ; candidats sans lien de nom net"}
+{"id": 3165, "choix": "aucun", "confiance": "haute", "nom_propose": "Hospices Civils de Lyon", "raison": "Centre hospitalier Lyon Sud rattaché aux HCL ; candidats sans rapport"}
+{"id": 3168, "choix": "siren:415015213", "confiance": "haute", "nom_propose": null, "raison": "Goodwill Agency Travel & Event, nom exact après normalisation, dept 75"}
+{"id": 3173, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "DIGITAL et D2A absents ; PHARMA seul mot commun"}
+{"id": 3175, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Trois sociétés D2A homonymes ; aucune association ni lien certain"}
+{"id": 3178, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "ATOUT.COM absent ; seul candidat 31 JANVIER sans lien de nom"}
+{"id": 3180, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre Hospitalier de Cholet", "raison": "CH de Cholet ; candidats sont des GIE, SARL et annexes sans rapport direct"}
+{"id": 3181, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Société Française de Radiologie", "raison": "SFR absente des candidats ; adresse rue de la Colonie partagée avec ISFRI"}
+{"id": 3183, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom de personne physique ; aucun candidat"}
+{"id": 3185, "choix": "siren:641720297", "confiance": "haute", "nom_propose": null, "raison": "Clinique Victor Pauchet de Butler SAS 86.10Z, dept 80 ; autres sont annexes"}
+{"id": 3186, "choix": "siren:539301127", "confiance": "haute", "nom_propose": null, "raison": "Nom NEXIALIST exact, SAS actif, dept 13 ; l'autre candidat est autre nom"}
+{"id": 3189, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "ADAAT Alpha1-France absente des candidats"}
+{"id": 3190, "choix": "siren:171302110", "confiance": "moyenne", "nom_propose": null, "raison": "Trésorerie générale 13 : recette des finances Marseille ; inactive mais nom plus proche"}
+{"id": 3191, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Libellé CHU seul ; seul candidat sans rapport de nom"}
+{"id": 3193, "choix": "siren:261300081", "confiance": "haute", "nom_propose": null, "raison": "Centre hospitalier régional de Marseille, nom rapproché AP-HM, 86.10Z"}
+{"id": 3194, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Société d'hématologie pédiatrique absente des candidats ; aucun lien"}
+{"id": 3196, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Homonymes OZIRIS tous hors département ; doute trop fort"}
+{"id": 3197, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "AFH absente ; candidats ALF ou IDF sans lien de nom"}
+{"id": 3198, "choix": "rna:W751098519", "confiance": "haute", "nom_propose": null, "raison": "Sigle CEDEF exact : Collège des enseignants de dermatologie de France"}
+{"id": 3199, "choix": "rna:W062005769", "confiance": "haute", "nom_propose": null, "raison": "Sigle GEREF exact, association active, dept 06"}
+{"id": 3200, "choix": "siren:379972623", "confiance": "haute", "nom_propose": null, "raison": "Sigle AFIB exact, association active, dept 86"}
+{"id": 3201, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre de lutte contre le cancer Eugène Marquis", "raison": "CRLCC Eugène Marquis ; candidats sont fondation liée et CSE, exclus"}
+{"id": 3202, "choix": "siren:780421434", "confiance": "haute", "nom_propose": null, "raison": "Institut Godinot, association 86.10Z active, dept 51"}
+{"id": 3204, "choix": "siren:263800302", "confiance": "haute", "nom_propose": null, "raison": "Centre de santé rattaché au CHU Grenoble Alpes, 86.10Z, dept 38"}
+{"id": 3208, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Groupe Hospitalier de l'Institut Catholique de Lille", "raison": "GHICL hospitalier nordiste ; aucun candidat dans le lot"}
+{"id": 3210, "choix": "siren:263700189", "confiance": "haute", "nom_propose": null, "raison": "Trésorerie du CHRU rattachée au CHRU de Tours, dept 37"}
+{"id": 3211, "choix": "siren:266900273", "confiance": "haute", "nom_propose": null, "raison": "Pôle femme-mère-enfant du groupement Est rattaché aux HCL, dept 69"}
+{"id": 3214, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Club rhumatismes absent ; candidats CRI homonymes sans lien"}
+{"id": 3216, "choix": "siren:180036048", "confiance": "haute", "nom_propose": null, "raison": "INSERM Délégation Paris rattachée à l'INSERM, dept 75"}
+{"id": 3219, "choix": "siren:344343223", "confiance": "haute", "nom_propose": null, "raison": "JIVD - AER, sigle exact des Journées de ventilation à domicile"}
+{"id": 3220, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "EFOR CVO : aucun candidat ne porte les deux noms ; doute"}
+{"id": 3221, "choix": "siren:434205134", "confiance": "haute", "nom_propose": null, "raison": "APRET = Association Picardie Réanimateurs Thérapeutes, dept 80"}
+{"id": 3222, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "REB absent ; seul candidat FEM hors département, autre activité"}
+{"id": 3226, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre Hospitalier Intercommunal de Créteil", "raison": "CHIC de Créteil, hôpital public ; aucun candidat dans le lot"}
+{"id": 3227, "choix": "aucun", "confiance": "haute", "nom_propose": "Fondation de l'Assistance Publique - Hôpitaux de Paris pour la recherche", "raison": "Adresse et libellé désignent la fondation de l'AP-HP ; aucun candidat"}
+{"id": 3228, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Fonds de dotation SFD absent ; candidats homonymes sans lien"}
+{"id": 3230, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Fondation LEEM", "raison": "Fondation LEEM à l'adresse du Leem ; candidats seulement FONDATION génériques"}
+{"id": 3231, "choix": "aucun", "confiance": "haute", "nom_propose": "Fondation de l'Assistance Publique - Hôpitaux de Paris pour la recherche", "raison": "Libellé et adresse désignent la fondation AP-HP ; candidats sans rapport"}
+{"id": 3235, "choix": "siren:504073529", "confiance": "moyenne", "nom_propose": null, "raison": "Sigle ARMD exact, association active, dept 06 ; expansion non déclarée"}
+{"id": 3236, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Fonds Hospidon absent ; candidats fonds de dotation sans lien"}
+{"id": 3237, "choix": "siren:483785994", "confiance": "haute", "nom_propose": null, "raison": "ORACLE = Organisation de recherches avancées en cancérologie Lib Est, dept 54"}
+{"id": 3241, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Fond de dotation recherche médicale absent ; seul candidat sans lien"}
+{"id": 3245, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "UNSAF absente des candidats"}
+{"id": 3246, "choix": "siren:263100125", "confiance": "haute", "nom_propose": null, "raison": "Hôtel-Dieu Saint-Jacques est un site du CHU de Toulouse ; amis exclus"}
+{"id": 3247, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Sigle SCGP partagé par huit entités hors département ; doute"}
+{"id": 3248, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Centre Hospitalier et Universitaire de Limoges", "raison": "CHU de Limoges connu ; adresse Villejuif (94) incohérente, candidat CHU absent"}
+{"id": 3249, "choix": "siren:495780033", "confiance": "haute", "nom_propose": null, "raison": "Hôpital privé des Côtes-d'Armor, SAS 86.10Z, dept 22"}
+{"id": 3250, "choix": "siren:339168981", "confiance": "moyenne", "nom_propose": null, "raison": "OCG = Occidentale de conseil et de gestion, ancien nom de Kelly OCG ; inactif"}
+{"id": 3252, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Candidat chirurgie thoracique proche mais nom différent ; doute"}
+{"id": 3254, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Homonyme HPRIM hors département, code NAF incohérent avec la catégorie"}
+{"id": 3257, "choix": "siren:266900273", "confiance": "haute", "nom_propose": null, "raison": "Centre des finances publiques des HCL ; service rattaché aux Hospices Civils"}
+{"id": 3261, "choix": "siren:784578528", "confiance": "moyenne", "nom_propose": null, "raison": "Nom exact Fédération française des diabétiques, association active, dept 75"}
+{"id": 3265, "choix": "siren:413297771", "confiance": "haute", "nom_propose": null, "raison": "Institut Sainte-Catherine actif 86.10Z, dept 84 ; doublon RNA inactif écarté"}
+{"id": 3269, "choix": "rna:W062015283", "confiance": "haute", "nom_propose": null, "raison": "Sigle ANRO exact : Association niçoise pour la recherche en ophtalmologie"}
+{"id": 3273, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Direction des finances : aucun candidat hospitalier ; entité non certaine"}
+{"id": 3276, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Branding Science Group sans candidat ; adresse étrangère"}
+{"id": 3278, "choix": "rna:W751129395", "confiance": "haute", "nom_propose": null, "raison": "Sigle ARDIR exact, association active, dept 75"}
+{"id": 3279, "choix": "rna:W751255899", "confiance": "haute", "nom_propose": null, "raison": "Nom exact Société française de chirurgie du sport, sigle SFCDS"}
+{"id": 3280, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "UNIHA exact mais candidat hors département ; doute"}
+{"id": 3281, "choix": "siren:778204271", "confiance": "haute", "nom_propose": null, "raison": "Centre Georges-François Leclerc, association 86.10Z active, dept 21"}
+{"id": 3282, "choix": "rna:W062001312", "confiance": "haute", "nom_propose": null, "raison": "Sigle ANIRREM exact, association active, dept 06"}
+{"id": 3285, "choix": "siren:480064906", "confiance": "haute", "nom_propose": null, "raison": "Maternité rattachée à la SA Pôle Santé Léonard de Vinci, 86.10Z"}
+{"id": 3286, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Assistance Publique - Hôpitaux de Marseille", "raison": "CHR Marseille relève de l'AP-HM ; candidats alumni et associations sans rapport"}
+{"id": 3287, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre Hospitalier de la Côte Basque", "raison": "Centre hospitalier de Bayonne ; candidats sont SCI et SOS Médecins"}
+{"id": 3293, "choix": "siren:775741101", "confiance": "moyenne", "nom_propose": null, "raison": "Service de Gustave Roussy rattaché à l'Institut Gustave Roussy, 86.10Z ; CSE exclu"}
+{"id": 3294, "choix": "siren:266700574", "confiance": "haute", "nom_propose": null, "raison": "Hôpital civil de Strasbourg = Hôpitaux universitaires de Strasbourg (HUS), 86.10Z"}
+{"id": 3296, "choix": "siren:784544991", "confiance": "moyenne", "nom_propose": null, "raison": "Sigle CREPATS et nom de recherche sur pathologies tropicales et sida, 72.19Z"}
+{"id": 3297, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "Hôpital Bicêtre rattaché à l'AP-HP, dept 75"}
+{"id": 3299, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "VoxPharma absent des candidats ; aucun lien"}
+{"id": 3300, "choix": "siren:780111738", "confiance": "moyenne", "nom_propose": null, "raison": "Nom SNFGE exact à l'adresse Montparnasse ; doublon RNA équivalent"}
+{"id": 3301, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Centre Hospitalier Drôme-Nord", "raison": "Trésorerie d'un hôpital Drôme Nord ; seul candidat est la DDFiP"}
+{"id": 3303, "choix": "rna:W781001349", "confiance": "haute", "nom_propose": null, "raison": "Nom exact Amicale des cardiologues des Yvelines (ACY), active, dept 78"}
+{"id": 3304, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre Hospitalier Universitaire de Bordeaux", "raison": "Hôpital Pellegrin est un site du CHU de Bordeaux ; aucun candidat"}
+{"id": 3305, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "AKO seul sigle commun ; ADVICE porte sur d'autres sociétés"}
+{"id": 3306, "choix": "rna:W941002145", "confiance": "moyenne", "nom_propose": null, "raison": "APIF = amicale des pneumologues d'Île-de-France ; catégorie santé concordante"}
+{"id": 3307, "choix": "siren:514930668", "confiance": "moyenne", "nom_propose": null, "raison": "Nom Immunologie de l'allogreffe IAG exact, association active ; doublon RNA"}
+{"id": 3309, "choix": "siren:905044814", "confiance": "moyenne", "nom_propose": null, "raison": "Sigle AFR3P exact, association santé active ; HPA non expliqué"}
+{"id": 3310, "choix": "siren:791268055", "confiance": "haute", "nom_propose": null, "raison": "Rouge & Red Médias, nom exact après normalisation, SAS active, dept 92"}
+{"id": 3311, "choix": "siren:820248250", "confiance": "haute", "nom_propose": null, "raison": "AFNP = Association française contre les neuropathies périphériques, dept 44"}
+{"id": 3313, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Groupe Hospitalier de Mulhouse et Sud Alsace", "raison": "CHU Mulhouse = groupe hospitalier au 87 avenue d'Altkirch ; candidats sans rapport"}
+{"id": 3314, "choix": "siren:809150030", "confiance": "moyenne", "nom_propose": null, "raison": "Centre de recherche clinique Portes du Sud, Vénissieux, nom et dept proches"}
+{"id": 3316, "choix": "siren:338227614", "confiance": "haute", "nom_propose": null, "raison": "McCann Health Paris, nom exact, SAS 73.11Z, dept 92"}
+{"id": 3319, "choix": "siren:263500076", "confiance": "haute", "nom_propose": null, "raison": "Trésorerie du CHU de Rennes rattachée au CHU Pontchaillou, 86.10Z"}
+{"id": 3320, "choix": "siren:180036048", "confiance": "haute", "nom_propose": null, "raison": "INSERM unité 1090 rattachée à l'INSERM, dept 13"}
+{"id": 3321, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Quotidien du Médecin absent ; seul candidat sans lien"}
+{"id": 3324, "choix": "siren:414427484", "confiance": "haute", "nom_propose": null, "raison": "Marseille Congrès actif, nom exact, dept 13 ; doublon RNA inactif"}
+{"id": 3326, "choix": "siren:780709598", "confiance": "haute", "nom_propose": null, "raison": "Centre régional François Baclesse 86.10Z ; la pharmacie est un service"}
+{"id": 3327, "choix": "aucun", "confiance": "haute", "nom_propose": "Groupe Hospitalier Régional de Metz-Thionville", "raison": "GHR Metz-Thionville hospitalier ; candidats sans rapport"}
+{"id": 3329, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Fédération des CRCM absente ; CRCM Rhône-Alpes est une entité régionale"}
+{"id": 3331, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Candidats sont des SCI de cabinets de dermatologie, pas l'entité"}
+{"id": 3332, "choix": "siren:994808947", "confiance": "moyenne", "nom_propose": null, "raison": "Radiothérapie et cancérologie du Sud, association active à La Réunion (dept 974)"}
+{"id": 3333, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Centre de lutte contre le cancer Oscar Lambret", "raison": "Centre Oscar Lambret de Lille connu ; candidats absents, département déclaré incohérent"}
+{"id": 3338, "choix": "siren:822451969", "confiance": "haute", "nom_propose": null, "raison": "Nom exact fonds de dotation RESO pour la recherche, même adresse Chanzy"}
+{"id": 3339, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre Hospitalier Régional Universitaire de Tours", "raison": "Hôpital Trousseau à Tours fait partie du CHRU de Tours ; candidats hors département"}
+{"id": 3340, "choix": "siren:831267315", "confiance": "moyenne", "nom_propose": null, "raison": "D2A SAS conseil 70.22Z, nom exact, dept 38 ; homonymes D2A existent"}
+{"id": 3343, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "BcomBrun absent des candidats ; aucun lien"}
+{"id": 3344, "choix": "siren:509507125", "confiance": "moyenne", "nom_propose": null, "raison": "Nom FREQUENCEMEDICALE.COM exact, dept 92 ; SAS inactive mais nom identique"}
+{"id": 3345, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre Hospitalier Universitaire de Limoges", "raison": "Hôpital Dupuytren est un site du CHU de Limoges ; seul candidat AP-HP hors sujet"}
+{"id": 3348, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Amaris : huit homonymes tous hors département, adresse londonienne"}
+{"id": 3349, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Association ARE Ophtalmo absente ; candidats sont annexes ou sans rapport"}
+{"id": 3351, "choix": "rna:W691071888", "confiance": "haute", "nom_propose": null, "raison": "ACROPOL = Association Croix-Roussienne pour le progrès en ophtalmologie, nom exact"}
+{"id": 3352, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre Hospitalier Universitaire de Reims", "raison": "Trésorerie du CHR de Reims, service rattaché au CHU ; candidats DDFiP et associations"}
+{"id": 3353, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre Hospitalier Régional d'Orléans", "raison": "Trésorerie du CHR d'Orléans, service rattaché au centre hospitalier ; aucun candidat"}
+{"id": 3358, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "SFGG : trois SAS homonymes, toutes hors département ; doute"}
+{"id": 3359, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "MEGAPREMIUM absent des candidats ; aucun lien"}
+{"id": 3360, "choix": "siren:822565925", "confiance": "haute", "nom_propose": null, "raison": "Fonds de dotation du CHRU de Brest pour la recherche, fondation active, dept 29"}
+{"id": 3361, "choix": "siren:264200304", "confiance": "haute", "nom_propose": null, "raison": "Hôpital Nord du CHU de Saint-Étienne ; site rattaché au CHU, 86.10Z"}
+{"id": 3362, "choix": "siren:413297771", "confiance": "haute", "nom_propose": null, "raison": "Institut Sainte-Catherine actif 86.10Z, dept 84 ; doublon RNA inactif écarté"}
+{"id": 3363, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Centre Hospitalier Régional Universitaire de Besançon", "raison": "CHRU de Besançon (place Saint-Jacques) ; candidats génériques ou amicales"}
+{"id": 3364, "choix": "siren:785989807", "confiance": "moyenne", "nom_propose": null, "raison": "Société d'orthopédie-traumatologie de l'Ouest, association active, dept 49"}
+{"id": 3365, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Innoveo : fonds du CHRU Brest absent ; homonymes hors département"}
+{"id": 3368, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Bertrand Audoin Consulting absent ; candidats BERTRAND homonymes"}
+{"id": 3370, "choix": "siren:834951741", "confiance": "haute", "nom_propose": null, "raison": "MD Events, nom exact, SAS active, dept 63"}
+{"id": 3371, "choix": "siren:834900748", "confiance": "haute", "nom_propose": null, "raison": "Selasu Tagast 41 : la forme SELASU est une SAS, nom exact, dept 06"}
+{"id": 3372, "choix": "siren:402181176", "confiance": "haute", "nom_propose": null, "raison": "Sigle ARCR exact, association de recherche clinique active, 72.20Z"}

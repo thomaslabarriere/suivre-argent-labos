@@ -1,0 +1,150 @@
+{"id": 7, "choix": "siren:390704484", "confiance": "moyenne", "nom_propose": null, "raison": "Mediacom Paris, agence média rapprochée par EssenceMediacom, APE 73.11Z, dép. 92"}
+{"id": 8, "choix": "siren:532834090", "confiance": "haute", "nom_propose": null, "raison": "Unicancer lui-même, siège rue de Tolbiac"}
+{"id": 11, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "AP-HP, entité principale"}
+{"id": 12, "choix": "siren:402364731", "confiance": "haute", "nom_propose": null, "raison": "ARCAGY, association de recherche cancers gynécologiques"}
+{"id": 17, "choix": "siren:775741101", "confiance": "haute", "nom_propose": null, "raison": "Institut Gustave Roussy, pas la salle de garde"}
+{"id": 21, "choix": "siren:490121811", "confiance": "haute", "nom_propose": null, "raison": "Webhelp Medica CX devenu Concentrix Medica"}
+{"id": 22, "choix": "siren:308296938", "confiance": "moyenne", "nom_propose": null, "raison": "GIE GERS (sigle GERS GIE), groupement statistiques"}
+{"id": 23, "choix": "siren:342066727", "confiance": "haute", "nom_propose": null, "raison": "Europa Group, nom et sigle identiques"}
+{"id": 26, "choix": "siren:266900273", "confiance": "haute", "nom_propose": null, "raison": "Hospices Civils de Lyon, établissement public"}
+{"id": 28, "choix": "siren:265906719", "confiance": "haute", "nom_propose": null, "raison": "CHU de Lille, adresse avenue Oscar Lambret"}
+{"id": 30, "choix": "siren:263500076", "confiance": "haute", "nom_propose": null, "raison": "CHU Pontchaillou de Rennes"}
+{"id": 33, "choix": "siren:403299480", "confiance": "haute", "nom_propose": null, "raison": "Société européenne de cardiologie"}
+{"id": 36, "choix": "siren:784257164", "confiance": "haute", "nom_propose": null, "raison": "Institut Curie, fondation hospitalière 86.10Z"}
+{"id": 41, "choix": "siren:493005581", "confiance": "haute", "nom_propose": null, "raison": "Edimark SAS, presse 58.14Z"}
+{"id": 48, "choix": "siren:397866021", "confiance": "haute", "nom_propose": null, "raison": "Seripharm, nom complet identique"}
+{"id": 49, "choix": "siren:263305823", "confiance": "haute", "nom_propose": null, "raison": "CHU de Bordeaux"}
+{"id": 54, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "Assistance publique = AP-HP"}
+{"id": 64, "choix": "siren:265906719", "confiance": "haute", "nom_propose": null, "raison": "CHRU de Lille = CHU de Lille"}
+{"id": 66, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "DRCI Saint-Louis se rattache à l'AP-HP"}
+{"id": 67, "choix": "siren:351515762", "confiance": "haute", "nom_propose": null, "raison": "Randomized Clinical Trials, sigle RCTS SAS"}
+{"id": 70, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "AP-HP"}
+{"id": 74, "choix": "siren:200023059", "confiance": "haute", "nom_propose": null, "raison": "CHRU de Brest"}
+{"id": 77, "choix": "siren:433936424", "confiance": "haute", "nom_propose": null, "raison": "ARTIC, association recherche thérapeutiques innovantes cancer"}
+{"id": 87, "choix": "siren:263500076", "confiance": "haute", "nom_propose": null, "raison": "CHU de Rennes"}
+{"id": 91, "choix": "siren:433457736", "confiance": "moyenne", "nom_propose": null, "raison": "IRCCS, institut recherche clinique cancers et sang, Lyon-Sud"}
+{"id": 92, "choix": "siren:403299480", "confiance": "haute", "nom_propose": null, "raison": "ESC, Société européenne de cardiologie, Biot"}
+{"id": 100, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "AP-HP, hôpitaux Beaujon, Brousse, Saint-Antoine"}
+{"id": 104, "choix": "siren:448155614", "confiance": "haute", "nom_propose": null, "raison": "ICTA Project Management"}
+{"id": 105, "choix": "siren:266307461", "confiance": "haute", "nom_propose": null, "raison": "CHU de Clermont-Ferrand"}
+{"id": 107, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "AP-HP, hôpital Necker enfants malades"}
+{"id": 108, "choix": "siren:448763961", "confiance": "haute", "nom_propose": null, "raison": "SORECOH, société de recherche clinique onco-hématologie"}
+{"id": 114, "choix": "siren:423728377", "confiance": "haute", "nom_propose": null, "raison": "Colloquium SAS, même dép., APE 82.30Z"}
+{"id": 123, "choix": "siren:263305823", "confiance": "haute", "nom_propose": null, "raison": "CHU de Bordeaux"}
+{"id": 124, "choix": "siren:264400136", "confiance": "haute", "nom_propose": null, "raison": "CHU de Nantes"}
+{"id": 128, "choix": "siren:775741101", "confiance": "haute", "nom_propose": null, "raison": "Institut Gustave Roussy, pas le CSE ni l'amicale"}
+{"id": 137, "choix": "siren:781831714", "confiance": "haute", "nom_propose": null, "raison": "Institut Bergonié, pas le CSE"}
+{"id": 138, "choix": "siren:400149647", "confiance": "haute", "nom_propose": null, "raison": "Keyrus SA"}
+{"id": 148, "choix": "siren:318024338", "confiance": "moyenne", "nom_propose": null, "raison": "IQVIA CSD, sigle CSD France SAS, société inactive"}
+{"id": 149, "choix": "rna:W751030940", "confiance": "haute", "nom_propose": null, "raison": "Société francophone du diabète, seul candidat cohérent"}
+{"id": 160, "choix": "siren:779213867", "confiance": "haute", "nom_propose": null, "raison": "Centre Jean Perrin, sigle CJP, Clermont-Ferrand"}
+{"id": 163, "choix": "siren:857200521", "confiance": "haute", "nom_propose": null, "raison": "Centre spécialités pharmaceutiques, Cournon"}
+{"id": 172, "choix": "siren:779924133", "confiance": "haute", "nom_propose": null, "raison": "Centre Léon Bérard, CRLC Lyon"}
+{"id": 179, "choix": "siren:264900036", "confiance": "haute", "nom_propose": null, "raison": "CHU d'Angers"}
+{"id": 197, "choix": "siren:430431338", "confiance": "haute", "nom_propose": null, "raison": "JNLF, Journées neurologiques de langue française"}
+{"id": 201, "choix": "siren:487575680", "confiance": "haute", "nom_propose": null, "raison": "GETAID, nom complet identique"}
+{"id": 205, "choix": "siren:753930445", "confiance": "haute", "nom_propose": null, "raison": "Alinéa Plus SAS, presse 58.14Z"}
+{"id": 206, "choix": "siren:532254307", "confiance": "haute", "nom_propose": null, "raison": "Institut de cancérologie de l'Ouest"}
+{"id": 213, "choix": "siren:421204199", "confiance": "moyenne", "nom_propose": null, "raison": "Association GERCOR, APE 72.19Z, doublon RNA écarté"}
+{"id": 214, "choix": "siren:487575680", "confiance": "haute", "nom_propose": null, "raison": "GETAID"}
+{"id": 215, "choix": "siren:269401154", "confiance": "haute", "nom_propose": null, "raison": "CHI de Créteil"}
+{"id": 222, "choix": "siren:318024338", "confiance": "haute", "nom_propose": null, "raison": "IQVIA Information Solutions France"}
+{"id": 223, "choix": "siren:342066727", "confiance": "moyenne", "nom_propose": null, "raison": "Europa Organisation, même adresse qu'Europa Group"}
+{"id": 230, "choix": "siren:523526812", "confiance": "haute", "nom_propose": null, "raison": "Uro Diffusion, nom identique"}
+{"id": 236, "choix": "siren:402364731", "confiance": "haute", "nom_propose": null, "raison": "ARCAGY-GINECO"}
+{"id": 248, "choix": "siren:438343972", "confiance": "haute", "nom_propose": null, "raison": "GFPC, Groupe français de pneumo-cancérologie"}
+{"id": 249, "choix": "siren:781831714", "confiance": "haute", "nom_propose": null, "raison": "Institut Bergonié, pas le CSE ni l'amicale"}
+{"id": 254, "choix": "siren:263800302", "confiance": "haute", "nom_propose": null, "raison": "CHU Grenoble Alpes"}
+{"id": 256, "choix": "siren:316607902", "confiance": "haute", "nom_propose": null, "raison": "SNFMI, siren plutôt que doublons RNA"}
+{"id": 265, "choix": "siren:782921233", "confiance": "haute", "nom_propose": null, "raison": "Institut Paoli-Calmettes"}
+{"id": 283, "choix": "siren:261400931", "confiance": "haute", "nom_propose": null, "raison": "CHU de Caen"}
+{"id": 290, "choix": "siren:778137877", "confiance": "haute", "nom_propose": null, "raison": "Hôpital privé Jean Mermoz SA, pas le GIE"}
+{"id": 295, "choix": "siren:348971037", "confiance": "haute", "nom_propose": null, "raison": "Nova Biomedical France, Courtaboeuf"}
+{"id": 297, "choix": "siren:781831714", "confiance": "haute", "nom_propose": null, "raison": "Pharmacie rattachée à l'Institut Bergonié"}
+{"id": 298, "choix": "siren:440430569", "confiance": "moyenne", "nom_propose": null, "raison": "A+A SAS études 73.20Z à Lyon, nom proche"}
+{"id": 299, "choix": "siren:263700189", "confiance": "haute", "nom_propose": null, "raison": "CHRU de Tours"}
+{"id": 300, "choix": "siren:449895333", "confiance": "haute", "nom_propose": null, "raison": "Divine ID SARL"}
+{"id": 301, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "Hôpital Saint-Louis, rattaché à l'AP-HP"}
+{"id": 302, "choix": "siren:200042166", "confiance": "haute", "nom_propose": null, "raison": "CHRU de Nancy"}
+{"id": 308, "choix": "siren:180036014", "confiance": "haute", "nom_propose": null, "raison": "Hôpital national des Quinze-Vingts, CHNO"}
+{"id": 319, "choix": "siren:200082105", "confiance": "haute", "nom_propose": null, "raison": "GHU Paris psychiatrie et neurosciences"}
+{"id": 325, "choix": "siren:784287914", "confiance": "haute", "nom_propose": null, "raison": "Société française de cardiologie"}
+{"id": 331, "choix": "siren:532254307", "confiance": "haute", "nom_propose": null, "raison": "ICO, site René Gauducheau, pas le CSE"}
+{"id": 335, "choix": "siren:753050657", "confiance": "moyenne", "nom_propose": null, "raison": "Pharmafield Groupe, nom identique, siège Levallois"}
+{"id": 337, "choix": "siren:800746406", "confiance": "haute", "nom_propose": null, "raison": "Patients en réseau"}
+{"id": 357, "choix": "siren:784257164", "confiance": "haute", "nom_propose": null, "raison": "Institut Curie fondation hospitalière, pas le syndicat"}
+{"id": 364, "choix": "siren:422322479", "confiance": "haute", "nom_propose": null, "raison": "Hopscotch Congrès SAS"}
+{"id": 368, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "AP-HP"}
+{"id": 374, "choix": "siren:315633578", "confiance": "haute", "nom_propose": null, "raison": "F-M Richard et Associés SA"}
+{"id": 382, "choix": "siren:794114645", "confiance": "haute", "nom_propose": null, "raison": "Fondation francophone pour la recherche sur le diabète"}
+{"id": 383, "choix": "siren:434506770", "confiance": "haute", "nom_propose": null, "raison": "IFCT, intergroupe francophone cancérologie thoracique"}
+{"id": 393, "choix": "siren:180089013", "confiance": "haute", "nom_propose": null, "raison": "CNRS établissement public"}
+{"id": 409, "choix": "rna:W751034537", "confiance": "haute", "nom_propose": null, "raison": "SPILF, société de pathologie infectieuse"}
+{"id": 411, "choix": "siren:775741101", "confiance": "haute", "nom_propose": null, "raison": "Centre de santé de l'Institut Gustave Roussy"}
+{"id": 412, "choix": "siren:200055358", "confiance": "haute", "nom_propose": null, "raison": "CHU de Poitiers"}
+{"id": 415, "choix": "siren:409429362", "confiance": "haute", "nom_propose": null, "raison": "European School of Haematology, même adresse Saint-Louis"}
+{"id": 417, "choix": "siren:784544991", "confiance": "haute", "nom_propose": null, "raison": "CREPATS, nom complet identique"}
+{"id": 436, "choix": "siren:316252295", "confiance": "moyenne", "nom_propose": null, "raison": "Laboratoires BTT, enseigne Synerlab, Bas-Rhin"}
+{"id": 438, "choix": "siren:499166510", "confiance": "haute", "nom_propose": null, "raison": "Institut Imagine des maladies génétiques"}
+{"id": 439, "choix": "siren:430431338", "confiance": "haute", "nom_propose": null, "raison": "JNLF association"}
+{"id": 449, "choix": "siren:789823580", "confiance": "haute", "nom_propose": null, "raison": "Hôpital privé du Confluent SAS"}
+{"id": 457, "choix": "siren:779213867", "confiance": "haute", "nom_propose": null, "raison": "Centre Jean Perrin, CRLCC de Clermont-Ferrand"}
+{"id": 460, "choix": "siren:180036048", "confiance": "haute", "nom_propose": null, "raison": "Inserm, pas Inserm Transfert"}
+{"id": 462, "choix": "siren:484248463", "confiance": "haute", "nom_propose": null, "raison": "Heva SAS, 74.90B, pas la SCI"}
+{"id": 465, "choix": "siren:453760332", "confiance": "haute", "nom_propose": null, "raison": "Association Robert Debré pour la recherche médicale"}
+{"id": 467, "choix": "siren:264400136", "confiance": "haute", "nom_propose": null, "raison": "Trésorerie du CHU de Nantes, bénéficiaire le CHU"}
+{"id": 469, "choix": "siren:775741101", "confiance": "haute", "nom_propose": null, "raison": "Institut Gustave Roussy"}
+{"id": 470, "choix": "siren:722055738", "confiance": "haute", "nom_propose": null, "raison": "Boston Consulting Group et Cie, actif, Paris"}
+{"id": 473, "choix": "siren:439169913", "confiance": "haute", "nom_propose": null, "raison": "Unique et Multiple Communication, Levallois"}
+{"id": 477, "choix": "siren:353360415", "confiance": "haute", "nom_propose": null, "raison": "GIE MEDES, institut médecine physiologie spatiale"}
+{"id": 481, "choix": "siren:200055358", "confiance": "haute", "nom_propose": null, "raison": "CHU de Poitiers, site La Milétrie"}
+{"id": 491, "choix": "siren:530330174", "confiance": "haute", "nom_propose": null, "raison": "Groupe Profession Santé SAS"}
+{"id": 493, "choix": "siren:264400136", "confiance": "haute", "nom_propose": null, "raison": "CHU de Nantes, site Hôtel-Dieu"}
+{"id": 497, "choix": "siren:877847962", "confiance": "haute", "nom_propose": null, "raison": "Institut de cancérologie de Bourgogne SAS"}
+{"id": 499, "choix": "siren:353139348", "confiance": "haute", "nom_propose": null, "raison": "SFDPST, nom complet identique"}
+{"id": 503, "choix": "siren:532254307", "confiance": "haute", "nom_propose": null, "raison": "Institut de cancérologie de l'Ouest"}
+{"id": 507, "choix": "siren:414967851", "confiance": "haute", "nom_propose": null, "raison": "SFCTCV, société chirurgie thoracique cardiovasculaire"}
+{"id": 508, "choix": "siren:261300081", "confiance": "haute", "nom_propose": null, "raison": "AP-HM, CHR de Marseille, rapproché par enseigne"}
+{"id": 510, "choix": "siren:778204271", "confiance": "haute", "nom_propose": null, "raison": "Centre Georges-François Leclerc, pas le CSE"}
+{"id": 514, "choix": "siren:784617854", "confiance": "haute", "nom_propose": null, "raison": "Société française d'ophtalmologie"}
+{"id": 521, "choix": "siren:265907006", "confiance": "moyenne", "nom_propose": null, "raison": "Trésorerie du CH de Tourcoing, bénéficiaire l'hôpital"}
+{"id": 522, "choix": "siren:403096670", "confiance": "haute", "nom_propose": null, "raison": "Highco Data SAS"}
+{"id": 529, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "AP-HP, hôpital Georges-Pompidou HEGP"}
+{"id": 532, "choix": "siren:784257164", "confiance": "haute", "nom_propose": null, "raison": "Institut Curie, forme fondation"}
+{"id": 548, "choix": "siren:484758610", "confiance": "moyenne", "nom_propose": null, "raison": "Newmed active, 70.21Z, Paris"}
+{"id": 550, "choix": "siren:353601693", "confiance": "haute", "nom_propose": null, "raison": "Société française de radiologie"}
+{"id": 551, "choix": "siren:389273962", "confiance": "haute", "nom_propose": null, "raison": "P R Editions SAS"}
+{"id": 554, "choix": "siren:268000148", "confiance": "haute", "nom_propose": null, "raison": "CHU d'Amiens"}
+{"id": 555, "choix": "siren:788214963", "confiance": "haute", "nom_propose": null, "raison": "Institut régional du cancer de Montpellier, pas le CSE"}
+{"id": 560, "choix": "siren:888880101", "confiance": "haute", "nom_propose": null, "raison": "Oncotask SAS"}
+{"id": 571, "choix": "siren:929918845", "confiance": "haute", "nom_propose": null, "raison": "Société francophone de la sclérose en plaques"}
+{"id": 572, "choix": "siren:310133608", "confiance": "haute", "nom_propose": null, "raison": "Société de pneumologie de langue française, sigle SPLF"}
+{"id": 573, "choix": "siren:392901856", "confiance": "haute", "nom_propose": null, "raison": "Ipsos (France) SAS, nom exact, étude 73.20Z"}
+{"id": 574, "choix": "siren:180036048", "confiance": "haute", "nom_propose": null, "raison": "Inserm, délégation régionale rattachée à l'Inserm"}
+{"id": 584, "choix": "siren:479145419", "confiance": "haute", "nom_propose": null, "raison": "Cognizant Technology Solutions France"}
+{"id": 585, "choix": "siren:261300081", "confiance": "haute", "nom_propose": null, "raison": "AP-HM, CHR de Marseille"}
+{"id": 586, "choix": "siren:778853309", "confiance": "haute", "nom_propose": null, "raison": "Centre Paul Strauss, Strasbourg"}
+{"id": 590, "choix": "siren:780709598", "confiance": "haute", "nom_propose": null, "raison": "Centre François Baclesse, Caen, pas le CSE"}
+{"id": 592, "choix": "siren:752032094", "confiance": "haute", "nom_propose": null, "raison": "TFS Trial Form Support SAS"}
+{"id": 594, "choix": "siren:266700574", "confiance": "moyenne", "nom_propose": null, "raison": "Trésorerie des HUS, bénéficiaire les Hôpitaux universitaires de Strasbourg"}
+{"id": 604, "choix": "siren:263800302", "confiance": "haute", "nom_propose": null, "raison": "CHU Grenoble Alpes"}
+{"id": 610, "choix": "siren:784257164", "confiance": "haute", "nom_propose": null, "raison": "Institut Curie, pas le syndicat de propriétaires"}
+{"id": 613, "choix": "siren:784778029", "confiance": "haute", "nom_propose": null, "raison": "Fondation A. de Rothschild, hôpital 86.10Z, rue Manin"}
+{"id": 619, "choix": "siren:265906719", "confiance": "haute", "nom_propose": null, "raison": "Recette des finances du CHU de Lille"}
+{"id": 626, "choix": "rna:W913002297", "confiance": "moyenne", "nom_propose": null, "raison": "SFFPC, société française et francophone des plaies, Essonne"}
+{"id": 629, "choix": "siren:391854791", "confiance": "haute", "nom_propose": null, "raison": "IRCAD, institut recherche cancers appareil digestif"}
+{"id": 645, "choix": "siren:501616122", "confiance": "haute", "nom_propose": null, "raison": "Institut du cerveau ICM, Paris"}
+{"id": 646, "choix": "siren:308718816", "confiance": "haute", "nom_propose": null, "raison": "Fondation Mérieux, fiche SIREN plutôt que RNA"}
+{"id": 661, "choix": "siren:261300081", "confiance": "moyenne", "nom_propose": null, "raison": "Trésorerie assistance publique Marseille, bénéficiaire AP-HM"}
+{"id": 670, "choix": "siren:337180160", "confiance": "haute", "nom_propose": null, "raison": "Courlancy Santé, exploitant de la polyclinique de Courlancy"}
+{"id": 671, "choix": "siren:775741101", "confiance": "haute", "nom_propose": null, "raison": "Institut Gustave Roussy, pas l'association jeunes chercheurs"}
+{"id": 676, "choix": "siren:784617854", "confiance": "haute", "nom_propose": null, "raison": "Société française d'ophtalmologie, fiche SIREN"}
+{"id": 680, "choix": "siren:781831714", "confiance": "haute", "nom_propose": null, "raison": "Institut Bergonié, pas syndicat ni CSE"}
+{"id": 681, "choix": "siren:027350321", "confiance": "haute", "nom_propose": null, "raison": "OpenHealth Company, Paris 75, active"}
+{"id": 691, "choix": "siren:815144571", "confiance": "haute", "nom_propose": null, "raison": "Fondation de l'AP-HP, explicitement nommée"}
+{"id": 703, "choix": "siren:352369375", "confiance": "moyenne", "nom_propose": null, "raison": "Vivactis SAS 73.11Z active, Hauts-de-Seine"}
+{"id": 704, "choix": "siren:267200160", "confiance": "haute", "nom_propose": null, "raison": "Centre hospitalier du Mans"}
+{"id": 707, "choix": "siren:263800302", "confiance": "haute", "nom_propose": null, "raison": "CHU Grenoble Alpes"}
+{"id": 719, "choix": "siren:430431338", "confiance": "haute", "nom_propose": null, "raison": "Journées neurologiques de langue française"}
+{"id": 737, "choix": "siren:775741101", "confiance": "haute", "nom_propose": null, "raison": "Institut Gustave Roussy"}
+{"id": 746, "choix": "siren:775741101", "confiance": "haute", "nom_propose": null, "raison": "Institut Gustave Roussy, campus"}
