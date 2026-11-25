@@ -71,7 +71,7 @@ def cle_sql(col):
 
 # 2. Hôpitaux : rattachement fiable, SIREN à 9 chiffres, catégorie établissement ou groupement sanitaire
 con.execute(f"""CREATE TABLE hop AS
-SELECT struct_id::BIGINT struct_id, identifiant2 AS siren, any_value(nom_officiel) nom_officiel
+SELECT struct_id::BIGINT struct_id, identifiant2 AS siren, min(nom_officiel) nom_officiel
 FROM read_csv('{sql_chemin(OUT / 'rattachement_final.csv')}', all_varchar=true)
 WHERE statut2='fiable' AND regexp_matches(identifiant2,'^[0-9]{{9}}$')
   AND (categorie IN ('Etablissement de santé','Groupement sanitaire') OR cat_juridique IN ('7364','7361','7362','7363','7365','7366','7367','7368','7369'))
@@ -105,18 +105,18 @@ FROM sir s WHERE s.siren IN (SELECT siren FROM hop) OR s.siren IN (SELECT siren 
 
 # 4. Labos payeurs de Transparence Santé (vue nette) : SIREN déclaré + clé de nom (premier mot significatif)
 con.execute("""CREATE TABLE labos AS
-SELECT raison_sociale, any_value(numero_siren) FILTER (WHERE regexp_matches(coalesce(numero_siren,''),'^[0-9]{9}$')) siren,
+SELECT raison_sociale, min(numero_siren) FILTER (WHERE regexp_matches(coalesce(numero_siren,''),'^[0-9]{9}$')) siren,
        sum(montant) total_ts FROM ts_net WHERE raison_sociale IS NOT NULL GROUP BY raison_sociale""")
 con.execute(f"CREATE TABLE labos_k AS SELECT *, {cle_sql('raison_sociale')} AS cle FROM labos")
 con.execute("DELETE FROM labos_k WHERE cle IN (%s)" % ",".join(f"'{w}'" for w in INTERDITS))
 # libellé du groupe : la raison sociale la plus lourde parmi celles qui déclarent un SIREN français (sinon ROCHE CANADA l'emporte sur ROCHE SAS)
 con.execute("""CREATE TABLE labo_groupes AS SELECT cle,
-   coalesce(arg_max(raison_sociale,total_ts) FILTER (WHERE siren IS NOT NULL), arg_max(raison_sociale,total_ts)) AS labo, sum(total_ts) AS total_ts
+   coalesce(arg_max(raison_sociale, (total_ts, raison_sociale)) FILTER (WHERE siren IS NOT NULL), arg_max(raison_sociale, (total_ts, raison_sociale))) AS labo, sum(total_ts) AS total_ts
    FROM labos_k WHERE cle IS NOT NULL GROUP BY cle""")
 # un SIREN peut porter plusieurs raisons sociales de clés différentes : on garde UNE clé, celle qui pèse le plus en euros
 n_multi = con.execute("""SELECT count(*) FROM (SELECT siren FROM labos_k WHERE siren IS NOT NULL AND cle IS NOT NULL
    GROUP BY siren HAVING count(DISTINCT cle)>1)""").fetchone()[0]
-con.execute("""CREATE TABLE labo_siren AS SELECT siren, arg_max(cle, total_ts) AS cle FROM
+con.execute("""CREATE TABLE labo_siren AS SELECT siren, arg_max(cle, (total_ts, cle)) AS cle FROM
    (SELECT siren, cle, sum(total_ts) total_ts FROM labos_k WHERE siren IS NOT NULL AND cle IS NOT NULL GROUP BY ALL) GROUP BY siren""")
 n_multi_apres = con.execute("SELECT count(*) FROM (SELECT siren FROM labo_siren GROUP BY siren HAVING count(*)>1)").fetchone()[0]
 
@@ -127,7 +127,7 @@ FROM (SELECT DISTINCT tit FROM marches WHERE ach IN (SELECT siren FROM ach)) m J
 # appariement par nom : même premier mot significatif ET (l'un des deux noms n'a qu'un mot significatif, ou le 2e mot est le même)
 # (évite FISHER SCIENTIFIC = FISHER & PAYKEL, THERMO ELECTRON = THERMO FISHER)
 con.execute("""CREATE TABLE tit_cle AS
-SELECT t.tit, coalesce(ls.cle, k.cle) AS cle, CASE WHEN ls.cle IS NOT NULL THEN 'siren' ELSE 'nom' END AS methode, any_value(t.nom_sirene) AS nom_sirene
+SELECT t.tit, coalesce(ls.cle, k.cle) AS cle, CASE WHEN ls.cle IS NOT NULL THEN 'siren' ELSE 'nom' END AS methode, min(t.nom_sirene) AS nom_sirene
 FROM tit_nom t LEFT JOIN labo_siren ls ON ls.siren=t.tit
 LEFT JOIN (SELECT DISTINCT t2.tit, t2.cle FROM tit_nom t2 JOIN (SELECT cle, sig(raison_sociale) sv FROM labos_k) v ON v.cle=t2.cle
    WHERE len(t2.st)<=1 OR len(v.sv)<=1 OR t2.st[2]=v.sv[2]) k ON k.tit=t.tit
@@ -154,7 +154,7 @@ SOMMES = f"""count(DISTINCT a.marche_id) AS nb_marches,
    round(sum(a.montant_part)) AS somme_plafonds_declares_eur,
    round(max(a.montant_declare)) AS plus_gros_plafond_declare_eur"""
 con.execute(f"""COPY (SELECT a.type_acheteur AS type_acheteur, a.ach AS acheteur_siren, a.acheteur_nom AS acheteur,
-   g.labo AS labo_ts, a.tit AS titulaire_siren, any_value(a.nom_sirene) AS titulaire, any_value(a.methode) AS appariement,
+   g.labo AS labo_ts, a.tit AS titulaire_siren, min(a.nom_sirene) AS titulaire, min(a.methode) AS appariement,
    {SOMMES},
    count(DISTINCT a.marche_id) FILTER (WHERE a.accord_cadre) AS dont_accords_cadres,
    round(100.0*count(*) FILTER (WHERE a.cpv LIKE '33%')/count(*),0) AS pct_marches_cpv33_medical,
@@ -191,7 +191,7 @@ con.execute(f"""COPY (SELECT p.siren AS hopital_siren, coalesce(h.nom_officiel, 
    p.m0 AS marches_premiere_notification, p.m1 AS marches_derniere_notification,
    p.apparie_par_nom AS apparie_par_nom_seulement_possible
  FROM paires p
- LEFT JOIN (SELECT siren, any_value(nom_officiel) nom_officiel FROM hop GROUP BY siren) h ON h.siren=p.siren
+ LEFT JOIN (SELECT siren, min(nom_officiel) nom_officiel FROM hop GROUP BY siren) h ON h.siren=p.siren
  LEFT JOIN sir s ON s.siren=p.siren LEFT JOIN labo_groupes g ON g.cle=p.cle
  ORDER BY p.recu_ts DESC)
  TO '{sql_chemin(OUT / 'hopitaux_finances_et_acheteurs.csv')}' (HEADER, DELIMITER ',')""")
@@ -210,6 +210,6 @@ p("""SELECT count(*) paires, count(DISTINCT siren) hopitaux, count(DISTINCT cle)
    sum(nb_marches) marches, sum(nb_gros) dont_100meur_et_plus, round(sum(montant_hors_gros)/1e6,1) marches_hors_100meur_meur,
    round(sum(somme_plafonds)/1e6,1) somme_plafonds_meur, count(*) FILTER (WHERE apparie_par_nom) paires_appariees_par_nom FROM paires""")
 print("== 10 premières paires (par euros reçus)")
-p("""SELECT p.siren, coalesce(any_value(h.nom_officiel), any_value(s.nom))[:40] hopital, p.cle, round(p.recu_ts) recu_ts, p.nb_marches, p.nb_gros,
+p("""SELECT p.siren, coalesce(min(h.nom_officiel), min(s.nom))[:40] hopital, p.cle, round(p.recu_ts) recu_ts, p.nb_marches, p.nb_gros,
    round(p.montant_hors_gros) hors_100meur, round(p.somme_plafonds) plafonds FROM paires p LEFT JOIN hop h ON h.siren=p.siren LEFT JOIN sir s ON s.siren=p.siren
    GROUP BY p.siren, p.cle, p.recu_ts, p.nb_marches, p.nb_gros, p.montant_hors_gros, p.somme_plafonds ORDER BY p.recu_ts DESC LIMIT 10""")

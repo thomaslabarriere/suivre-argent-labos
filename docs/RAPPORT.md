@@ -8,8 +8,8 @@ reste à faire. Il s'adresse à une équipe qui voudrait reprendre le travail ou
 code est dans ce dépôt ; chaque chiffre cité se recalcule avec les scripts indiqués entre crochets, par exemple [21].
 
 **Précautions de lecture.** Un lien financier entre un laboratoire et un acteur de santé n'est pas une irrégularité :
-ces versements sont légaux, déclarés et publics. Les rapprochements par nom comportent des homonymes possibles. Ce
-document ne nomme aucune personne physique (voir la section 9).
+ces versements sont légaux, déclarés et publics. Les rapprochements par nom comportent des homonymes possibles. Les
+fichiers de `resultats/` nomment des personnes à partir de données publiques (voir la section 9).
 
 ---
 
@@ -51,6 +51,9 @@ document ne nomme aucune personne physique (voir la section 9).
   moins un marché public avec lui : 219 paires, 83 M€ de versements, 1 039 marchés.
 - **Le lobbying.** 122 groupes qui versent de l'argent dans Transparence Santé sont aussi inscrits au registre des
   représentants d'intérêts. Ils déclarent 92 M€ de dépenses de lobbying sur 2022 à 2025.
+- **Les anomalies.** 35 lignes de 10 M€ ou plus pèsent 10 % de tout l'argent net déclaré. La plus grosse, 445 M€
+  d'une seule convention vers un centre de lutte contre le cancer, ressemble à une erreur de saisie. 98 % des euros
+  de rémunérations versés aux professionnels n'ont aucun motif déclaré [33].
 
 ---
 
@@ -341,6 +344,36 @@ courant : un labo finance la recherche d'un CHU et lui vend aussi ses médicamen
 manque aujourd'hui, c'est de voir les deux chiffres côte à côte. Le CHU de Bordeaux publie très peu de marchés avec
 des labos dans les DECP.
 
+### 5.12 Anomalies de déclaration [33]
+
+Un contrôle de vraisemblance que la base n'applique pas. Détail ligne par ligne dans
+`resultats/anomalies_declarations.csv`.
+
+- **Des lignes géantes.** 35 lignes de 10 M€ ou plus totalisent 1,31 Md€, soit 10,3 % de l'argent net déclaré de
+  2012 à 2026. La première est une convention de 444 947 450 € déclarée par Syneos Health (une société de recherche
+  sous contrat) vers le Centre Henri-Becquerel de Rouen le 19 mai 2025, motif « Autre », détail « recherche ». Le
+  montant dépasse très probablement le budget annuel de l'établissement : une virgule déplacée (444 947,45 €) est
+  l'hypothèse la plus simple. Cette seule ligne pèse 3,5 % du total national.
+- **Des prestataires comptés comme bénéficiaires.** IQVIA, société de recherche clinique sous contrat, reçoit 560 M€,
+  dont 348 M€ d'Abivax en 12 lignes : c'est le coût sous-traité d'essais cliniques, pas un lien d'intérêt au sens
+  courant. Ces flux gonflent les totaux « versés aux acteurs de santé ».
+- **Des rémunérations sans motif.** 405,5 M€ de rémunérations versées aux professionnels de santé : 98,1 % des euros
+  (94 % des lignes) n'ont ni motif, ni texte libre, ni événement. Exemple : le premier bénéficiaire individuel de la
+  base reçoit 4,79 M€ en une seule ligne de rémunération, sans aucune explication.
+- **Des hébergements impossibles.** 19 avantages « hospitalité, repas ou transport » de 20 000 € ou plus pour une
+  seule personne, dont un « hébergement » de 1 307 280 € déclaré en 2023.
+- **Des sociétés déclarées comme personnes.** 77 364 lignes « professionnel de santé » portent un identifiant à
+  9 chiffres (un SIREN) au lieu d'un RPPS, pour 10,2 M€ ; l'une d'elles figure parmi les dix premiers bénéficiaires
+  individuels (colonne `alerte` de `professionnels_top.csv`).
+- **Des plafonds déclarés comme des montants.** Cinq chirurgiens, dont deux en Gironde, ont chacun une convention
+  d'« expert scientifique » d'exactement 402 800 € avec le même fabricant de robots chirurgicaux. Aucune
+  rémunération ne vient l'exécuter : le montant d'une convention est souvent un maximum prévu, pas une somme
+  versée. Les classements individuels qui additionnent les conventions doivent être lus avec cette réserve.
+- 206 montants négatifs (rectifications non documentées).
+
+Nos totaux nets gardent ces lignes : ce sont les montants déclarés. Retirer la seule ligne de 445 M€ ramène le total
+net de 12,77 à 12,33 Md€.
+
 ---
 
 ## 6. Fiche par base de données
@@ -477,22 +510,33 @@ structure si les numéros changent), tri déterministe partout, URL de télécha
 erreurs réseau plus jamais mises en cache, compte rendu mensuel qui couvrait un seul jour, chemins indépendants du
 dossier courant, une seule définition des groupes de labos.
 
+Deuxième passe (25 novembre) : le classement des professionnels affichait le nom pris au hasard parmi les lignes d'un
+même RPPS. Or 32 220 RPPS portent au moins une ligne à un autre nom (erreur du déclarant) : un médecin pouvait
+apparaître sous le nom d'une autre personne. Le nom affiché est désormais la forme la plus fréquente, et tous les
+`any_value()` et `arg_max()` des scripts départagent les égalités de façon déterministe. Le classement sépare
+aussi les conventions sans versement (souvent des plafonds) et signale les sociétés déclarées comme personnes.
+
 ---
 
 ## 9. Données personnelles et publication
 
-Les données de Transparence Santé sont publiques, mais l'article R1453-7 du code de la santé publique protège les
-données directement identifiantes contre l'indexation par les moteurs de recherche externes. Un dépôt GitHub est
-indexé. Nous publions donc uniquement :
+Toutes les données nominatives de ce dépôt viennent de sources publiques : Transparence Santé, la liste des
+responsables publics de la HATVP, la composition des commissions publiée par la HAS, le registre des entreprises.
+`resultats/` publie donc aussi les fichiers nominatifs (professionnels les mieux payés, élus bénéficiaires, experts
+de la HAS, dirigeants payés à titre personnel), avec trois garde-fous :
 
-- le code ;
-- des agrégats par labo, groupe, spécialité, département, établissement ou structure morale (`resultats/`) ;
-- le rattachement des structures, sans les catégories qui désignent souvent une personne (étudiant, influenceur,
-  vétérinaire).
+- **Les homonymes sont signalés.** Les croisements par nom portent une colonne de qualité (`qualite` : sûre,
+  probable, homonyme possible ; `personnes_meme_nom` pour les élus). Un élu et un médecin qui portent le même nom,
+  le même prénom et vivent dans le même département ne sont pas forcément la même personne.
+- **Un lien n'est pas une irrégularité.** Les versements sont légaux et déclarés. Un montant inhabituel peut être
+  une erreur du déclarant (section 5.12) : il ne dit rien du bénéficiaire.
+- **Le droit de rectification passe par le déclarant.** Une personne qui conteste une ligne doit la faire corriger
+  par l'entreprise sur Transparence Santé ; nous retirons ou corrigeons toute ligne signalée par une issue GitHub.
 
-Les sorties nominatives (professionnels les mieux payés, élus, experts de la HAS, dirigeants) se régénèrent en
-local avec les scripts et ne sont jamais versionnées. `scripts/99_exporter_public.py` refuse d'exporter un fichier
-qui contient une colonne de nom de personne.
+Point juridique à connaître : l'article R1453-7 du code de la santé publique encadre l'indexation des données
+directement identifiantes par les moteurs de recherche externes, et le RGPD s'applique à toute réutilisation de
+données personnelles, même publiques. D'autres réutilisateurs publient déjà ces données nominatives ; un avis
+juridique reste conseillé avant une diffusion large.
 
 ---
 
@@ -512,6 +556,11 @@ Ce que nous changerions dans Transparence Santé, par ordre d'impact :
 6. **Rendre DPI-Santé téléchargeable en masse** (comme la HATVP le fait pour ses déclarations) : confronter liens
    déclarés et versements reçus est le contrôle le plus utile, et il est aujourd'hui impossible.
 7. **Open Medic** : un lien de téléchargement stable, sans jeton.
+8. **Contrôler la vraisemblance à la saisie** : plafond par motif (un hébergement à 1,3 M€), format de
+   l'identifiant selon le type de bénéficiaire (RPPS à 11 chiffres, pas un SIREN), alerte au-delà d'un multiple du
+   budget de l'établissement bénéficiaire.
+9. **Rendre le motif obligatoire pour les rémunérations** : 98 % des euros versés aux professionnels sous cette forme
+   n'ont aucune explication.
 
 ---
 
@@ -532,6 +581,12 @@ Ce que nous changerions dans Transparence Santé, par ordre d'impact :
 - Le rapprochement FINESS pour tous les établissements de santé.
 - Les dirigeants des sociétés savantes et associations, à partir de leurs publications (statuts, rapports annuels).
 - Séries temporelles : effet des nouveaux médicaments (lancement) sur les versements aux spécialistes concernés.
+- Un filtre « vraisemblance » au chargement : lignes géantes, hébergements à six chiffres, SIREN à la place d'un
+  RPPS, doublons exacts entre bénéficiaires (script 33 comme point de départ), avec des totaux « avec » et « sans ».
+- Séparer les prestataires (sociétés de recherche sous contrat, grossistes, agences) des bénéficiaires au sens de
+  la loi, pour des totaux comparables entre labos.
+- Confronter les élus bénéficiaires à leurs déclarations d'intérêts HATVP (script 23) : un élu payé par un labo
+  qui ne le déclare pas est l'information la plus forte que permettent ces bases, et nous ne l'avons pas mesurée.
 
 **Recherche**
 
@@ -549,8 +604,8 @@ Voir le [README](../README.md). En résumé :
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python scripts/telecharger.py              # ≈ 11 Go ; Open Medic à la main (voir README)
 ./scripts/run_mensuel.sh                             # chaîne de rattachement complète
-for s in 21 22 23 24 26 27 28 29 30 31 32; do .venv/bin/python scripts/${s}_*.py; done
-.venv/bin/python scripts/99_exporter_public.py       # agrégats publiables dans resultats/
+for s in 21 22 23 24 26 27 28 29 30 31 32 33; do .venv/bin/python scripts/${s}_*.py; done
+.venv/bin/python scripts/99_exporter_public.py       # résultats publiés dans resultats/
 ```
 
 Durée sur un portable récent : environ 15 minutes hors téléchargement. Mémoire : DuckDB est limité à 8 Go.

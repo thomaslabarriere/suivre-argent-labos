@@ -91,7 +91,7 @@ E.append(Paragraph("Évolution sur les 12 dernières périodes", H2)); E.append(
 E.append(Paragraph("Les entreprises déclarent avec retard : les périodes les plus récentes se complètent encore pendant plusieurs mois.", PT))
 
 # Qui reçoit
-top = con.execute(f"""WITH a AS (SELECT ent, min(nom) FILTER (WHERE identifie) nom0, any_value(nom) nom1, any_value(categorie) cat, bool_or(identifie) idf,
+top = con.execute(f"""WITH a AS (SELECT ent, min(nom) FILTER (WHERE identifie) nom0, min(nom) nom1, min(categorie) cat, bool_or(identifie) idf,
   sum(montant) FILTER (WHERE {P}) m, sum(montant) FILTER (WHERE {PP}) mp, count(DISTINCT labo) FILTER (WHERE {P}) nlab FROM v GROUP BY 1)
 SELECT ent, coalesce(nom0, nom1), cat, idf, m, mp, nlab FROM a WHERE m > 0 ORDER BY m DESC LIMIT 15""").fetchall()
 rows = [["Structure", "Type", "Montant", "Entreprises", "Évolution"]] + [[Paragraph(court(n, 70) + ("" if i else " (?)"), ParagraphStyle("c", parent=TX, fontSize=8, leading=9.5)), court(c, 26), eur(m), str(nl_), var(m, mp or 0)] for _, n, c, i, m, mp, nl_ in top]
@@ -113,7 +113,7 @@ rows = [["Entreprise", "Montant versé", "Structures payées", "Évolution"]] + 
 E.append(KeepTogether([Paragraph("Les 10 entreprises qui ont le plus versé", H2), tableau(rows, [95, 30, 30, 20], (1, 2, 3))]))
 
 # Nouveaux bénéficiaires
-nv = con.execute(f"""WITH a AS (SELECT ent, any_value(nom) nom, any_value(categorie) cat, min(date) d0, sum(montant) FILTER (WHERE {P}) m FROM v GROUP BY 1)
+nv = con.execute(f"""WITH a AS (SELECT ent, min(nom) nom, min(categorie) cat, min(date) d0, sum(montant) FILTER (WHERE {P}) m FROM v GROUP BY 1)
 SELECT nom, cat, m FROM a WHERE d0 >= DATE '{deb}' AND m > 0 ORDER BY m DESC LIMIT 8""").fetchall()
 if nv:
     rows = [["Structure payée pour la première fois", "Type", "Montant"]] + [[court(n, 60), court(c, 30), eur(m)] for n, c, m in nv]

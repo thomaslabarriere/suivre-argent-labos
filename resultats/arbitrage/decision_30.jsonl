@@ -28,6 +28,7 @@
 {"id": 4523, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Centre hospitalier régional d'Orléans", "raison": "GHR d'Orléans = CHR d'Orléans ; aucun candidat ne convient."}
 {"id": 4531, "choix": "siren:304555634", "confiance": "haute", "nom_propose": null, "raison": "IPSOS SA : nom exact, 70.10Z, même département, active."}
 {"id": 4534, "choix": "siren:780709598", "confiance": "haute", "nom_propose": null, "raison": "Centre régional François Baclesse : nom exact, même code postal, active."}
+{"id": 4553, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Institut du Cerveau et de la Moelle épinière", "raison": "ICM : institut de recherche certain ; aucun candidat ne correspond."}
 {"id": 4580, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Bertrand Audoin : aucun candidat ne porte ce nom."}
 {"id": 4588, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier d'Angoulême", "raison": "CH d'Angoulême certain à l'adresse indiquée ; aucun candidat."}
 {"id": 4598, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "egg France : EG France possible mais nom différent, règle 8."}

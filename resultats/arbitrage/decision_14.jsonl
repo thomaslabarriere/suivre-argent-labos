@@ -58,6 +58,7 @@
 {"id": 4435, "choix": "siren:414879064", "confiance": "haute", "nom_propose": null, "raison": "Marie-Amélie Lenoir Consulting, SAS active dans le département"}
 {"id": 4437, "choix": "siren:432289064", "confiance": "haute", "nom_propose": null, "raison": "Cardiologue Congrès, association active dans les Bouches-du-Rhône"}
 {"id": 4438, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat trouvé pour ce nom"}
+{"id": 4439, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Personne physique sans candidat ni identifiant d'entité"}
 {"id": 4440, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Centre hospitalier universitaire de Dijon", "raison": "Hôpital François-Mitterrand est un site du CHU de Dijon, absent des candidats"}
 {"id": 4443, "choix": "siren:877824979", "confiance": "haute", "nom_propose": null, "raison": "Nom identique au déclaré, fondation active dans le département"}
 {"id": 4445, "choix": "siren:489085704", "confiance": "haute", "nom_propose": null, "raison": "SFEMC correspond à la Société française d'étude de la migraine, active"}
@@ -101,16 +102,19 @@
 {"id": 4521, "choix": "siren:477830921", "confiance": "haute", "nom_propose": null, "raison": "Content'ed Net, SAS éditrice active dans le département, nom identique"}
 {"id": 4522, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Centre hospitalier universitaire d'Orléans", "raison": "GHR d'Orléans est le CHU d'Orléans, absent des candidats"}
 {"id": 4525, "choix": "siren:783336068", "confiance": "moyenne", "nom_propose": null, "raison": "Institut de cancérologie de Lorraine opère le centre Alexis-Vautrin à Vandœuvre"}
+{"id": 4529, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Personne physique sans candidat ni identifiant d'entité"}
 {"id": 4530, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Ipsos absent des candidats ; homonymes d'études sans lien"}
 {"id": 4533, "choix": "siren:780709598", "confiance": "haute", "nom_propose": null, "raison": "Centre régional François Baclesse, centre de lutte contre le cancer actif à Caen"}
 {"id": 4534, "choix": "siren:788987261", "confiance": "haute", "nom_propose": null, "raison": "Innovative therapies for children with cancer, association active, nom identique"}
 {"id": 4536, "choix": "siren:783697345", "confiance": "haute", "nom_propose": null, "raison": "Centre Oscar Lambret, établissement de santé actif ; Anicor est une association annexe"}
 {"id": 4537, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Homonymes AREP sans rapport avec la pneumologie"}
 {"id": 4541, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat ne correspond à L.e.n Medical"}
+{"id": 4542, "choix": "siren:390666964", "confiance": "haute", "nom_propose": null, "raison": "Prévention des maladies osseuses, nom identique, association active"}
 {"id": 4543, "choix": "siren:927599936", "confiance": "haute", "nom_propose": null, "raison": "KellyOCG France SAS, nom identique, active dans le département"}
 {"id": 4545, "choix": "aucun", "confiance": "basse", "nom_propose": "Centre hospitalier Dr Duchenne", "raison": "Aucun candidat ; hôpital Duchenne absent de la liste"}
 {"id": 4548, "choix": "siren:433405834", "confiance": "haute", "nom_propose": null, "raison": "Sigle AFL, association française du lupus active en Moselle"}
 {"id": 4550, "choix": "siren:482031267", "confiance": "moyenne", "nom_propose": null, "raison": "Sigle CNAO, collectif d'associations de patients, catégorie usagers"}
+{"id": 4552, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Institut du Cerveau et de la Moelle épinière", "raison": "ICM = Institut du cerveau ; candidats ICM sans rapport"}
 {"id": 4553, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Seul nom partiel commun, sigle et entité différents"}
 {"id": 4555, "choix": "siren:263100125", "confiance": "haute", "nom_propose": null, "raison": "Hôpital Purpan rattaché au CHU de Toulouse, établissement actif"}
 {"id": 4556, "choix": "siren:264500091", "confiance": "haute", "nom_propose": null, "raison": "Service du CHU d'Orléans, Hôpital La Source, établissement actif"}
@@ -124,6 +128,7 @@
 {"id": 4571, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat ne correspond à la Ligue française contre l'épilepsie"}
 {"id": 4573, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat trouvé"}
 {"id": 4574, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat trouvé"}
+{"id": 4575, "choix": "rna:W751162686", "confiance": "haute", "nom_propose": null, "raison": "Association Robert Debré pour la recherche médicale, nom identique, active"}
 {"id": 4577, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Centre hospitalier régional universitaire de Tours", "raison": "Trésorerie hospitalière rattachée au CHU de Tours, absent des candidats"}
 {"id": 4579, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat ne porte le nom Bertrand Audoin"}
 {"id": 4580, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat ne porte le nom Anticip Santé"}
@@ -141,6 +146,7 @@
 {"id": 4601, "choix": "siren:348145913", "confiance": "haute", "nom_propose": null, "raison": "Sigle CERMEP et expansion identique, GIE actif dans le Rhône"}
 {"id": 4602, "choix": "siren:490521291", "confiance": "moyenne", "nom_propose": null, "raison": "Le Centre de liaison d'études et de formations, nom proche, SARL active"}
 {"id": 4603, "choix": "siren:917902512", "confiance": "haute", "nom_propose": null, "raison": "Association recherche scientifique Fondation Alain Carpentier, nom identique, active"}
+{"id": 4605, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Personne physique sans candidat ni identifiant d'entité"}
 {"id": 4606, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat ne porte le nom Heva"}
 {"id": 4611, "choix": "rna:W313005211", "confiance": "haute", "nom_propose": null, "raison": "Sigle FMC HGE 80 exact, association active dans la Haute-Garonne"}
 {"id": 4612, "choix": "siren:924698863", "confiance": "haute", "nom_propose": null, "raison": "Association neurochirurgie Madagascar, nom identique, active, SIREN"}

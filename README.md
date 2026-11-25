@@ -14,6 +14,7 @@ Deux chantiers :
    cliniques et les experts de la HAS.
 
 **Le document complet (méthode, trouvailles, fiche par base, recommandations) : [docs/RAPPORT.md](docs/RAPPORT.md).**
+**Les dix constats principaux : [docs/A_RETENIR.md](docs/A_RETENIR.md).**
 
 ## Ce qu'on trouve
 
@@ -25,9 +26,10 @@ Deux chantiers :
 - Un spécialiste reçoit en moyenne 1 441 € par an des labos, un généraliste 222 €.
 - 1 % des professionnels de santé payés reçoivent 51 % des euros.
 - 219 paires hôpital × labo combinent versements et marchés publics de 2023 à 2026.
+- 35 déclarations de 10 M€ ou plus pèsent 10 % du total ; la plus grosse (445 M€) ressemble à une erreur de saisie.
 
-Résultats agrégés : [`resultats/`](resultats/). Rattachement de chaque structure :
-[`resultats/rattachement_structures.csv`](resultats/rattachement_structures.csv).
+Résultats, y compris nominatifs : [`resultats/`](resultats/) (lire d'abord [`resultats/LISEZMOI.md`](resultats/LISEZMOI.md)).
+Rattachement de chaque structure : [`resultats/rattachement_structures.csv`](resultats/rattachement_structures.csv).
 
 ## Installation
 
@@ -105,22 +107,23 @@ rattachement avant `28`.
 | `29_essais_cliniques.py` | essais cliniques industriels et conventions de recherche |
 | `30_marques_labos.py` | qui est qui : marque → labo → groupe |
 | `31_specialites_carte.py`, `32_carte.py` | euros par médecin, par spécialité et par département ; carte |
-| `99_exporter_public.py` | copie les agrégats publiables dans `resultats/` |
+| `33_anomalies.py` | déclarations invraisemblables (lignes géantes, hébergements, SIREN au lieu du RPPS) |
+| `99_exporter_public.py` | copie les résultats publiés dans `resultats/` |
 
 ## Organisation
 
 ```
 scripts/     code (commun.py : fonctions partagées)
 data/        données téléchargées et base DuckDB de travail (non versionné)
-out/         sorties complètes, dont fichiers nominatifs (non versionné)
-resultats/   agrégats publiés
-docs/        RAPPORT.md
+out/         sorties de travail (non versionné)
+resultats/   résultats publiés
+docs/        RAPPORT.md, A_RETENIR.md
 ```
 
 ## Précautions
 
 Un lien d'intérêt n'est pas une irrégularité : ces versements sont légaux et déclarés. Les rapprochements par nom
-comportent des homonymes possibles. Ce dépôt ne publie aucune donnée nominative de personne physique (voir
-[docs/RAPPORT.md, section 9](docs/RAPPORT.md#9-données-personnelles-et-publication)).
+comportent des homonymes possibles. Les fichiers nominatifs reprennent des données publiques ; une erreur se signale
+par une issue (voir [docs/RAPPORT.md, section 9](docs/RAPPORT.md#9-données-personnelles-et-publication)).
 
 Code sous licence MIT ; données sous la licence de leur producteur (Licence Ouverte / Etalab 2.0 pour la plupart).

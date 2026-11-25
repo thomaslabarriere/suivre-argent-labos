@@ -113,6 +113,7 @@
 {"id": 8754, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Association du CH de Bligny absente ; candidats sans rapport"}
 {"id": 8765, "choix": "siren:106559156", "confiance": "haute", "nom_propose": null, "raison": "APEMSA = Association pictave pour l'étude des maladies du sang : expansion exacte"}
 {"id": 8773, "choix": "aucun", "confiance": "moyenne", "nom_propose": null, "raison": "Groupe francophone hépato-gastro absent ; candidat pédiatrique différent"}
+{"id": 8787, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Prénom seul Daniela ; candidats homonymes sans lien identifiable"}
 {"id": 8791, "choix": "rna:W062015283", "confiance": "moyenne", "nom_propose": null, "raison": "ANRO = Association niçoise pour la recherche en ophtalmologie : sigle exact"}
 {"id": 8805, "choix": "siren:829266782", "confiance": "haute", "nom_propose": null, "raison": "SELAS du Docteur Olivier Rebollo : nom identique, société active, dép. 34"}
 {"id": 8810, "choix": "siren:266900273", "confiance": "haute", "nom_propose": null, "raison": "Service de CH Lyon Sud rattaché aux Hospices civils de Lyon, 86.10Z actif"}

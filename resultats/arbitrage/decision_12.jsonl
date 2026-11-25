@@ -4,6 +4,7 @@
 {"id": 2946, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Seul LIFE en commun ; « Life is Rose » ne correspond à aucun candidat"}
 {"id": 2950, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Candidats Lever de Rideau tous inactifs, aucun ne ressort clairement"}
 {"id": 2951, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Plusieurs PLEIN SUD sans lien clair avec une formation de santé"}
+{"id": 2970, "choix": "aucun", "confiance": "moyenne", "nom_propose": null, "raison": "Influenceur personne physique ; SHERA est une marque sans lien démontré"}
 {"id": 3001, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Aucun candidat ne porte le sigle IPC ; fondations homonymes non concernées"}
 {"id": 3007, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Union seul mot commun ; candidats commerciaux, pas une association de santé"}
 {"id": 3010, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier universitaire de Caen Normandie", "raison": "Trésorerie hospitalière du CHU de Caen ; la trésorerie générale n'est pas le bénéficiaire"}
@@ -41,6 +42,7 @@
 {"id": 3425, "choix": "siren:348714635", "confiance": "haute", "nom_propose": null, "raison": "Nom ANAFORCAL exact, formation continue allergologie, active"}
 {"id": 3435, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier universitaire de Nantes (CHU de Nantes)", "raison": "Hôpital Saint-Jacques est un site du CHU de Nantes ; candidat sans rapport"}
 {"id": 3437, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Candidats ADREV tous hors département, sans lien santé"}
+{"id": 3445, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom PANTIGNY seul ; candidats hors département, aucun lien établi"}
 {"id": 3463, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier universitaire de Nantes (CHU de Nantes)", "raison": "Siège du CH de Nantes allée de l'Île de Gloriette ; candidats inactifs ambigus"}
 {"id": 3471, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Association française des hémophiles (AFH)", "raison": "Hémophilie absente des candidats ; homonymes AFH sans rapport"}
 {"id": 3479, "choix": "siren:348147091", "confiance": "moyenne", "nom_propose": null, "raison": "Sigle ALS = association de lutte contre le sida, active, Lyon"}
@@ -158,6 +160,7 @@
 {"id": 3897, "choix": "siren:266900273", "confiance": "haute", "nom_propose": null, "raison": "Hospices civils de Lyon, établissement public 86.10Z actif"}
 {"id": 3898, "choix": "siren:810041913", "confiance": "haute", "nom_propose": null, "raison": "Gérontopôle Auvergne-Rhône-Alpes, association active, même département"}
 {"id": 3899, "choix": "rna:W9R1005779", "confiance": "moyenne", "nom_propose": null, "raison": "Sigle et nom exacts, association active ; département candidat discordant"}
+{"id": 3900, "choix": "siren:877737841", "confiance": "moyenne", "nom_propose": null, "raison": "Nom identique, SAS active ; catégorie influenceur peu documentée"}
 {"id": 3902, "choix": "aucun", "confiance": "moyenne", "nom_propose": null, "raison": "Sigle AFIC absent ; candidats ADEFIC, AFBICA et autres sans rapport"}
 {"id": 3903, "choix": "aucun", "confiance": "moyenne", "nom_propose": null, "raison": "Aucun candidat ; adresse du CHU de Nantes sans lien démontré avec ATERHIT"}
 {"id": 3905, "choix": "rna:W131002514", "confiance": "haute", "nom_propose": null, "raison": "L'Étoile Maternité Catholique de Provence, association active, nom identique"}
@@ -181,6 +184,7 @@
 {"id": 3941, "choix": "siren:263000036", "confiance": "haute", "nom_propose": null, "raison": "Groupe Carémeau relève du CHU de Nîmes, établissement actif"}
 {"id": 3942, "choix": "rna:W943001033", "confiance": "haute", "nom_propose": null, "raison": "Société francophone de transplantation, association active, nom exact"}
 {"id": 3945, "choix": "siren:752456129", "confiance": "haute", "nom_propose": null, "raison": "Sigle AOSER, association active, même département"}
+{"id": 3947, "choix": "siren:440397651", "confiance": "haute", "nom_propose": null, "raison": "Groupe vétérinaire de Brocéliande, SARL active, nom exact, même département"}
 {"id": 3951, "choix": "siren:832465892", "confiance": "moyenne", "nom_propose": null, "raison": "Diverchim CDMO active, même département ; holding Biby Factor non identifiée"}
 {"id": 3953, "choix": "siren:423728377", "confiance": "moyenne", "nom_propose": null, "raison": "Colloquium, SAS active en congrès, même département ; le mot AGENCE est générique"}
 {"id": 3956, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Société française d'hématologie (SFH)", "raison": "Société savante déclarée absente des candidats ; homonymes sans rapport"}

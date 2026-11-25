@@ -37,7 +37,7 @@ c AS (
   FROM ts s JOIN r ON r.nom_norm IN (s.nom_norm, s.nom_sans_par)),
 c2 AS (SELECT c.*, coalesce(u.siren, c.ident) AS cle FROM c LEFT JOIN ref_ul u ON c.type_id='rna' AND u.rna=c.ident),
 best AS (SELECT * FROM c2 QUALIFY confiance = max(confiance) OVER (PARTITION BY struct_id)),
-ch AS (SELECT struct_id, any_value(methode) methode, count(DISTINCT cle) nb, count(DISTINCT cle) FILTER (WHERE actif) nba,
+ch AS (SELECT struct_id, min(methode) methode, count(DISTINCT cle) nb, count(DISTINCT cle) FILTER (WHERE actif) nba,
               min(cle) cle, min(cle) FILTER (WHERE actif) cle_a, list(DISTINCT type_id||':'||ident) idents FROM best GROUP BY 1)
 SELECT struct_id, methode, idents, CASE WHEN nb=1 THEN cle WHEN nba=1 THEN cle_a END AS cle,
        CASE WHEN nb=1 OR nba=1 THEN 'rattaché' ELSE 'ambigu' END AS statut FROM ch""")

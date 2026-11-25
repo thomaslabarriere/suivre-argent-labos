@@ -44,6 +44,7 @@
 {"id": 8569, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier intercommunal Toulon La Seyne-sur-Mer", "raison": "CHITS Sainte-Musse absent ; candidats GO Sainte-Musse sans rapport"}
 {"id": 8570, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier universitaire de Montpellier", "raison": "Plateforme Euromédecine du CHU de Montpellier ; candidats sans rapport"}
 {"id": 8571, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Sigle IACH sans correspondance ; seule SCI homonyme, adresse hors France"}
+{"id": 8572, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Influenceur, pas une structure ; aucun candidat"}
 {"id": 8573, "choix": "aucun", "confiance": "haute", "nom_propose": "Association française des hémophiles", "raison": "Siège national absent ; candidats = comités régionaux hors département"}
 {"id": 8575, "choix": "rna:W691109704", "confiance": "haute", "nom_propose": null, "raison": "Sigle ALEID exact, association lyonnaise active, même département"}
 {"id": 8576, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier Émile-Roux (Le Puy-en-Velay)", "raison": "CH Émile-Roux absent des candidats ; fonds de dotation annexe non retenu"}
@@ -128,6 +129,7 @@
 {"id": 8702, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "Site Georges-Pompidou du GHU AP-HP rattaché à l'AP-HP"}
 {"id": 8704, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom générique « centre de formation continu » ; seul candidat au nom commun"}
 {"id": 8707, "choix": "siren:397598699", "confiance": "haute", "nom_propose": null, "raison": "Association française narcolepsie cataplexie, nom complet exact, active"}
+{"id": 8708, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Influenceur sans adresse ; aucun candidat"}
 {"id": 8710, "choix": "siren:266800903", "confiance": "haute", "nom_propose": null, "raison": "Centre hospitalier de Colmar, nom rapproché CH Louis-Pasteur, 86.10Z actif"}
 {"id": 8714, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Sigle AVEC porté par des associations sans rapport avec la santé"}
 {"id": 8715, "choix": "siren:783697345", "confiance": "moyenne", "nom_propose": null, "raison": "Institut de formation rattaché au Centre Oscar-Lambret, 86.10Z actif"}
@@ -166,8 +168,11 @@
 {"id": 8777, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat ne correspond à une SCP Plas-Lescure"}
 {"id": 8778, "choix": "siren:795317379", "confiance": "moyenne", "nom_propose": null, "raison": "Nom DA CUNHA exact, SAS active ; code NAF à vérifier"}
 {"id": 8780, "choix": "rna:W313022843", "confiance": "haute", "nom_propose": null, "raison": "Auris, nom développé exact, association active en Haute-Garonne"}
+{"id": 8783, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Influenceur, pas une structure de santé ; candidats homonymes sans rapport"}
+{"id": 8784, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Influenceur ; plusieurs associations Les Babychoux, aucune identifiable"}
 {"id": 8787, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Centre hospitalier de Longjumeau", "raison": "CH de Longjumeau absent ; la PUI associative est une annexe"}
 {"id": 8789, "choix": "rna:W062015283", "confiance": "haute", "nom_propose": null, "raison": "ANRO, association niçoise de recherche en ophtalmologie, nom exact"}
+{"id": 8791, "choix": "siren:852588300", "confiance": "moyenne", "nom_propose": null, "raison": "Flabat, nom exact, SAS active ; influenceur, rattachement incertain"}
 {"id": 8793, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Personne physique ; aucun candidat"}
 {"id": 8794, "choix": "siren:183830017", "confiance": "moyenne", "nom_propose": null, "raison": "CCI de Grenoble, tutelle probable de la Grenoble École de Management"}
 {"id": 8796, "choix": "siren:269100012", "confiance": "haute", "nom_propose": null, "raison": "CH général d'Arpajon 86.10Z actif, nom exact, même département"}
@@ -182,8 +187,10 @@
 {"id": 8807, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Sigle ADP commun à de nombreuses entités ; aucune identifiée"}
 {"id": 8809, "choix": "siren:452159940", "confiance": "haute", "nom_propose": null, "raison": "Lorsep, association de prise en charge de la sclérose en plaques, active"}
 {"id": 8810, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Sigle COC commun à plusieurs entités sans lien identifié"}
+{"id": 8811, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Influenceur ; candidats Demangel inactifs hors département"}
 {"id": 8813, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Société savante absente des candidats ; aucun candidat"}
 {"id": 8815, "choix": "siren:800428583", "confiance": "haute", "nom_propose": null, "raison": "Sigle ARFEN exact, association de néonatologie active à Paris"}
+{"id": 8818, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Influenceur sans adresse ; aucun candidat"}
 {"id": 8819, "choix": "siren:505160317", "confiance": "haute", "nom_propose": null, "raison": "Alcos = Alliance contre le sida, sigle exact, association active"}
 {"id": 8820, "choix": "rna:W372006277", "confiance": "haute", "nom_propose": null, "raison": "Sigle GECOPA exact, groupe ORL actif à Tours"}
 {"id": 8821, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Adresse britannique ; aucun candidat"}

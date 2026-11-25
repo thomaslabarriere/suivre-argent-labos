@@ -112,6 +112,7 @@
 {"id": 1795, "choix": "aucun", "confiance": "haute", "nom_propose": "Société française d'ophtalmologie", "raison": "SFO, villa d'Alésia : société savante absente des candidats, autres sociétés sans rapport."}
 {"id": 1796, "choix": "rna:W751042801", "confiance": "haute", "nom_propose": null, "raison": "Nom identique au centre d'étude, association active, même département."}
 {"id": 1799, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat ne porte P AND P ; P.A. CONSULTING et autres homonymes trop proches."}
+{"id": 1800, "choix": "siren:353360415", "confiance": "haute", "nom_propose": null, "raison": "Nom exact MEDES-INST, GIE actif, même département ; catégorie déclarée erronée."}
 {"id": 1802, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Plusieurs organisations proches (collège, conseil, syndicat) ; impossible de trancher."}
 {"id": 1803, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Centre hospitalier de Bretagne Sud", "raison": "Hôpital de Lorient, absent des candidats ; les sociétés trouvées n'ont aucun lien."}
 {"id": 1804, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier régional universitaire de Tours", "raison": "Hôpital Bretonneau relève du CHRU de Tours ; l'AP-HP candidat est hors département."}

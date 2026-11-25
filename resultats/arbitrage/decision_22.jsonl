@@ -10,6 +10,7 @@
 {"id": 7179, "choix": "siren:263100125", "confiance": "haute", "nom_propose": null, "raison": "Hôpital Pierre-Paul Riquet rattaché au CHU de Toulouse, adresse identique"}
 {"id": 7180, "choix": "aucun", "confiance": "haute", "nom_propose": "CENTRE HOSPITALIER ANNECY GENEVOIS", "raison": "Centre hospitalier d'Annecy absent des candidats, nom officiel connu"}
 {"id": 7181, "choix": "siren:937912848", "confiance": "haute", "nom_propose": null, "raison": "Grand Paris Obésité (GPO), association active 72.19Z, nom identique"}
+{"id": 7182, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Candidats SARL Calvez non vétérinaires, nom Lemey absent"}
 {"id": 7183, "choix": "siren:905381091", "confiance": "moyenne", "nom_propose": null, "raison": "Société de recherche dermatologique, nom identique, association active"}
 {"id": 7186, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Seul mot PARTNERS commun, EDU différent d'EDEN ou EDGI"}
 {"id": 7188, "choix": "siren:780111738", "confiance": "haute", "nom_propose": null, "raison": "Sigle SNFGE exact, société nationale de gastro-entérologie"}
@@ -36,6 +37,7 @@
 {"id": 7228, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Candidats Montsouris sont mutuelles ou inactives, lien avec le thorax incertain"}
 {"id": 7229, "choix": "rna:W632002794", "confiance": "haute", "nom_propose": null, "raison": "Nom identique GREPADIN, association de pathologie digestive active"}
 {"id": 7234, "choix": "rna:W133026444", "confiance": "haute", "nom_propose": null, "raison": "Rencontres médico-chirurgicales marseillaises en oncologie thoracique, nom quasi identique"}
+{"id": 7237, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom trop générique CENTRE HOSPITALIER ; catégorie vétérinaire incohérente"}
 {"id": 7239, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Homonymes ARCHIMEDE sociétés commerciales, aucune association"}
 {"id": 7244, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Seul mot MISSION commun, nom AD'MISSION non retrouvé"}
 {"id": 7247, "choix": "siren:198608564", "confiance": "moyenne", "nom_propose": null, "raison": "UFR médecine-pharmacie rattachée à l'Université de Poitiers, entité principale"}
@@ -108,6 +110,7 @@
 {"id": 7373, "choix": "siren:525219127", "confiance": "haute", "nom_propose": null, "raison": "Nom exact Lauma Communication, agence active, Paris 3e"}
 {"id": 7376, "choix": "rna:W591005301", "confiance": "haute", "nom_propose": null, "raison": "Sigle AFTP exact, association franco-tunisienne de pneumologie active"}
 {"id": 7378, "choix": "rna:W251001148", "confiance": "moyenne", "nom_propose": null, "raison": "RADEOS, nom et sigle RADEO quasi exacts, mais association inactive"}
+{"id": 7380, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Seul nom de famille FLABAT, pas de lien prouvé avec l'influenceuse"}
 {"id": 7381, "choix": "siren:130015332", "confiance": "haute", "nom_propose": null, "raison": "Aix-Marseille Université, établissement public actif, nom identique"}
 {"id": 7384, "choix": "rna:W623002835", "confiance": "moyenne", "nom_propose": null, "raison": "Société francophone de néphrologie dialyse transplantation, nom quasi exact"}
 {"id": 7385, "choix": "rna:W632006119", "confiance": "haute", "nom_propose": null, "raison": "Sigle RECVA exact, recherche en chirurgie vasculaire Auvergne active"}
@@ -194,3 +197,4 @@
 {"id": 7528, "choix": "siren:197517212", "confiance": "moyenne", "nom_propose": null, "raison": "Université Paris Descartes, entité fusionnée et marquée inactive"}
 {"id": 7530, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Mot Bureau générique, candidats sans rapport avec une association"}
 {"id": 7531, "choix": "rna:W381009296", "confiance": "moyenne", "nom_propose": null, "raison": "Société française de photodermatologie citée dans le nom, active"}
+{"id": 7532, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Seul candidat SCI DU MURIER, immobilier et non l'exploitant vétérinaire"}

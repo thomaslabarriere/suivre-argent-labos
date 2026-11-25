@@ -145,6 +145,7 @@
 {"id": 1495, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Hôpital d'instruction des armées Sainte-Anne", "raison": "Hôpital militaire absent ; candidats sont des amicales et associations"}
 {"id": 1496, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Quatre sociétés « TOMO » homonymes ; choix impossible"}
 {"id": 1497, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom de personne ; candidats « Antoine » génériques sans rapport"}
+{"id": 1498, "choix": "siren:809893381", "confiance": "haute", "nom_propose": null, "raison": "Auzalide Santé Animale, nom exact, SARL active, Loire-Atlantique"}
 {"id": 1499, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Fondation Rennes 1", "raison": "Fondation universitaire absente ; candidats sont associations et sociétés"}
 {"id": 1501, "choix": "siren:490963840", "confiance": "moyenne", "nom_propose": null, "raison": "Sudler et Hennessey, nom exact ; seul candidat exact, inactif"}
 {"id": 1502, "choix": "siren:263800211", "confiance": "haute", "nom_propose": null, "raison": "Centre hospitalier Alpes Isère actif ; unité d'évaluation rattachée"}

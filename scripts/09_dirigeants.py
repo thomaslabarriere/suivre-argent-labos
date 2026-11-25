@@ -46,7 +46,7 @@ print(con.execute("SELECT type_dirigeant, count(*), count(DISTINCT siren) FROM d
 
 # a) dirigeant personne morale = groupe d'un laboratoire déclarant de cette même structure
 con.execute("""CREATE OR REPLACE TABLE croisement_groupe AS
-SELECT f.identifiant2 AS siren_beneficiaire, any_value(f.nom_officiel) nom_beneficiaire, d.denomination AS dirigeant, d.siren_dirigeant,
+SELECT f.identifiant2 AS siren_beneficiaire, min(f.nom_officiel) nom_beneficiaire, d.denomination AS dirigeant, d.siren_dirigeant,
   l.raison_sociale AS laboratoire, round(sum(l.montant)) AS montant_du_labo
 FROM (SELECT DISTINCT siren, denomination, siren_dirigeant, type_dirigeant FROM dirigeants) d   -- un dirigeant aux qualités multiples ne double pas les montants
 JOIN final2 f ON f.identifiant2=d.siren

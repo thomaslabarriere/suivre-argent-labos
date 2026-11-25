@@ -30,7 +30,7 @@ org, act = pd.DataFrame(org), pd.DataFrame(act)
 print(f"HATVP : {org.denomination.nunique()} organisations, {len(act)} fiches d'activité")
 # entreprises de Transparence Santé (toutes, y compris celles qui ne versent qu'aux professionnels quand la base complète sera là)
 con = vues_ts(duckdb.connect())
-ts = con.execute("""SELECT raison_sociale, any_value(numero_siren) siren, sum(montant) FILTER (WHERE year(date)=2025) verse25,
+ts = con.execute("""SELECT raison_sociale, min(numero_siren) siren, sum(montant) FILTER (WHERE year(date)=2025) verse25,
                             sum(montant) verse_total FROM ts_net GROUP BY 1""").df()
 groupe = groupe_labo
 ts["g"] = ts.raison_sociale.map(groupe); org["g"] = org.denomination.map(groupe); act["g"] = act.denomination.map(groupe)

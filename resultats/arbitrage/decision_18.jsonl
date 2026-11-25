@@ -68,6 +68,7 @@
 {"id": 5898, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "Hôpital Européen Georges Pompidou rattaché à l'AP-HP"}
 {"id": 5901, "choix": "rna:W381012154", "confiance": "haute", "nom_propose": null, "raison": "Nom exact de l'association des hépato-gastro-entérologues, Isère"}
 {"id": 5903, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom CHAM trop court ; plusieurs homonymes SARL sans lien"}
+{"id": 5909, "choix": "aucun", "confiance": "moyenne", "nom_propose": null, "raison": "Personne physique ; SCI HUSS ne porte pas le nom déclaré"}
 {"id": 5912, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom de personne physique ; SEL Aubry possible mais non certaine"}
 {"id": 5913, "choix": "aucun", "confiance": "haute", "nom_propose": "CENTRE HOSPITALIER UNIVERSITAIRE DE TOULOUSE", "raison": "Hôtel-Dieu est un site du CHU de Toulouse ; candidats hôtels sans rapport"}
 {"id": 5915, "choix": "rna:W081000337", "confiance": "haute", "nom_propose": null, "raison": "Sigle AFTMN exact, techniciens en médecine nucléaire, Ardennes"}
@@ -92,6 +93,7 @@
 {"id": 5957, "choix": "siren:388308637", "confiance": "haute", "nom_propose": null, "raison": "Réussir SCA active 58.14Z, édition de presse, même nom"}
 {"id": 5958, "choix": "siren:130055809", "confiance": "moyenne", "nom_propose": null, "raison": "MCI France SAS active du même nom ; NAF discordant"}
 {"id": 5959, "choix": "siren:300088663", "confiance": "haute", "nom_propose": null, "raison": "Syndicat des pharmaciens des établissements publics de santé, SYNPREFH"}
+{"id": 5960, "choix": "siren:903880565", "confiance": "moyenne", "nom_propose": null, "raison": "Nom exact de la société ; département absent du déclaré"}
 {"id": 5961, "choix": "aucun", "confiance": "moyenne", "nom_propose": "INSTITUT PAOLI-CALMETTES", "raison": "Adresse Marseille 13273 de l'IPC ; candidats sans rapport"}
 {"id": 5962, "choix": "siren:428822852", "confiance": "haute", "nom_propose": null, "raison": "EFS national, siège de Saint-Denis, nom officiel identique"}
 {"id": 5964, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Aucun candidat trouvé pour l'association SILLC"}
@@ -136,6 +138,7 @@
 {"id": 6028, "choix": "rna:W381012154", "confiance": "haute", "nom_propose": null, "raison": "Association hépato-gastro-entérologues du cabinet des Cèdres, même adresse"}
 {"id": 6030, "choix": "siren:779213867", "confiance": "haute", "nom_propose": null, "raison": "Centre de lutte contre le cancer Jean Perrin, sigle CJP, 86.10Z actif"}
 {"id": 6032, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Aucun candidat FORTIL ; homonymes CARE sans rapport"}
+{"id": 6033, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Aucun candidat trouvé pour cet influenceur"}
 {"id": 6035, "choix": "rna:W751046979", "confiance": "haute", "nom_propose": null, "raison": "Nom identique et sigle SFP, société savante active, Paris"}
 {"id": 6036, "choix": "siren:523407203", "confiance": "moyenne", "nom_propose": null, "raison": "Nom exact Remy Defrance Consultants, entité SAS inactive"}
 {"id": 6037, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat au nom Oncologie 3 ; ICB homonyme incertain"}

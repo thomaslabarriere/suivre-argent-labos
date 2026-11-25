@@ -42,6 +42,7 @@
 {"id": 7945, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat pour NTT Data Business Solutions."}
 {"id": 7947, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "Hôpital Necker-Enfants Malades relève de l'AP-HP, entité juridique principale."}
 {"id": 7952, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat correspondant au CLUBEO."}
+{"id": 7954, "choix": "rna:W212003267", "confiance": "haute", "nom_propose": null, "raison": "Nom exact de l'ABREMAD, actif, même département."}
 {"id": 7955, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat ESCCAP ; les sigles ESC et CAP ne correspondent pas."}
 {"id": 7956, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Candidats « La Méditerranéenne » sont des sociétés ; aucun nom de rétine."}
 {"id": 7960, "choix": "rna:W872004000", "confiance": "haute", "nom_propose": null, "raison": "Nom exact de l'ARENRIL, association active, même département."}
@@ -52,6 +53,7 @@
 {"id": 7968, "choix": "rna:W343015919", "confiance": "haute", "nom_propose": null, "raison": "Nom exact de l'ACRLR, association active, même département."}
 {"id": 7969, "choix": "siren:260600200", "confiance": "haute", "nom_propose": null, "raison": "Centre hospitalier de Cannes Simone Veil, établissement public actif, même département."}
 {"id": 7970, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Candidats génériques « CONSEIL » sans cœur de nom METM."}
+{"id": 7971, "choix": "siren:884646381", "confiance": "moyenne", "nom_propose": null, "raison": "Nom exact DOUZE FEVRIER, société active ; département absent du cas."}
 {"id": 7972, "choix": "rna:W931018128", "confiance": "haute", "nom_propose": null, "raison": "Le Souffle des enfants de Bicêtre, nom quasi exact, actif, même département."}
 {"id": 7976, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Candidats GFPC tous hors département et sociétés, pas une association."}
 {"id": 7977, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom FEMINAE exact mais RNA W222 (Côtes-d'Armor), hors département 57."}
@@ -67,6 +69,7 @@
 {"id": 7991, "choix": "siren:268400264", "confiance": "haute", "nom_propose": null, "raison": "Centre hospitalier d'Orange Louis Giorgi, nom exact, établissement public actif, même département."}
 {"id": 7992, "choix": "aucun", "confiance": "haute", "nom_propose": "Hôpitaux civils de Colmar", "raison": "Service biomédical des Hôpitaux civils de Colmar ; entité absente des candidats."}
 {"id": 7998, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat pour Brand Champions."}
+{"id": 8000, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom de personne (Perrin) ; huit SARL et SCI homonymes sans lien identifiable."}
 {"id": 8001, "choix": "siren:302666060", "confiance": "moyenne", "nom_propose": null, "raison": "Sigle ECHO exact, association active à Nantes, nom développé différent."}
 {"id": 8002, "choix": "siren:818822298", "confiance": "moyenne", "nom_propose": null, "raison": "UNILABS SA, nom exact ; siège hors département 59 à vérifier."}
 {"id": 8004, "choix": "siren:261300081", "confiance": "haute", "nom_propose": null, "raison": "Hôpital Nord, Centre hospitalier régional de Marseille, établissement public actif, même département."}
@@ -167,6 +170,7 @@
 {"id": 8170, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Seul candidat EQUASENS, nom différent et hors département."}
 {"id": 8171, "choix": "rna:W595009371", "confiance": "haute", "nom_propose": null, "raison": "Formasup Hauts-de-France, sigle FORMASUP HDF exact, association active, même département."}
 {"id": 8173, "choix": "siren:108161787", "confiance": "haute", "nom_propose": null, "raison": "HOP 24 = Hématologie oncologie Périgord 24 ; association active, même département."}
+{"id": 8175, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat ; compte d'influenceur sans structure identifiable."}
 {"id": 8176, "choix": "rna:W751091092", "confiance": "haute", "nom_propose": null, "raison": "Nom complet du GETAID adulte exact, association active, Paris."}
 {"id": 8177, "choix": "siren:452160211", "confiance": "haute", "nom_propose": null, "raison": "Sigle SFCE, Société française de lutte contre les cancers de l'enfant, association active."}
 {"id": 8178, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier universitaire d'Amiens Picardie", "raison": "Site Nord du CHU d'Amiens ; CHU absent des candidats, associations de quartier sans rapport."}

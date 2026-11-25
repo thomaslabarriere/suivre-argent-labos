@@ -1,13 +1,16 @@
 {"id": 6215, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat ne correspond à ASS.PV NORD"}
 {"id": 6218, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "ASTRE exact mais département différent ; doute"}
+{"id": 6220, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom déclaré = personne physique étudiante, pas une structure"}
 {"id": 6222, "choix": "siren:504639253", "confiance": "moyenne", "nom_propose": null, "raison": "SCM Nice Retina Centre DMLA, inactive mais nom proche"}
 {"id": 6223, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier de Versailles (André Mignot)", "raison": "CH de Versailles certain ; absent des candidats"}
 {"id": 6228, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat ne porte le nom de l'ADEC"}
 {"id": 6235, "choix": "siren:501278733", "confiance": "moyenne", "nom_propose": null, "raison": "Association pour la Fondation Santé Durable, inactive, nom proche"}
+{"id": 6237, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom déclaré = étudiant personne physique, pas une structure"}
 {"id": 6241, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "ICAN absent ; Icare et autres ne correspondent pas"}
 {"id": 6245, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat ne correspond à Neuromyelite Optique France"}
 {"id": 6252, "choix": "rna:W751281354", "confiance": "haute", "nom_propose": null, "raison": "Nom déclaré repris mot pour mot dans le candidat RNA"}
 {"id": 6259, "choix": "rna:W922007492", "confiance": "haute", "nom_propose": null, "raison": "Sigle SAMPIL exact, association médicale Ile-de-France"}
+{"id": 6262, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom déclaré = étudiant personne physique, pas une structure"}
 {"id": 6268, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Institut Cardiovasculaire absent ; homonymes génériques seulement"}
 {"id": 6279, "choix": "rna:W263013744", "confiance": "haute", "nom_propose": null, "raison": "Nom exact ADAD, dermatologie, département 26 concordant"}
 {"id": 6280, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier Jacques Cœur de Bourges", "raison": "Entité certaine absente des candidats ; annexes exclues"}
@@ -21,7 +24,9 @@
 {"id": 6353, "choix": "siren:267802718", "confiance": "haute", "nom_propose": null, "raison": "CH de Versailles porte le nom André Mignot, entité active"}
 {"id": 6354, "choix": "rna:W373002052", "confiance": "moyenne", "nom_propose": null, "raison": "La Tourangelle, association du département 37, nom concordant"}
 {"id": 6355, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Clinique vétérinaire absente ; candidats Carrelet sont des pontons"}
+{"id": 6370, "choix": "aucun", "confiance": "haute", "nom_propose": "École nationale vétérinaire de Toulouse", "raison": "Entité certaine absente des candidats"}
 {"id": 6386, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom déclaré = personne physique, pas une structure"}
+{"id": 6391, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom déclaré = personne physique, pas une structure"}
 {"id": 6415, "choix": "siren:901731281", "confiance": "moyenne", "nom_propose": null, "raison": "Radiologie ICC 92 : radiologie et sigle ICC concordants"}
 {"id": 6418, "choix": "siren:789228574", "confiance": "moyenne", "nom_propose": null, "raison": "Groupe d'étude des tumeurs endocrines, GTE, dupliqué en RNA"}
 {"id": 6422, "choix": "rna:W751146795", "confiance": "haute", "nom_propose": null, "raison": "Incubateur Paris Biotech Santé, nom exact"}
@@ -33,6 +38,7 @@
 {"id": 6543, "choix": "siren:264400136", "confiance": "haute", "nom_propose": null, "raison": "CHU de Nantes, sigle CHU, établissement public actif"}
 {"id": 6548, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier régional universitaire de Montpellier", "raison": "Entité certaine absente des candidats"}
 {"id": 6550, "choix": "siren:353215890", "confiance": "haute", "nom_propose": null, "raison": "Eurofins Laboratoire Dermscan, nom exact, département concordant"}
+{"id": 6551, "choix": "siren:394260327", "confiance": "moyenne", "nom_propose": null, "raison": "Chene Vert SAS, code NAF 75.00Z vétérinaire, département concordant"}
 {"id": 6557, "choix": "rna:W212003309", "confiance": "haute", "nom_propose": null, "raison": "Nom exact ABPRO, ophtalmologie, département 21"}
 {"id": 6560, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "AMLO : aucun candidat association, départements discordants"}
 {"id": 6582, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "AAO ophtalmologie corse hors département, doute"}
@@ -97,6 +103,7 @@
 {"id": 7175, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom déclaré = personne physique, pas une structure"}
 {"id": 7180, "choix": "rna:W771022018", "confiance": "haute", "nom_propose": null, "raison": "Grand Paris Obésité, nom exact, département 77"}
 {"id": 7181, "choix": "siren:905381091", "confiance": "moyenne", "nom_propose": null, "raison": "Société de recherche dermatologique, doublon RNA, code 72.19Z"}
+{"id": 7183, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Groupe vétérinaire Lemey Calvez absent ; homonymes Calvez inactifs"}
 {"id": 7185, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "EDU Partners absent ; Eden Partners et autres non concordants"}
 {"id": 7194, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "CERC : départements discordants, pas de candidat clair"}
 {"id": 7200, "choix": "aucun", "confiance": "haute", "nom_propose": "Société française de pédiatrie (SFP)", "raison": "Société savante certaine ; absente des candidats"}
@@ -185,6 +192,7 @@
 {"id": 7975, "choix": "rna:W931018128", "confiance": "haute", "nom_propose": null, "raison": "Le Souffle des enfants de Bicêtre, nom concordant, département 93"}
 {"id": 7979, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "EURL E2A : tous candidats hors département 76"}
 {"id": 7983, "choix": "siren:265906727", "confiance": "haute", "nom_propose": null, "raison": "Centre hospitalier de Roubaix, maternité de Beaumont, entité active"}
+{"id": 7999, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom déclaré = personne physique, pas une structure"}
 {"id": 8009, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "UPR : candidats hors département, associations de financement politique"}
 {"id": 8010, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Net Cancer : sigle cancer seul, nom non concordant"}
 {"id": 8027, "choix": "siren:533070579", "confiance": "haute", "nom_propose": null, "raison": "E-learning santé Europe, nom exact, département 92"}

@@ -106,6 +106,7 @@
 {"id": 2486, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier de Pau", "raison": "CH de Pau absent des candidats ; sociétés et associations sans rapport"}
 {"id": 2487, "choix": "siren:811504851", "confiance": "haute", "nom_propose": null, "raison": "SOFOG = Société francophone d'onco-gériatrie, association active, nom exact"}
 {"id": 2490, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Modis France", "raison": "Modis France absent des candidats ; Medias France et homonymes sans rapport"}
+{"id": 2491, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Pseudonyme d'influenceur, sans structure ni candidat"}
 {"id": 2496, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Dat'AIDS-Nadis absent ; sigle AIDS d'une SARL inactive sans rapport"}
 {"id": 2497, "choix": "siren:924511306", "confiance": "haute", "nom_propose": null, "raison": "Fondation PASTEL, sigle exact, fondation active dans le département"}
 {"id": 2500, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "GERP : candidats homonymes par sigle seul, activités et lieux sans rapport"}

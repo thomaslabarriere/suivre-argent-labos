@@ -46,6 +46,7 @@
 {"id": 6547, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier universitaire de Montpellier", "raison": "CHRU sans candidat hospitalier ; CHU de Montpellier connu avec certitude"}
 {"id": 6548, "choix": "siren:552016628", "confiance": "haute", "nom_propose": null, "raison": "ADP est le sigle d'Aéroports de Paris, SA, Roissy 95700"}
 {"id": 6549, "choix": "siren:353215890", "confiance": "haute", "nom_propose": null, "raison": "EUROFINS LABORATOIRE DERMSCAN, nom cœur identique, SAS active"}
+{"id": 6550, "choix": "siren:394260327", "confiance": "moyenne", "nom_propose": null, "raison": "Groupe Chêne Vert ; SAS Chêne Vert 75.00Z vétérinaire, Ille-et-Vilaine"}
 {"id": 6551, "choix": "siren:348910431", "confiance": "haute", "nom_propose": null, "raison": "Association des cardiologues de l'Est, nom identique, Meurthe-et-Moselle"}
 {"id": 6553, "choix": "rna:W251004332", "confiance": "moyenne", "nom_propose": null, "raison": "Sigle ADPHF et intitulé concordants ; département RNA différent"}
 {"id": 6555, "choix": "siren:432759256", "confiance": "haute", "nom_propose": null, "raison": "Sigle AJNPD, journées nationales provinciales de dermatologie, Paris"}
@@ -61,6 +62,7 @@
 {"id": 6570, "choix": "siren:524108990", "confiance": "haute", "nom_propose": null, "raison": "Intitulé exact GRAMM, association 94.99Z, Val-de-Marne actif"}
 {"id": 6571, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Sigle GRCI : candidats hors département, aucun lien avec Pontoise"}
 {"id": 6573, "choix": "siren:824332829", "confiance": "moyenne", "nom_propose": null, "raison": "Nom exact, Hauts-de-Seine ; inactif mais seul candidat identique"}
+{"id": 6574, "choix": "siren:385009840", "confiance": "moyenne", "nom_propose": null, "raison": "SCDF des vétérinaires des Essarteaux ; cœur du nom, inactif"}
 {"id": 6575, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Seule une SCI ANHET immobilière ; pas une association identifiée"}
 {"id": 6576, "choix": "siren:803887561", "confiance": "haute", "nom_propose": null, "raison": "OPHTALLIANCE FORMATION RECHERCHE, intitulé exact, Loire-Atlantique"}
 {"id": 6578, "choix": "siren:130021074", "confiance": "moyenne", "nom_propose": null, "raison": "GCS Nord Deux-Sèvres, nom concordant, établissement de santé Deux-Sèvres"}
@@ -140,6 +142,7 @@
 {"id": 6717, "choix": "siren:300512647", "confiance": "haute", "nom_propose": null, "raison": "Association Ambroise Croizat Santé gère l'hôpital Pierre-Rouquès-Bluets"}
 {"id": 6718, "choix": "siren:434385779", "confiance": "haute", "nom_propose": null, "raison": "Sigle AREP, recherche et enseignement en pneumologie, Marne"}
 {"id": 6721, "choix": "rna:W751020514", "confiance": "haute", "nom_propose": null, "raison": "Société française de médecine de l'exercice et du sport, intitulé identique"}
+{"id": 6722, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Personne physique influenceur ; aucun candidat"}
 {"id": 6723, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "TRT5 absent ; candidats recherche thérapeutique sans nom concordant"}
 {"id": 6725, "choix": "siren:438928699", "confiance": "haute", "nom_propose": null, "raison": "Sigle ACCD OM, association des communes et collectivités d'outre-mer"}
 {"id": 6726, "choix": "siren:525152484", "confiance": "haute", "nom_propose": null, "raison": "JEHL = Journées d'endocrinologie du Haut-Lévêque, Bordeaux, actif"}
@@ -172,6 +175,7 @@
 {"id": 6783, "choix": "siren:420474678", "confiance": "haute", "nom_propose": null, "raison": "Sigle AQUARE, qualité recherche enseignement Saint-Joseph, Paris 14e"}
 {"id": 6784, "choix": "siren:267500452", "confiance": "moyenne", "nom_propose": null, "raison": "Adresse hôpital Bicêtre rattaché à l'AP-HP, seul candidat hospitalier"}
 {"id": 6785, "choix": "siren:448781088", "confiance": "haute", "nom_propose": null, "raison": "Sigle AFORMI, formation recherche médecine interne, Nord"}
+{"id": 6787, "choix": "siren:777579574", "confiance": "moyenne", "nom_propose": null, "raison": "Nom exact de la clinique vétérinaire, Finistère ; inactive"}
 {"id": 6788, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Société francophone d'arthroscopie", "raison": "Sigle SFA homonymes sans rapport ; société savante connue avec certitude"}
 {"id": 6790, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "Hôpital Fernand-Widal, établissement de l'AP-HP, Paris 10e"}
 {"id": 6791, "choix": "siren:200023059", "confiance": "haute", "nom_propose": null, "raison": "Trésorerie du CHU Morvan : CHRU de Brest rattaché, actif"}

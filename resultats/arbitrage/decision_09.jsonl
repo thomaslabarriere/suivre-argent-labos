@@ -32,6 +32,7 @@
 {"id": 3076, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre Hospitalier Intercommunal Toulon La Seyne-sur-Mer", "raison": "GHI Toulon La Seyne est le CH intercommunal ; candidats sans rapport"}
 {"id": 3077, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre Hospitalier Universitaire Grenoble Alpes", "raison": "CHU Grenoble La Tronche ; aucun candidat hospitalier dans le lot"}
 {"id": 3079, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "GRPSO absent ; ARP possible mais lien de nom non établi"}
+{"id": 3080, "choix": "siren:952133478", "confiance": "moyenne", "nom_propose": null, "raison": "Nom exact, seul candidat, actif, dept 69 ; catégorie influenceur"}
 {"id": 3082, "choix": "rna:W802018450", "confiance": "haute", "nom_propose": null, "raison": "Sigle IRPU exact, association active, dept 80"}
 {"id": 3084, "choix": "siren:391752987", "confiance": "moyenne", "nom_propose": null, "raison": "Nom exact et forme SARL déclarée ; homonyme SAS écarté"}
 {"id": 3085, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom déclaré NA ; aucun candidat"}
@@ -47,6 +48,7 @@
 {"id": 3100, "choix": "siren:267400026", "confiance": "haute", "nom_propose": null, "raison": "Centre hospitalier Annecy Genevois active ; doublon inactif écarté"}
 {"id": 3101, "choix": "siren:419424650", "confiance": "moyenne", "nom_propose": null, "raison": "Sigle SFGM TC et nom proche ; NAF 72.11Z recherche"}
 {"id": 3104, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Hôpital Marie-Lannelongue : candidats homonymes ou annexes, entité hospitalière absente"}
+{"id": 3108, "choix": "siren:441201027", "confiance": "moyenne", "nom_propose": null, "raison": "Nom exact RC SERVICES, seul candidat, actif, dept 85"}
 {"id": 3110, "choix": "aucun", "confiance": "haute", "nom_propose": "Assistance Publique - Hôpitaux de Paris", "raison": "Pitié-Salpêtrière est un hôpital de l'AP-HP ; aucun candidat AP-HP"}
 {"id": 3111, "choix": "aucun", "confiance": "haute", "nom_propose": "Institut National de la Santé et de la Recherche Médicale", "raison": "INSERM Délégation Auvergne-Rhône-Alpes ; aucun candidat INSERM dans la liste"}
 {"id": 3113, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "ISFRI non identifiée ; aucun candidat"}
@@ -76,6 +78,7 @@
 {"id": 3155, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre Hospitalier Universitaire du Mans", "raison": "CHU du Mans à l'adresse avenue Rubillard ; aucun candidat hospitalier"}
 {"id": 3156, "choix": "siren:788060465", "confiance": "haute", "nom_propose": null, "raison": "Charles River Laboratories Evreux, site rue de Pacy, dept 27"}
 {"id": 3157, "choix": "siren:818650533", "confiance": "haute", "nom_propose": null, "raison": "FINACTION SARL exact, forme et conseil 70.22Z, dept 75"}
+{"id": 3158, "choix": "rna:W641012233", "confiance": "moyenne", "nom_propose": null, "raison": "Handiamo association exacte ; SARL homonyme 93.19Z hors département"}
 {"id": 3160, "choix": "aucun", "confiance": "haute", "nom_propose": "Fondation Ophtalmologique Adolphe de Rothschild", "raison": "Fondation hospitalière de la rue Manin ; candidats sont des annexes ou homonymes"}
 {"id": 3161, "choix": "siren:401641725", "confiance": "haute", "nom_propose": null, "raison": "OPEN'ACT = OPENACT, SAS conseil 70.22Z, dept 75"}
 {"id": 3162, "choix": "siren:200063477", "confiance": "haute", "nom_propose": null, "raison": "Centre hospitalier de Meaux relève du GHEF, sigle GHEF, 86.10Z"}

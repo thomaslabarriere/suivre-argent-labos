@@ -51,6 +51,7 @@
 {"id": 2749, "choix": "siren:267500452", "confiance": "haute", "nom_propose": null, "raison": "Hopital Bicetre est un etablissement AP-HP, candidat AP-HP exact"}
 {"id": 2751, "choix": "siren:262501760", "confiance": "haute", "nom_propose": null, "raison": "Hopital Jean Minjoz rapproche CHRU, CHU Besancon etablissement public"}
 {"id": 2752, "choix": "siren:415381987", "confiance": "haute", "nom_propose": null, "raison": "Siel Bleu = Sport Initiative et Loisir Bleu, association Strasbourg"}
+{"id": 2755, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Personne physique influenceur, aucun candidat"}
 {"id": 2757, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Centre ophtalmologique non identifie ; cabinet Morin Devin Morel non lie"}
 {"id": 2758, "choix": "rna:W952007779", "confiance": "haute", "nom_propose": null, "raison": "Nom identique ADIIS, meme departement, association"}
 {"id": 2760, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "CMCO Strasbourg absent des candidats ; restauration et SCI homonymes"}
@@ -87,6 +88,7 @@
 {"id": 2819, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "B4 Events absent ; seul candidat hors departement sans lien"}
 {"id": 2821, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "TRUEBLUE SPA, SPA = societe protectrice des animaux, faux positif"}
 {"id": 2822, "choix": "siren:334834132", "confiance": "haute", "nom_propose": null, "raison": "SOC FRANCAISE D ENDOCRINOLOGIE, societe savante Paris, nom identique"}
+{"id": 2823, "choix": "siren:483754347", "confiance": "moyenne", "nom_propose": null, "raison": "ASSOCIATION INSTITUT DE MYOLOGIE, nom identique, categorie peu claire"}
 {"id": 2826, "choix": "siren:391270006", "confiance": "moyenne", "nom_propose": null, "raison": "LIGUE FRANCAISE CONTRE L EPILEPSIE, sigle LFCE identique, hors departement"}
 {"id": 2828, "choix": "siren:408071157", "confiance": "haute", "nom_propose": null, "raison": "STOP SIDA association lutte sida, nom identique, Nord"}
 {"id": 2829, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier universitaire de Toulouse", "raison": "CHU de Toulouse absent des candidats ; sociétés homonymes sans lien"}
@@ -164,6 +166,7 @@
 {"id": 2964, "choix": "rna:W751087988", "confiance": "haute", "nom_propose": null, "raison": "Sigle FFAAIR identique, federation malades respiratoires Paris"}
 {"id": 2967, "choix": "aucun", "confiance": "moyenne", "nom_propose": null, "raison": "Conseil Media Sante absent ; MEDIA CONSEIL homonymes inactifs"}
 {"id": 2968, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Aucun candidat trouve pour GFHC"}
+{"id": 2970, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Influenceur personne, homonymes SHERA hors departement"}
 {"id": 2972, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre Leon Berard", "raison": "Centre Leon Berard Lyon absent ; candidats cancerologie prives sans lien"}
 {"id": 2973, "choix": "siren:790711717", "confiance": "moyenne", "nom_propose": null, "raison": "Nom APODIS exact, SAS, Tours ; association homonyme existe aussi"}
 {"id": 2974, "choix": "aucun", "confiance": "haute", "nom_propose": "Assistance Publique - Hopitaux de Paris", "raison": "CRPV Georges Pompidou rattache a l'hopital AP-HP ; candidats associatifs sans lien"}

@@ -21,6 +21,7 @@
 {"id": 5086, "choix": "siren:352728570", "confiance": "haute", "nom_propose": null, "raison": "Cœur ARNICA identique, unique candidat édition active à Paris"}
 {"id": 5089, "choix": "siren:267411031", "confiance": "haute", "nom_propose": null, "raison": "Site de Thonon rattaché au CHI Les Hôpitaux du Léman, Haute-Savoie"}
 {"id": 5092, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Candidats LA STEPHANOISE sans rapport avec l'association scientifique déclarée"}
+{"id": 5097, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Vétérinaire individuel ; candidats sont des sociétés aux noms différents"}
 {"id": 5098, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Aucun candidat d'immunologie ; homonymes SOCIETE FRANCAISE sans rapport"}
 {"id": 5100, "choix": "siren:331758862", "confiance": "haute", "nom_propose": null, "raison": "Nom LEN MEDICAL exact, SAS parisienne active"}
 {"id": 5104, "choix": "siren:263700189", "confiance": "haute", "nom_propose": null, "raison": "CHRU de Tours, Clocheville est un de ses sites"}
@@ -94,6 +95,7 @@
 {"id": 5244, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Institut Gustave Roussy", "raison": "Institut absent des candidats ; GUSTAVE seul, nom incomplet"}
 {"id": 5246, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Seul candidat SCM sans rapport avec la polyclinique"}
 {"id": 5247, "choix": "siren:422846212", "confiance": "haute", "nom_propose": null, "raison": "Nom Approfondissement des thérapeutiques néphrologie exact, Paris active"}
+{"id": 5248, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Aucun candidat ; personne physique, influenceur"}
 {"id": 5249, "choix": "rna:W372008098", "confiance": "haute", "nom_propose": null, "raison": "AURCIL nom exact et sigle, association tourangelle active"}
 {"id": 5250, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Le Point : asso RNA et SARL 47.64Z peu sûrs, société mère inactive"}
 {"id": 5255, "choix": "rna:W9R2003554", "confiance": "haute", "nom_propose": null, "raison": "Sigle SRMOI exact, Société de rhumatologie de l'Océan indien"}
@@ -110,6 +112,7 @@
 {"id": 5278, "choix": "siren:266700574", "confiance": "haute", "nom_propose": null, "raison": "Hôpital Univ. Strasbourg = Hôpitaux universitaires de Strasbourg, HUS actif"}
 {"id": 5281, "choix": "aucun", "confiance": "moyenne", "nom_propose": null, "raison": "IQVIA absent ; candidats NAL, OPERATION GOLF, CLEVER sans rapport"}
 {"id": 5283, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Canceropôle Provence-Alpes-Côte d'Azur", "raison": "Canceropôle PACA absent ; candidats relais et conseil régional sans rapport"}
+{"id": 5285, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "LEPERLIER homonymes tous hors département 51, non tranchés"}
 {"id": 5286, "choix": "rna:W751170031", "confiance": "haute", "nom_propose": null, "raison": "Association de chimiothérapie anti-infectieuse, sigle ACAI, active parisienne"}
 {"id": 5288, "choix": "rna:W133016704", "confiance": "haute", "nom_propose": null, "raison": "Sigle ARDEC exact, association marseillaise active en cardio-vasculaire"}
 {"id": 5289, "choix": "siren:265906719", "confiance": "haute", "nom_propose": null, "raison": "Hôpital B Roger Salengro Neurologie est un site du CHU de Lille"}
@@ -125,6 +128,7 @@
 {"id": 5302, "choix": "siren:398096669", "confiance": "moyenne", "nom_propose": null, "raison": "Sigle IRCS exact, association lyonnaise active ; IRCCS homonyme proche"}
 {"id": 5303, "choix": "aucun", "confiance": "haute", "nom_propose": "Assistance publique - Hôpitaux de Paris", "raison": "AP-HP absente des candidats ; homonymes privés sans rapport"}
 {"id": 5304, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Sigle IME porté par huit homonymes sans lien tranché"}
+{"id": 5305, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Aucun candidat ; compte d'influenceur"}
 {"id": 5308, "choix": "rna:W941004364", "confiance": "haute", "nom_propose": null, "raison": "Sigle AREFOR exact, association de recherche oncologie-radiothérapie, Val-de-Marne"}
 {"id": 5310, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Monaco Cardio ne correspond pas à Cardio 09 ; nom incohérent"}
 {"id": 5312, "choix": "siren:433405834", "confiance": "haute", "nom_propose": null, "raison": "Sigle AFL et nom lupus auto-immunes exacts, association mosellane active"}
@@ -141,6 +145,7 @@
 {"id": 5336, "choix": "rna:W442028019", "confiance": "moyenne", "nom_propose": null, "raison": "ENORA sigle et nom exacts, association nantaise active ; doublon RNA"}
 {"id": 5337, "choix": "rna:W751182047", "confiance": "moyenne", "nom_propose": null, "raison": "Association Notre Sclérose, nom exact, Loire-Atlantique ; doublon SIREN"}
 {"id": 5338, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Aucun candidat au nom B3 ; homonymes génériques sans rapport"}
+{"id": 5339, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Aucun candidat ; compte d'influenceur"}
 {"id": 5340, "choix": "siren:265907006", "confiance": "haute", "nom_propose": null, "raison": "Hôpital Chatiliez/Gustave Dron rattaché au Centre hospitalier de Tourcoing"}
 {"id": 5341, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre Georges-François Leclerc", "raison": "Centre absent des candidats ; aucun candidat trouvé"}
 {"id": 5344, "choix": "siren:420071540", "confiance": "haute", "nom_propose": null, "raison": "Sigle JARCA exact, association d'anesthésie aquitaine active"}
@@ -171,7 +176,9 @@
 {"id": 5397, "choix": "siren:300088663", "confiance": "haute", "nom_propose": null, "raison": "Syndicat national nommé explicitement, sigle SYNPREFH exact, actif"}
 {"id": 5398, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Académie absente ; SPFPL Cordeliers est une holding sans rapport"}
 {"id": 5400, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Candidats CLAD et assises d'anatomie pathologique ne correspondent pas à ORL"}
+{"id": 5403, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Aucun candidat ; compte d'influenceur"}
 {"id": 5404, "choix": "siren:430431338", "confiance": "haute", "nom_propose": null, "raison": "Nom exact Journées de neurologie de langue française, association strasbourgeoise active"}
+{"id": 5406, "choix": "siren:505038646", "confiance": "haute", "nom_propose": null, "raison": "Sigle ADERMI exact, association toulousaine de recherche dermatologique active"}
 {"id": 5407, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Aucun candidat trouvé ; société belge"}
 {"id": 5408, "choix": "rna:W751028127", "confiance": "haute", "nom_propose": null, "raison": "CNGOF, collège national des gynécologues, sigle et adresse parisienne actifs"}
 {"id": 5409, "choix": "aucun", "confiance": "haute", "nom_propose": "Clinique Rhéna", "raison": "Clinique Rhéna absente des candidats ; autres sont des sociétés sans rapport"}
@@ -179,6 +186,7 @@
 {"id": 5413, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Oncogard absent ; centres médicaux génériques de l'Hérault non identifiés"}
 {"id": 5414, "choix": "rna:W913016199", "confiance": "moyenne", "nom_propose": null, "raison": "Regional expert group migration health, nom proche, association active ; doublon SIREN"}
 {"id": 5417, "choix": "siren:907973234", "confiance": "haute", "nom_propose": null, "raison": "Sigle SOFEM = Société ophtalmologique française féminine, association active"}
+{"id": 5418, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Aucun candidat trouvé ; compte d'influenceur"}
 {"id": 5419, "choix": "siren:266900190", "confiance": "moyenne", "nom_propose": null, "raison": "Hôpital de jour et unité de Villefranche, CHS public actif dans le Rhône"}
 {"id": 5420, "choix": "siren:434731311", "confiance": "haute", "nom_propose": null, "raison": "Clinique de l'Europe, nom exact dans le nom déclaré, SAS active dans la Somme"}
 {"id": 5421, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Aucun candidat trouvé pour la trésorerie des hôpitaux strasbourgeois"}

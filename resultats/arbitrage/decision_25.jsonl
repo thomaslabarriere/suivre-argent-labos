@@ -34,8 +34,10 @@
 {"id": 8283, "choix": "siren:780153862", "confiance": "haute", "nom_propose": null, "raison": "Libellé LIVE BY GL EVENTS identique, entité active, département 69"}
 {"id": 8284, "choix": "aucun", "confiance": "moyenne", "nom_propose": null, "raison": "ARDETO est une SARL d'architecture ; forme et département incompatibles"}
 {"id": 8285, "choix": "siren:264400136", "confiance": "haute", "nom_propose": null, "raison": "Trésorier du CHU : le CHU de Nantes est le bénéficiaire"}
+{"id": 8286, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Déclaré comme influenceur personne ; SCI homonyme sans lien démontré"}
 {"id": 8290, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Assistance publique - Hôpitaux de Paris", "raison": "Pitié-Salpêtrière relève de l'AP-HP ; aucun candidat ne convient"}
 {"id": 8292, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Clinique de l'Infirmerie absente des candidats ; noms sans rapport"}
+{"id": 8293, "choix": "siren:824055693", "confiance": "haute", "nom_propose": null, "raison": "SELARL YZIVET est la société YZIVET, vétérinaire, département 49"}
 {"id": 8294, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Centre Cardiologique du Nord", "raison": "Seule une SCI homonyme ; l'exploitant de la clinique n'est pas candidat"}
 {"id": 8295, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier intercommunal de Haute-Comté", "raison": "CHI absent ; association de Haute Comté est une structure annexe"}
 {"id": 8298, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Aucun candidat"}

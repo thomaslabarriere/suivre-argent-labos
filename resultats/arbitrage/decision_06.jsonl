@@ -95,6 +95,7 @@
 {"id": 2123, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "GHR Martinique absent ; candidats associatifs hors dépt"}
 {"id": 2125, "choix": "siren:782921233", "confiance": "haute", "nom_propose": null, "raison": "Institut Paoli-Calmettes, 86.10Z actif, dépt 13"}
 {"id": 2126, "choix": "rna:W751162686", "confiance": "haute", "nom_propose": null, "raison": "Association Robert-Debré exacte, active, dépt 75"}
+{"id": 2127, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Aucun candidat ; influenceur, pas de structure enregistrée"}
 {"id": 2128, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Fondation LIRYC", "raison": "Fondation nommée absente ; seule Université de Bordeaux candidate"}
 {"id": 2130, "choix": "siren:789228574", "confiance": "haute", "nom_propose": null, "raison": "GTE sigle et nom exacts, association 72.19Z active, dépt 75"}
 {"id": 2133, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "AIMED exact mais hors dépt 69 et APE 47.71Z incohérent"}

@@ -39,6 +39,7 @@
 {"id": 5506, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "SRP ambigu, plusieurs sociétés ; aucune liée à la division médicale."}
 {"id": 5507, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Observatoire Sommeil en Pneumologie Libérale (OSPL)", "raison": "OSPL déjà identifié ; seul candidat sans rapport."}
 {"id": 5509, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom de personne physique ; candidats homonymes DELPHINE sans lien."}
+{"id": 5510, "choix": "siren:812879583", "confiance": "moyenne", "nom_propose": null, "raison": "Nom ALEK ONCO exact, SELARL déclarée, active en Loire-Atlantique."}
 {"id": 5511, "choix": "siren:130026081", "confiance": "haute", "nom_propose": null, "raison": "Université Grenoble Alpes active, même nom, département concordant."}
 {"id": 5512, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Centre hospitalier de Compiègne", "raison": "Hôpital déclaré ; candidats CHD ou COMPIEGNE sans rapport hospitalier."}
 {"id": 5515, "choix": "siren:750195695", "confiance": "moyenne", "nom_propose": null, "raison": "DBVM exact, active à Paris ; mot DRAGOM non retrouvé."}
@@ -72,6 +73,7 @@
 {"id": 5567, "choix": "aucun", "confiance": "haute", "nom_propose": "Assistance publique - Hôpitaux de Paris", "raison": "Pitié-Salpêtrière relève de l'AP-HP ; candidats annexes ou sans rapport."}
 {"id": 5569, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier régional universitaire de Tours", "raison": "Hôpital Trousseau de Tours relève du CHRU ; candidats annexes."}
 {"id": 5570, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom de fondation endométriose absent ; homonymes génériques de fondations."}
+{"id": 5572, "choix": "siren:407836857", "confiance": "haute", "nom_propose": null, "raison": "MC VET CONSEIL, nom exact, SARL active, Sarthe."}
 {"id": 5575, "choix": "aucun", "confiance": "moyenne", "nom_propose": null, "raison": "Aucun candidat pour Henri8."}
 {"id": 5576, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "GEDO odontologie ou SCI sans rapport avec le don d'ovocytes."}
 {"id": 5578, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Sigle ADFR seul ; candidats dentaires, formation radiologie absente."}
@@ -86,6 +88,7 @@
 {"id": 5590, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom tronqué ; candidats homonymes ASS sans lien avec le club."}
 {"id": 5592, "choix": "rna:W751276117", "confiance": "moyenne", "nom_propose": null, "raison": "Association Action du Cœur, nom concordant ; homonyme SIREN identique."}
 {"id": 5594, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Fondation AVC absente ; FONDATION AVEC et ARC inactives, autres sans rapport."}
+{"id": 5596, "choix": "aucun", "confiance": "moyenne", "nom_propose": null, "raison": "Aucun candidat pour ATTWEEL."}
 {"id": 5599, "choix": "siren:180036048", "confiance": "haute", "nom_propose": null, "raison": "Unité Inserm rattachée à l'Inserm, établissement public actif."}
 {"id": 5601, "choix": "siren:266209295", "confiance": "haute", "nom_propose": null, "raison": "Centre hospitalier de Béthune-Beuvry, 86.10Z, département concordant."}
 {"id": 5604, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Fondation absente des candidats ; association homonyme non confirmée."}
@@ -101,6 +104,7 @@
 {"id": 5623, "choix": "aucun", "confiance": "moyenne", "nom_propose": null, "raison": "Aucun candidat pour ARTICLE1."}
 {"id": 5627, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Seul le mot SOCIETE commun aux candidats ; aucun nom BACOM."}
 {"id": 5628, "choix": "rna:W442006499", "confiance": "haute", "nom_propose": null, "raison": "PMATLANTIQUE, sigle et nom exacts, association active, Loire-Atlantique."}
+{"id": 5629, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Seul candidat E.D.H., sans rapport avec The Brunette."}
 {"id": 5630, "choix": "rna:W543004738", "confiance": "haute", "nom_propose": null, "raison": "Association régionale d'aide aux insuffisants respiratoires de Lorraine, nom concordant."}
 {"id": 5631, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Sigle IMS générique ; six homonymes sans lien établi avec IMS AG."}
 {"id": 5632, "choix": "rna:W751220177", "confiance": "haute", "nom_propose": null, "raison": "CFSR de la rétine, même adresse rue Ambroise-Paré que le cas 5536."}
@@ -120,6 +124,7 @@
 {"id": 5667, "choix": "siren:027350321", "confiance": "moyenne", "nom_propose": null, "raison": "OPENHEALTH COMPANY, cœur de nom identique, actif, Morbihan."}
 {"id": 5668, "choix": "aucun", "confiance": "haute", "nom_propose": "Groupe hospitalier Diaconesses Croix Saint-Simon", "raison": "Groupe hospitalier déclaré ; aucun candidat présenté."}
 {"id": 5669, "choix": "rna:W372004912", "confiance": "haute", "nom_propose": null, "raison": "Anciens de l'INSSA et médecins congolais de France, sigle A.I.M.C. concordant."}
+{"id": 5672, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Influenceur ; candidats SCI La Marinelle hors département, sans lien établi."}
 {"id": 5675, "choix": "rna:W372004239", "confiance": "haute", "nom_propose": null, "raison": "APECO, sigle et nom de chirurgie vidéo-assistée de l'Ouest exacts, actif."}
 {"id": 5677, "choix": "rna:W343008332", "confiance": "haute", "nom_propose": null, "raison": "ARFTAR, nom de transplantation hépatique et anesthésie concordant, Hérault."}
 {"id": 5678, "choix": "siren:823779459", "confiance": "haute", "nom_propose": null, "raison": "Veranex France, nom exact, SAS active, Paris."}

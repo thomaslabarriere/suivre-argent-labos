@@ -28,6 +28,7 @@
 {"id": 3416, "choix": "aucun", "confiance": "basse", "nom_propose": "Centre hospitalier universitaire de Toulouse", "raison": "CHU absent des candidats ; adresse Strasbourg incohérente avec le nom"}
 {"id": 3417, "choix": "siren:490642329", "confiance": "moyenne", "nom_propose": null, "raison": "Sigle GRF et activité formation 85.59A, Paris concordant"}
 {"id": 3418, "choix": "aucun", "confiance": "haute", "nom_propose": "Société française de greffe de moelle et de thérapie cellulaire", "raison": "Société savante réelle absente des candidats, aucun candidat trouvé"}
+{"id": 3419, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Personne physique médecin sans candidat, aucune structure identifiable"}
 {"id": 3421, "choix": "siren:903793479", "confiance": "moyenne", "nom_propose": null, "raison": "Sigle ACPB exact en SAS active, Paris 75 concordant"}
 {"id": 3424, "choix": "siren:800365611", "confiance": "moyenne", "nom_propose": null, "raison": "Deux homonymes actifs ; retenu celui portant le sigle JPIP"}
 {"id": 3425, "choix": "siren:348714635", "confiance": "haute", "nom_propose": null, "raison": "Sigle ANAFORCAL identique, association de formation, département 13"}
@@ -37,6 +38,7 @@
 {"id": 3437, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Homonymes ADREV hors département 85, aucun ne correspond"}
 {"id": 3441, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Nom de personne physique, aucune structure ne correspond"}
 {"id": 3443, "choix": "siren:432759256", "confiance": "haute", "nom_propose": null, "raison": "Nom complet et sigle AJNPD concordants, association dermatologie Paris"}
+{"id": 3445, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Catégorie étudiant, candidats hors département et sans lien"}
 {"id": 3446, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Plusieurs RNA DIADIET actifs homonymes, impossible de départager"}
 {"id": 3447, "choix": "aucun", "confiance": "haute", "nom_propose": "Groupe hospitalier Bretagne Sud", "raison": "GHBS de Lorient réel, absent des candidats ; HDB et GIE non concernés"}
 {"id": 3449, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat trouvé, entité inconnue"}
@@ -73,6 +75,7 @@
 {"id": 3502, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Huit homonymes GEMME sans lien décisif, rien ne départage"}
 {"id": 3503, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier universitaire de Poitiers", "raison": "CHU réel, adresse rue de la Milétrie absente des candidats, homonymes sans lien"}
 {"id": 3504, "choix": "rna:W061004327", "confiance": "moyenne", "nom_propose": null, "raison": "Société européenne d'endoscopie ESGE, inactive mais seul nom correspondant, Lyon"}
+{"id": 3508, "choix": "siren:334516457", "confiance": "haute", "nom_propose": null, "raison": "Nom BIO CHENE VERT identique, vétérinaire 75.00Z, département 35"}
 {"id": 3509, "choix": "aucun", "confiance": "moyenne", "nom_propose": "AO Foundation", "raison": "Fondation AO réelle (Davos) absente des candidats ; OSHIL sans lien"}
 {"id": 3511, "choix": "siren:783336068", "confiance": "haute", "nom_propose": null, "raison": "Institut de cancérologie de Lorraine, sigle ICL, 86.10Z, département 54"}
 {"id": 3513, "choix": "aucun", "confiance": "moyenne", "nom_propose": "Centre hospitalier universitaire d'Angers", "raison": "Adresse Hôtel-Dieu Angers ; candidats CH tous hors département 49"}
@@ -185,6 +188,7 @@
 {"id": 3699, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier universitaire de Reims", "raison": "Hôpital Robert Debré est un site du CHU de Reims, absent des candidats"}
 {"id": 3702, "choix": "rna:W662006019", "confiance": "haute", "nom_propose": null, "raison": "Sigle AID-PP et nom complet identiques, association pelvi-périnéologie"}
 {"id": 3703, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "CNGPO candidat hors département, sigle et nom différents"}
+{"id": 3704, "choix": "siren:440789816", "confiance": "moyenne", "nom_propose": null, "raison": "SARL MISSION TEC nom identique, département 31, catégorie influenceur douteuse"}
 {"id": 3713, "choix": "rna:W133020665", "confiance": "haute", "nom_propose": null, "raison": "Sigle AOM 3 identique, association ophtalmologique Marseille"}
 {"id": 3714, "choix": "siren:263305823", "confiance": "haute", "nom_propose": null, "raison": "Hôpital Saint-André site du CHU de Bordeaux, 86.10Z, Gironde"}
 {"id": 3715, "choix": "siren:782921233", "confiance": "haute", "nom_propose": null, "raison": "Institut Paoli-Calmettes centre régional de lutte contre le cancer, 86.10Z"}

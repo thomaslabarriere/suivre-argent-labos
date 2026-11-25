@@ -1,0 +1,180 @@
+nom,prenom,departement,mandats,profession,rpps,euros,versements,labos,principal_labo,premiere_annee,derniere_annee,personnes_meme_nom
+LECOMTE,Thierry,37,Adjoint au maire de Tours,Médecin,10001456952,114114.0,289,44,ZESTE RESEARCH,2018,2026,3.0
+ELKAIM,Jean-Philippe,29,Vice-Président de Brest Métropole,Médecin,10002668993,71654.0,176,22,MYLAN MEDICAL SAS,2017,2026,1.0
+COLLART,Frédéric,13,Conseiller départemental des Bouches-du-Rhône,Médecin,10003412649,59999.0,79,16,EDWARDS LIFESCIENCES SUISSE,2013,2026,1.0
+HENRY,Pierre-Charles,25,Vice-Président de Grand Besançon Métropole,Médecin,10002495207,43734.0,136,20,PIERRE FABRE MEDICAMENT,2019,2026,1.0
+CORNELOUP,Josiane,71,Députée de Saône-et-Loire,Pharmacien,10000963875,41549.0,20,2,TEVA SANTE SAS,2021,2023,1.0
+CASTILLO,Laurent,06,Sénateur des Alpes-Maritimes,Médecin,10003296398,21700.0,74,16,WORLDONE GROUP B.V.,2020,2026,2.0
+MARCHAL,Pauline,08,Vice-Présidente d'Ardenne Métropole,Médecin,10100623817,13085.0,88,15,NOVARTIS PHARMA SAS,2017,2026,3.0
+NICOLAS,Nadège,54,Adjointe au maire de Nancy,Pharmacien,10001195493,9983.0,42,6,ROCHE,2017,2026,3.0
+GILLES,Philippe,07,Président de la communauté de communes du Pays Beaume-Drobie,Pharmacien,10001692036,8775.0,12,9,ELANSIA,2022,2026,1.0
+GONÇALVES,Anthony,13,Adjoint au maire de Marseille,Médecin,10003426045,7130.0,58,16,NOVARTIS PHARMA SAS,2018,2026,1.0
+LEONETTI,Jean,06,Maire d'Antibes ; Président de la communauté d'agglomération de Sophia Antipolis,Médecin,10003427985,7043.0,60,14,ZESTE RESEARCH,2016,2026,2.0
+BODART,Jean,59,Député du Nord,Médecin,10003801635,6333.0,51,11,ABBOTT MEDICAL FRANCE SAS,2019,2026,1.0
+CARPENTIER,Julien,03,Conseiller départemental de l'Allier,Médecin,10004398912,6155.0,42,9,PIERRE FABRE MEDICAMENT,2019,2026,2.0
+BACCHETTA,Vittorio,92,Adjoint au maire de Boulogne-Billancourt,Médecin,10001023554,5915.0,26,12,PRESSE & PAPIERS,2019,2026,1.0
+DARCQ,Clément,25,Adjoint au maire de Besançon,Médecin,10004069109,4089.0,53,16,IPSEN PHARMA,2021,2026,1.0
+RENARD,Dominique,60,Président de la communauté de communes de l'Oise Picarde,Médecin,10001067304,3967.0,22,6,VEODIS,2021,2025,1.0
+DARY,Patrick,87,Président de la communauté de communes du Pays de Saint-Yrieix,Médecin,10002938925,2388.0,48,11,ZESTE SANTE,2019,2026,4.0
+FRAPPÉ,Thierry,62,Député du Pas-de-Calais,Médecin,10002271236,2229.0,10,6,ALL GLOBAL,2019,2026,1.0
+BÉNÉZET,Jean-Charles,30,Vice-Président d'Alès Agglomération,Médecin,10003198545,2049.0,17,3,ASTRAZENECA,2018,2025,1.0
+TOTY,Louis,15,Président de la communauté de communes du Pays Gentiane,Médecin,10002699642,1936.0,11,2,SANOFI AVENTIS FRANCE,2021,2024,1.0
+JEUNET,Laurent,25,Vice-Président de Grand Besançon Métropole,Médecin,10002479516,1820.0,9,3,ZIMMER BIOMET FRANCE SAS,2021,2024,1.0
+THEBAULT,Christophe,22,Vice-Président de Lannion-Trégor Communauté,Médecin,10100164572,1770.0,11,5,BIOTRONIK FRANCE SAS,2019,2024,3.0
+CUNY,Pierre,57,Maire de Thionville ; Président  de Thionville Fensch Agglomération,Chirurgien-dentiste,10005131031,1762.0,7,4,SEPTODONT SAS,2022,2025,1.0
+TRAVERS,David,35,Adjoint au maire de Rennes,Médecin,10002675485,1732.0,14,2,EISAI SAS,2021,2024,1.0
+CADET,Michel,24,Maire de Périgueux ; Vice-Président de la communauté d'agglomération le Grand Perigueux,Médecin,10002737087,1697.0,36,6,MEDACTA FRANCE,2021,2025,1.0
+JARDE,Olivier,80,Vice-Président du conseil départemental de la Somme,Médecin,10003767497,1339.0,11,8,LES LABORATOIRES BROTHIER,2022,2025,1.0
+NICOLAS,Nadège,54,Adjointe au maire de Nancy,Pharmacien,,1129.0,3,1,ROCHE SAS,2021,2022,3.0
+FABRE,Jean-Michel,31,Vice-Président du conseil départemental de la Haute-Garonne,Opticien-lunetier,478475791,1120.0,1,1,NOVACEL OPHTALMIQUE,2026,2026,3.0
+LEONETTI,Jean,06,Maire d'Antibes ; Président de la communauté d'agglomération de Sophia Antipolis,Médecin,,1113.0,5,1,BRISTOL-MYERS SQUIBB,2021,2021,2.0
+NICOLAS,Nadège,54,Adjointe au maire de Nancy,Pharmacien,84097000800016,1092.0,2,1,ROCHE,2023,2023,3.0
+SCHAEFFER,Jean-Michel,67,Vice-Président de l'Eurométropole de Strasbourg,Médecin,10002434792,1046.0,37,18,MERZ PHARMA FRANCE,2021,2025,2.0
+LEGRAND,Jean-François,59,Vice-Président de la Métropole Européenne de Lille,Pharmacien,10001083582,986.0,19,13,ROCHE DIABETES CARE FRANCE,2021,2026,2.0
+ALLEMAND,Marie-José,05,Députée des Hautes-Alpes,Infirmier,056145360,920.0,3,1,ISIS COTE D'AZUR,2024,2024,2.0
+PERRIN,Jean-Marc,13,Conseiller départemental des Bouches-du-Rhône,Médecin,,917.0,4,1,COVIDIEN AG,2025,2025,4.0
+FRIMON-RICHARD,Benoît,91,Vice-Président de la communauté d'agglomération Cœur d'Essonne,Pharmacien,10107775966,890.0,23,5,MARIE AMELIE LENOIR CONSULTING,2022,2026,2.0
+THOMAS,Laurent,21,Conseiller départemental de la Côte-d'Or,Médecin,10002180239,873.0,19,6,LILLY FRANCE SAS,2021,2025,1.0
+LEGRAND,Jean-François,59,Vice-Président de la Métropole Européenne de Lille,Pharmacien,10004095617,808.0,8,3,ADVANCED ACCELERATOR APPLICATIONS,2020,2024,2.0
+BERGEROL,Véronique,92,Conseillère départementale des Hauts-de-Seine,Médecin,10001002277,618.0,15,10,NOVARTIS PHARMA SAS,2021,2025,2.0
+HENNEQUIN,Thomas,02,Président de la communauté de communes des Portes de la Thiérache,Médecin,10101619319,571.0,14,2,LABORATOIRES URGO,2022,2026,1.0
+RAPIN,Jean-François,62,Sénateur du Pas-de-Calais,Médecin,10002261195,548.0,18,8,LABORATOIRE GLAXOSMITHKLINE,2021,2026,3.0
+LAGARDE,Isabelle,16,Présidente de la communauté de communes des 4B Sud-Charente,Infirmier,10109647395,514.0,6,2,MEDTRONIC FRANCE,2025,2026,3.0
+BELIN,Bruno,86,Sénateur de la Vienne,Pharmacien,10001506061,500.0,1,1,CRISTERS,2024,2024,1.0
+BOSSET-AUDOIT,Amélie,33,Conseillère départementale de la Gironde,Orthophoniste,,500.0,1,1,ADVANCED BIONICS,2024,2024,3.0
+LECOMTE,Thierry,37,Adjoint au maire de Tours,Médecin,,460.0,6,2,STETHOS,2019,2021,3.0
+THEBAULT,Christophe,22,Vice-Président de Lannion-Trégor Communauté,Médecin,10002672227,413.0,7,2,MENARINI FRANCE,2021,2024,3.0
+CADART,François-Xavier,59,Conseiller départemental du Nord,Médecin,10002217197,398.0,17,4,VIATRIS SANTE,2020,2026,1.0
+GERVAIS,Sabine,17,Députée de la Charente-Maritime,Infirmier,10105995541,348.0,4,3,ASTRAZENECA,2024,2026,1.0
+BOSSET-AUDOIT,Amélie,33,Conseillère départementale de la Gironde,Orthophoniste,Pas d'identifiant,344.0,1,1,ADVANCED BIONICS,2025,2025,3.0
+OZENNE,Thierry,14,Président de la communauté de communes Seulles Terre et Mer,Médecin,10002108842,300.0,2,2,ISIS NORMANDIE,2021,2021,1.0
+MERCIER,Thierry,25,Vice-Président de Pays de Montbéliard Agglomération,Médecin,10002475076,278.0,6,3,LILLY FRANCE,2023,2024,1.0
+PERRIN,Jean-Marc,13,Conseiller départemental des Bouches-du-Rhône,Chirurgien-dentiste,10003603601,247.0,9,2,B3TSI,2021,2026,4.0
+ROUX,Jean-Luc,01,Vice-Président de Grand Bourg Agglomération,Pharmacien,10001687218,237.0,9,5,PIERRE FABRE MEDICAMENT,2019,2026,1.0
+TUROT,Valérie,37,Conseillère départementale d'Indre-et-Loire,Médecin,10002036258,198.0,7,4,LABORATOIRES BOUCHARA - RECORDATI,2024,2025,1.0
+GUYON,Jean-Luc,25,Vice-Président du conseil départemental du Doubs,Médecin,10002475241,194.0,4,1,LABORATOIRE GLAXOSMITHKLINE,2021,2021,1.0
+BAGATE,Christian,33,Maire de Bègles ; Vice-Président de Bordeaux Métropole,Médecin,10002750692,179.0,6,5,IBSA PHARMA SAS,2021,2024,1.0
+BOTELLA,Georges,06,Vice-Président de la communauté d'agglomération Cannes Pays de Lérins,Médecin,10003293023,175.0,4,2,SOS OXYGENE,2022,2026,1.0
+MERCIER,Sylvie,17,Vice-Présidente du conseil départemental de la Charente-Maritime,Infirmier,10102391991,159.0,6,2,LABORATOIRES URGO,2023,2026,3.0
+CHARPENTIER,Philippe,77,Vice-Président de la communauté d'agglomération Melun Val de Seine,Médecin,10000689454,158.0,4,2,GUERBET FRANCE,2021,2023,1.0
+DAHMANI,Bouchra,87,Adjoint au maire de Limoges,Médecin,10100984110,149.0,6,5,GILEAD SCIENCES,2023,2025,1.0
+ACAR,Philippe,31,Adjoint au maire de Toulouse,Médecin,10000591726,148.0,3,2,ASTRAZENECA,2022,2023,1.0
+GRUET,Justine,39,Députée du Jura,Masseur-kinésithérapeute,10005932214,144.0,1,1,BIOGARAN,2026,2026,1.0
+LE BOUEDEC,Pascal,56,Vice-Président de Golfe du Morbihan - Vannes Agglomération,Infirmier,10102456430,143.0,4,3,LABORATOIRES URGO,2021,2024,2.0
+BODEAU,Éric,23,Président de la communauté d'agglomération du Grand Guéret,Infirmier,10105801459,125.0,4,1,LABORATOIRES URGO,2021,2023,3.0
+HURELLE,Gérard,14,Adjoint au maire de Caen,Médecin,10002112356,122.0,4,1,LABORATOIRE GLAXOSMITHKLINE,2021,2022,1.0
+MARCHAL,Pauline,08,Vice-Présidente d'Ardenne Métropole,Médecin,WFRM06307239,122.0,4,1,NOVO NORDISK,2021,2023,3.0
+RAPIN,Jean-François,62,Sénateur du Pas-de-Calais,Médecin,WFRM07681380,115.0,4,1,NOVO NORDISK,2023,2025,3.0
+BATAILLE,Jean-Pierre,59,Député du Nord,Médecin,10002219938,111.0,1,1,MOLNLYCKE HEALTH CARE,2026,2026,1.0
+CHARPENTIER,Thierry,45,Vice-Président d'Orléans Métropole,Pharmacien,10000858984,106.0,3,3,ABBOTT FRANCE,2022,2026,1.0
+LEMAIRE,Patrick,62,Vice-Président de la communauté urbaine d'Arras,Médecin,10002286549,105.0,5,4,PRECIPHAR,2021,2021,1.0
+DARY,Patrick,87,Président de la communauté de communes du Pays de Saint-Yrieix,Médecin,FRA8470881,100.0,1,1,IQVIA MEDICAL RADAR,2021,2021,4.0
+DURAND,Jean-Luc,11,Conseiller départemental de l'Aude,Chirurgien-dentiste,10000557115,100.0,2,1,HALEON FRANCE,2024,2024,2.0
+FERNANDEZ,Marie,26,Conseillère départementale de la Drôme,Médecin,10002957404,100.0,2,2,THERAMEX FRANCE,2021,2022,1.0
+GARNIER,Laurence,44,Sénatrice de la Loire-Atlantique,Pharmacien,,99.0,5,2,LABORATOIRE NOREVA-LED,2019,2025,2.0
+ISAAC-SIBILLE,Cyrille,69,Député du Rhône,Médecin,10003049490,99.0,2,1,AUDIKA GROUPE SA,2021,2023,1.0
+KHALIFÉ,Khalifé,57,Sénateur de la Moselle,Médecin,10003810560,98.0,4,3,BIOTRONIK FRANCE SAS,2018,2021,1.0
+LEMAITRE,Jean-François,59,Vice-Président de la communauté d'agglomération Maubeuge Val de Sambre,Médecin,10002233046,98.0,4,3,ASTRAZENECA,2022,2025,1.0
+ALLEMAND,Marie-José,05,Députée des Hautes-Alpes,Infirmier,10103752399,96.0,2,2,L'OREAL FRANCE,2024,2026,2.0
+BUREAU,Marie-Christine,17,Conseillère départementale de la Charente-Maritime,Pharmacien,10001491280,96.0,2,1,STETHOS,2023,2023,1.0
+CHABAUD,Jean-Louis,04,Président  de la communauté de communes Alpes Provence Verdon - Sources de Lumière,Préparateur en pharmacie et préparateur en pharmacie hospitalière,,96.0,2,1,LABVORATOIRE CHAUVIN,2023,2023,2.0
+STOFFEL,Marie-Laure,68,Vice-Présidente de Colmar Agglomération,Préparateur en pharmacie et préparateur en pharmacie hospitalière,,92.0,7,5,BOIRON,2019,2025,4.0
+COUTEL,Stéphanie,28,Conseillère départementale d'Eure-et-Loir,Infirmier,N/A,90.0,1,1,ZESTE RESEARCH,2021,2021,2.0
+PIGRENET,Yves,06,Maire du Cannet ; Vice-Président de la communauté d'agglomération Cannes Pays de Lérins,Pharmacien,10001954485,85.0,2,1,B3TSI,2023,2024,2.0
+VALOIS,Patrick,59,Vice-Président du conseil départemental du Nord,Pharmacien,10001021533,84.0,6,4,PIERRE FABRE DERMO-COSMÉTIQUE,2021,2023,1.0
+LAGARDE,Isabelle,16,Présidente de la communauté de communes des 4B Sud-Charente,Infirmier,,82.0,2,1,PHARMA DOM,2024,2024,3.0
+STOFFEL,Marie-Laure,68,Vice-Présidente de Colmar Agglomération,Préparateur en pharmacie et préparateur en pharmacie hospitalière,,79.0,3,2,THUASNE,2023,2024,4.0
+COUTEL,Stéphanie,28,Conseillère départementale d'Eure-et-Loir,Médecin,10102254181,75.0,1,1,ZESTE RESEARCH,2021,2021,2.0
+DUMAS,Catherine,75,Sénatrice de Paris,Technicien de laboratoire médical,10007167199,70.0,2,1,BIO-RAD FRANCE,2024,2024,1.0
+WEY,Joëlle,57,Présidente de la communauté de communes du Pays de Bitche,Infirmier,10102560280,68.0,2,2,SANOFI AVENTIS FRANCE,2023,2025,2.0
+RAPIN,Jean-François,62,Sénateur du Pas-de-Calais,Médecin,10002286788,66.0,3,3,VIATRIS MEDICAL,2021,2022,3.0
+BODEAU,Éric,23,Président de la communauté d'agglomération du Grand Guéret,Infirmier,,65.0,1,1,EXAFIELD,2018,2018,3.0
+CHABAUD,Jean-Louis,04,Président  de la communauté de communes Alpes Provence Verdon - Sources de Lumière,Préparateur en pharmacie et préparateur en pharmacie hospitalière,,65.0,3,3,CENBIOTECH,2020,2023,2.0
+LUQUÉ,Mariane,17,Présidente de la communauté de communes du Bassin de Marennes,Préparateur en pharmacie et préparateur en pharmacie hospitalière,,65.0,2,1,ZENTIVA FRANCE,2022,2022,1.0
+SCHAEFFER,Jean-Michel,67,Vice-Président de l'Eurométropole de Strasbourg,Médecin,WFRM03718010,60.0,2,1,NOVO NORDISK,2023,2024,2.0
+TADJINE,Mehdi,38,Adjoint au maire de Grenoble,,,60.0,1,1,AMO FRANCE SAS,2019,2019,1.0
+FABRE,Jean-Michel,31,Vice-Président du conseil départemental de la Haute-Garonne,Opticien-lunetier,,57.0,2,1,NOVACEL OPHTALMIQUE,2021,2021,3.0
+KUNTZ,Marie-Louise,57,Vice-Présidente du conseil départemental de la Moselle,Infirmier,SO,57.0,1,1,ASTRAZENECA,2019,2019,1.0
+IMBERT,Corinne,17,Sénatrice de la Charente-Maritime,Pharmacien,10001491413,56.0,2,1,PHARMA DOM,2021,2023,1.0
+CHABAL,Jacques,07,Président de la communauté de communes Val d'Eyrieux,Médecin,10002954930,54.0,2,1,ASTRAZENECA,2025,2025,1.0
+BERGEROL,Véronique,92,Conseillère départementale des Hauts-de-Seine,Médecin,,50.0,1,1,MSD FRANCE,2024,2024,2.0
+BOSSET-AUDOIT,Amélie,33,Conseillère départementale de la Gironde,Médecin,,50.0,1,1,AUDIKA GROUPE SA,2025,2025,3.0
+COSTE,Michel,66,Président de la communauté de communes du Vallespir,Médecin,10003711503,50.0,1,1,VIATRIS SANTE,2025,2025,1.0
+DÉPAQUY,Marie,51,Adjointe au maire de Reims ; Vice-Présidente du conseil départemental de la Marne,Sage-femme,10000307990,50.0,1,1,EXELTIS SANTE,2024,2024,1.0
+HEINTZ,Paul,67,Président de la communauté de communes de l'Outre-Forêt,Pharmacien,10001209849,50.0,1,1,B3TSI,2025,2025,1.0
+LEFÈVRE,Marine,31,Vice-Présidente de Toulouse Métropole,Chirurgien-dentiste,10101573938,50.0,2,2,PHILIPS FRANCE COMMERCIAL,2021,2025,1.0
+LETOQUART,Jean,62,Vice-Président de la communauté d'agglomération de Lens - Liévin,Infirmier,,50.0,1,1,LABORATOIRES URGO,2023,2023,1.0
+MARCHAL,Pauline,08,Vice-Présidente d'Ardenne Métropole,Infirmier,10108098996,50.0,1,1,BIOPROTEC,2025,2025,3.0
+MEYER,Jean-Yves,07,Conseiller départemental de l'Ardèche,Médecin,10003866752,50.0,1,1,VI FRANCE SAS,2025,2025,1.0
+RAYNAUD,Jacques,33,Conseiller départemental de la Gironde,Médecin,10002759370,50.0,1,1,MENARINI FRANCE,2021,2021,1.0
+ADAM,Christophe,33,Adjoint au maire de Bordeaux,Médecin,10002817327,49.0,1,1,STRYKER FRANCE SAS,2024,2024,1.0
+BLANC,Étienne,69,Ancien Sénateur du Rhône,Infirmier,,48.0,1,1,BOSTON SCIENTIFIC SAS,2022,2022,1.0
+BARRIERE,Charles,21,Conseiller départemental de la Côte-d'Or,Pharmacien,10000943133,47.0,2,1,LABORATOIRES URGO HEALTHCARE,2021,2021,2.0
+CARPENTIER,Julien,03,Conseiller départemental de l'Allier,Médecin,,47.0,1,1,MSD FRANCE,2022,2022,2.0
+ROUSSEAU,Sandrine,75,Députée de Paris,Infirmier,10108033076,47.0,1,1,EDWARDS LIFESCIENCES,2023,2023,1.0
+BERGEY,Chantal,33,Adjointe au maire de Bordeaux,Médecin,10002776119,46.0,1,1,JANSSEN-CILAG,2023,2023,1.0
+PETIT,Marie-Agnès,43,Présidente du conseil départemental de la Haute-Loire,Médecin,10101224300,43.0,1,1,SANOFI AVENTIS FRANCE,2023,2023,1.0
+FIALAIRE,Bernard,69,Sénateur du Rhône,Médecin,10003046512,41.0,2,1,LABORATOIRES URGO HEALTHCARE,2023,2023,1.0
+DARY,Patrick,87,Président de la communauté de communes du Pays de Saint-Yrieix,Médecin,,40.0,2,2,NOVARTIS PHARMA SAS,2019,2022,4.0
+LUX,Isabelle,57,Adjointe au maire de Metz,Médecin,10001172062,37.0,3,3,A+A,2019,2023,1.0
+STOFFEL,Marie-Laure,68,Vice-Présidente de Colmar Agglomération,Préparateur en pharmacie et préparateur en pharmacie hospitalière,WFRP00022338,36.0,1,1,ABBOTT FRANCE,2024,2024,4.0
+BROCHET,François,03,Conseiller départemental de l'Allier,Médecin,10003142634,35.0,1,1,LABORATOIRES COLOPLAST,2021,2021,1.0
+MORLET,Éric,08,Vice-Président d'Ardenne Métropole,Chirurgien-dentiste,10000411776,33.0,2,1,U-LABS,2021,2022,1.0
+FABRE,Jean-Michel,31,Vice-Président du conseil départemental de la Haute-Garonne,Opticien-lunetier,47847579100016,30.0,1,1,NOVACEL OPHTALMIQUE,2024,2024,3.0
+LE GALL,Camille-Océane,29,Adjointe au maire de Brest,Infirmier,10105320062,30.0,1,1,LABORATOIRES COLOPLAST,2026,2026,1.0
+MERCIER,Marie,71,Sénatrice de Saône-et-Loire,Physicien médical,,30.0,1,1,ELEKTA SAS,2022,2022,2.0
+MEUNIER,Philippe,,Vice-Président du conseil régional d'Auvergne-Rhône-Alpes,Pharmacien,,30.0,1,1,NOVARTIS PHARMA SAS,2024,2024,
+PERRIN,Jean-Marc,13,Conseiller départemental des Bouches-du-Rhône,Chirurgien-dentiste,,30.0,1,1,BVA (2),2023,2023,4.0
+PICARD,Fanny,45,Adjointe au maire d'Orléans,Médecin,,30.0,1,1,PFIZER SAS,2026,2026,1.0
+BAUDOUARD,Pierre-Jean,76,Vice-Président de la communauté urbaine Le Havre Seine Métropole,Médecin,10003783734,28.0,1,1,GE MEDICAL SYSTEMS,2025,2025,1.0
+GARCIA,Stéphane,,Président de la communauté d'agglomération Les Sorgues du Comtat,Médecin,10003372967,26.0,1,1,NOVARTIS PHARMA SAS,2021,2021,
+THEBAULT,Christophe,22,Vice-Président de Lannion-Trégor Communauté,Médecin,,26.0,1,1,BIOTRONIK FRANCE SAS,2021,2021,3.0
+PIGRENET,Yves,06,Maire du Cannet ; Vice-Président de la communauté d'agglomération Cannes Pays de Lérins,Pharmacien,SIRET : 30432904800017,25.0,1,1,B3TSI,2021,2021,2.0
+RAYNAUD,Jean-Pierre,,Vice-Président du conseil régional de Nouvelle-Aquitaine,Médecin,10003546578,25.0,1,1,HOYA LENS FRANCE SAS,2024,2024,
+ZUILI,Nicolas,76,Adjoint au maire de Rouen,Chirurgien-dentiste,10000502111,25.0,1,1,P\S\L GROUP SERVICES,2024,2024,1.0
+DEPALLENS,Caroline,83,Conseillère départementale du Var,Opticien-lunetier,,24.0,1,1,MEGA OPTIC DESIGN,2021,2021,1.0
+BRUN,Jean-Jacques,69,Conseiller départemental du Rhône ; Vice-Président du conseil départemental du Rhône,Pharmacien,690012604,23.0,1,1,ARROW GENERIQUES SAS,2021,2021,1.0
+ROBERT,Sylvie,35,Sénatrice d'Ille-et-Vilaine,Prothésiste et orthésiste pour l'appareillage des personnes handicapées,,23.0,1,1,AMOENA FRANCE,2024,2024,1.0
+ROSSI,Florent,06,Vice-Président de la communauté d'agglomération du Pays de Grasse,Chirurgien-dentiste,,23.0,1,1,EUROTEKNIKA,2023,2023,2.0
+BLANC,Sophie,66,Députée des Pyrénées-Orientales,Préparateur en pharmacie et préparateur en pharmacie hospitalière,,22.0,1,1,LABORATOIRES INNOTHERA,2025,2025,2.0
+BONNEFOY,Jean-Yves,42,Député de la Loire ; Vice-Président du conseil départemental de la Loire,Audioprothésiste,,22.0,1,1,SIVANTOS,2022,2022,1.0
+VINCENT,Marie-Pierre,43,Conseillère départementale de la Haute-Loire,Pharmacien,10001887156,22.0,1,1,LABORATOIRES INNOTHERA,2026,2026,1.0
+FRIMON-RICHARD,Benoît,91,Vice-Président de la communauté d'agglomération Cœur d'Essonne,Pharmacien,,20.0,1,1,BVA,2024,2024,2.0
+MERCIER,Marie,71,Sénatrice de Saône-et-Loire,Infirmier,,20.0,1,1,KYOWA KIRIN,2019,2019,2.0
+HUYGHE,Sébastien,59,Député du Nord,Préparateur en pharmacie et préparateur en pharmacie hospitalière,,19.0,1,1,LABORATOIRES INNOTHERA,2024,2024,1.0
+MULLER,Dominique,67,Président de la communauté de communes du Pays de Saverne,Préparateur en pharmacie et préparateur en pharmacie hospitalière,,18.0,1,1,SM EUROPE,2023,2023,2.0
+HAGENBACH,Vincent,68,Vice-Président de Mulhouse Alsace Agglomération,Pharmacien,10001247641,17.0,1,1,LABORATOIRES URGO HEALTHCARE,2026,2026,1.0
+SAURY,Hugues,45,Sénateur du Loiret,Pharmacien,10000854470,17.0,1,1,LABORATOIRES URGO HEALTHCARE,2026,2026,1.0
+TRÉGUER,Jean-François,29,Président de la communauté de communes du Pays des Abers,Chirurgien-dentiste,10000899152,17.0,1,1,U-LABS,2022,2022,1.0
+MERCIER,Sylvie,17,Vice-Présidente du conseil départemental de la Charente-Maritime,Infirmier,,16.0,1,1,LABORATOIRES URGO,2021,2021,3.0
+STOFFEL,Marie-Laure,68,Vice-Présidente de Colmar Agglomération,Préparateur en pharmacie officine,SANS NUMERO,16.0,1,1,SM EUROPE,2026,2026,4.0
+BRUN,Charlotte,59,Adjointe au maire de Lille ; Vice-Présidente de la Métropole Européenne de Lille,Pharmacien,10106800161,15.0,1,1,PIERRE FABRE DERMO-COSMETIQUE,2024,2024,1.0
+CHATELUS,Claudia,68,Vice-Présidente de Colmar Agglomération,,10002458122,15.0,1,1,EISAI SAS,2023,2023,1.0
+DUBOIS,Jean-Luc,35,Président de la communauté de communes du Val d'Ille-Aubigné,Médecin,10001036978,15.0,1,1,PASCALEO,2021,2021,1.0
+BARRIERE,Charles,21,Conseiller départemental de la Côte-d'Or,Pharmacien,,14.0,1,1,SM EUROPE,2021,2021,2.0
+BLANC,Sophie,66,Députée des Pyrénées-Orientales,Préparateur en pharmacie hospitalière,,14.0,1,1,DJO FRANCE,2025,2025,2.0
+TERRAIL-NOVÈS,Vincent,31,Vice-Président de Toulouse Métropole,Masseur-kinésithérapeute,10005514400,14.0,1,1,ALCURA FRANCE,2024,2024,1.0
+DURAND,Jean-Luc,11,Conseiller départemental de l'Aude,Pharmacien,10107421058,13.0,1,1,PIERRE FABRE DERMO-COSMETIQUE,2024,2024,2.0
+VEYRIRAS,Stéphane,87,Vice-Président du conseil départemental de la Haute-Vienne,Médecin,10002931441,13.0,1,1,KYOWA KIRIN,2019,2019,1.0
+BUISSON,Hervé,28,Vice-Président du conseil départemental d'Eure-et-Loir,Chirurgien-dentiste,10000521046,12.0,2,2,PIERRE FABRE MEDICAMENT,2019,2021,1.0
+VALENTIN,Laetitia,42,Adjointe au maire de Saint-Étienne,Infirmier,10107484544,12.0,1,1,FRESENIUS KABI FRANCE,2023,2023,1.0
+ROSSI,Florent,06,Vice-Président de la communauté d'agglomération du Pays de Grasse,Chirurgien-dentiste,10001446177,11.0,1,1,U-LABS,2021,2021,2.0
+ANGELETTI,Laurence,13,Conseillère départementale des Bouches-du-Rhône,Infirmier,NDANGELETTI/LAURENCE/AIX,10.0,1,1,LES LABORATOIRES BROTHIER,2023,2023,1.0
+GOFFARD,Anne,59,Adjointe au maire de Lille,,10002296795,0.0,1,1,PFIZER SAS,2022,2022,1.0
+JOMIER,Bernard,75,Sénateur de Paris,Médecin,10000446103,0.0,1,1,ROCHE,2025,2025,1.0
+LAUZZANA,Michel,47,Député de Lot-et-Garonne,Médecin,10002790417,0.0,1,1,DAIICHI SANKYO FRANCE SAS,2025,2025,1.0
+LECOMTE,Thierry,37,Adjoint au maire de Tours,Médecin,3577851,0.0,2,1,42 MARKET RESEARCH,2024,2024,3.0
+MEUNIER,Philippe,,Vice-Président du conseil régional d'Auvergne-Rhône-Alpes,Pharmacien,,0.0,1,1,NUTRICIA NUTRITION CLINIQUE SAS,2021,2021,
+NEUDER,Yannick,38,Député de l'Isère,Médecin,10003108684,0.0,1,1,ROCHE,2026,2026,1.0
+BODEAU,Éric,23,Président de la communauté d'agglomération du Grand Guéret,Infirmier,,,1,1,LABORATOIRES URGO,2016,2016,3.0
+CASTILLO,Laurent,06,Sénateur des Alpes-Maritimes,Médecin,3548747,,3,1,42 MARKET RESEARCH,2022,2022,2.0
+DARY,Patrick,87,Président de la communauté de communes du Pays de Saint-Yrieix,Médecin,5052065,,1,1,42 MARKET RESEARCH,2021,2021,4.0
+FAYARD,Stéphanie,42,Vice-Présidente de Loire Forez Agglomération,Préparateur en pharmacie et préparateur en pharmacie hospitalière,,,1,1,CENBIOTECH,2019,2019,1.0
+GARNIER,Laurence,44,Sénatrice de la Loire-Atlantique,Préparateur en pharmacie et préparateur en pharmacie hospitalière,[SO],,1,1,BOIRON,2019,2019,2.0
+LAGARDE,Isabelle,16,Présidente de la communauté de communes des 4B Sud-Charente,Infirmier,N/A,,1,1,BOEHRINGER INGELHEIM FRANCE,2018,2018,3.0
+LE BOUEDEC,Pascal,56,Vice-Président de Golfe du Morbihan - Vannes Agglomération,Infirmier,,,3,1,LABORATOIRES URGO,2020,2020,2.0
+LÉGER,Jean-Luc,,Président de la communauté de communes Creuse Grand Sud,Médecin,,,1,1,A+A,2021,2021,
+MERCIER,Sylvie,17,Vice-Présidente du conseil départemental de la Charente-Maritime,Infirmier,176833499,,1,1,LABORATOIRES COLOPLAST,2021,2021,3.0
+MULLER,Dominique,67,Président de la communauté de communes du Pays de Saverne,Préparateur en pharmacie et préparateur en pharmacie hospitalière,[SO],,3,1,BOIRON,2019,2020,2.0
+PERRIN,Jean-Marc,13,Conseiller départemental des Bouches-du-Rhône,Chirurgien-dentiste,,,1,1,M3 GLOBAL RESEARCH LTD,2024,2024,4.0
+WEY,Joëlle,57,Présidente de la communauté de communes du Pays de Bitche,Infirmier,2021791,,1,1,CONTINUUM PLUS SANTÉ,2020,2020,2.0

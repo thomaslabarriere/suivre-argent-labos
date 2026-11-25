@@ -103,7 +103,7 @@ n_pers, n_act = con.execute("SELECT count(DISTINCT rpps), count(DISTINCT rpps) F
 con.execute("""CREATE TABLE rpps AS
   WITH a AS (SELECT * FROM act WHERE mode IS NOT NULL AND rpps NOT IN (SELECT rpps FROM act WHERE cat_pro='Etudiant')),
   d AS (SELECT rpps, arg_min(dep, (-n, dep)) dep FROM (SELECT rpps, dep, count(*) n FROM a WHERE dep IN (SELECT dep FROM deps) GROUP BY 1,2) GROUP BY 1)
-  SELECT a.rpps, bool_or(a.mode='L') liberal, any_value(d.dep) dep, coalesce(any_value(s.categorie), 'sans spécialité renseignée') categorie
+  SELECT a.rpps, bool_or(a.mode='L') liberal, min(d.dep) dep, coalesce(min(s.categorie), 'sans spécialité renseignée') categorie
   FROM a LEFT JOIN d USING (rpps) LEFT JOIN sf_df s USING (rpps) GROUP BY a.rpps""")
 n_ret, n_mg = con.execute(f"SELECT count(*), count(*) FILTER (WHERE categorie='{MG}') FROM rpps").fetchone()
 print(f"RPPS médecins : {n_pers} personnes, {n_act} avec une activité en cours, {n_ret} retenus hors étudiants, dont {n_mg} généralistes")

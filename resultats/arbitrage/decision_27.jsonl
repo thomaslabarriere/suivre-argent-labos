@@ -24,6 +24,7 @@
 {"id": 8875, "choix": "aucun", "confiance": "haute", "nom_propose": "Société française de chirurgie orthopédique et traumatologique", "raison": "SOFCOT absente ; nom officiel connu"}
 {"id": 8881, "choix": "siren:790126700", "confiance": "haute", "nom_propose": null, "raison": "DADI GPSE Denis Pouchain : nom exact, SAS active"}
 {"id": 8882, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "ELIXIR generique, nombreuses homonymes actives"}
+{"id": 8883, "choix": "siren:353360415", "confiance": "haute", "nom_propose": null, "raison": "MEDES : nom exact du GIE, actif"}
 {"id": 8884, "choix": "rna:W062015056", "confiance": "haute", "nom_propose": null, "raison": "ANED : nom exact de l'association dermatologie nicoise, active"}
 {"id": 8886, "choix": "siren:490259397", "confiance": "moyenne", "nom_propose": null, "raison": "SIP : sigle equivalent, association active dans le departement"}
 {"id": 8887, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "CMH : deux SCI homonymes, aucune association identifiable"}
@@ -38,6 +39,7 @@
 {"id": 8901, "choix": "siren:883192247", "confiance": "haute", "nom_propose": null, "raison": "AJD : nom exact de l'association des jeunes dermatologues"}
 {"id": 8902, "choix": "siren:923564496", "confiance": "haute", "nom_propose": null, "raison": "Nom exact, code NAF recherche, association active"}
 {"id": 8903, "choix": "rna:W751142993", "confiance": "haute", "nom_propose": null, "raison": "SFHG : nom exact de la societe hanche genou, active"}
+{"id": 8904, "choix": "aucun", "confiance": "moyenne", "nom_propose": null, "raison": "Personne : seule SCI inactive hors departement"}
 {"id": 8905, "choix": "siren:500942024", "confiance": "moyenne", "nom_propose": null, "raison": "Fondation Neurodis : nom exact, inactive, seule correspondance"}
 {"id": 8906, "choix": "rna:W627004478", "confiance": "haute", "nom_propose": null, "raison": "AFMC ORL Hauts-de-France : sigle et nom exacts, active"}
 {"id": 8907, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Personne physique ; SCI homonymes non rattachables"}
@@ -78,4 +80,5 @@
 {"id": 8961, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat"}
 {"id": 8967, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "BILLO : aucun candidat correspondant"}
 {"id": 8968, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "ORLAF : seule SCI homonyme, association non candidate"}
+{"id": 8969, "choix": "siren:530918325", "confiance": "haute", "nom_propose": null, "raison": "GIE Bordeaux Recherche Clinique : nom et sigle exacts, actif"}
 {"id": 8971, "choix": "aucun", "confiance": "haute", "nom_propose": "Centre hospitalier universitaire de Nantes", "raison": "CHU Nantes Hotel-Dieu absent ; nom officiel connu"}

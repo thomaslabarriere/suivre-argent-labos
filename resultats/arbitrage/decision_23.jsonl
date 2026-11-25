@@ -1,4 +1,5 @@
 {"id": 7534, "choix": "siren:455203539", "confiance": "haute", "nom_propose": null, "raison": "Clinique Saint Augustin homonyme, SAS 86.10Z dans le département 33"}
+{"id": 7535, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Influenceur, personne physique, aucun candidat"}
 {"id": 7536, "choix": "rna:W442000349", "confiance": "haute", "nom_propose": null, "raison": "ITERTUN, nom rapproché identique, département 44"}
 {"id": 7537, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Mme Infante, personne physique ; INDI INFANTE ne correspond pas à IRSAM"}
 {"id": 7538, "choix": "siren:265906743", "confiance": "haute", "nom_propose": null, "raison": "Centre hospitalier d'Armentières, 86.10Z actif, département 59"}
@@ -74,6 +75,7 @@
 {"id": 7664, "choix": "siren:902482504", "confiance": "haute", "nom_propose": null, "raison": "FORMIR, sigle de formation et recherche en médecine intensive, Lille"}
 {"id": 7666, "choix": "siren:440923399", "confiance": "haute", "nom_propose": null, "raison": "UBV, Université Bordeaux Vision, association active à Bordeaux"}
 {"id": 7667, "choix": "siren:393715230", "confiance": "haute", "nom_propose": null, "raison": "EPIMAD, groupe d'étude maladies inflammatoires, actif, Amiens"}
+{"id": 7668, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Influenceur, aucun candidat, pas une structure identifiable"}
 {"id": 7669, "choix": "siren:307736108", "confiance": "haute", "nom_propose": null, "raison": "CACIC, centrale de référencement hospitalier, nom abrégé identique"}
 {"id": 7670, "choix": "aucun", "confiance": "moyenne", "nom_propose": null, "raison": "Devon Medical et SCI Gangloff ne sont pas OPH-Communication"}
 {"id": 7671, "choix": "siren:444270326", "confiance": "moyenne", "nom_propose": null, "raison": "Groupe Languedoc Mutualité absorbé, successeur actif Aesio avec nom rapproché identique"}
@@ -139,6 +141,7 @@
 {"id": 7770, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Insight Health GmbH est une société allemande absente du registre français"}
 {"id": 7773, "choix": "siren:263305823", "confiance": "haute", "nom_propose": null, "raison": "CHU de Bordeaux, 86.10Z actif, département 33"}
 {"id": 7775, "choix": "siren:400135513", "confiance": "haute", "nom_propose": null, "raison": "Centre d'étude de la peau et du cheveu, association active à Paris"}
+{"id": 7776, "choix": "aucun", "confiance": "moyenne", "nom_propose": null, "raison": "Influenceur personne physique, EARL agricole sans lien"}
 {"id": 7778, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "La Strasbourgeoise sans rapport avec l'orthopédie traumatologie"}
 {"id": 7779, "choix": "siren:264500091", "confiance": "haute", "nom_propose": null, "raison": "CHR d'Orléans hôpital La Source, c'est le CHU d'Orléans, actif"}
 {"id": 7780, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Aucun candidat hospitalier pour le CH de Valence"}
@@ -165,6 +168,7 @@
 {"id": 7819, "choix": "siren:265100057", "confiance": "haute", "nom_propose": null, "raison": "CHU de Reims, 86.10Z actif, département 51"}
 {"id": 7820, "choix": "siren:791150923", "confiance": "moyenne", "nom_propose": null, "raison": "SOFFCO-MM, acronyme de la société de chirurgie de l'obésité"}
 {"id": 7823, "choix": "siren:784579385", "confiance": "haute", "nom_propose": null, "raison": "ANPDE, sigle identique, association active à Paris"}
+{"id": 7825, "choix": "aucun", "confiance": "haute", "nom_propose": null, "raison": "Influenceur personne physique, aucun candidat"}
 {"id": 7828, "choix": "siren:450324181", "confiance": "haute", "nom_propose": null, "raison": "Réseau régional de cancérologie Oncorun, nom identique, association active à La Réunion"}
 {"id": 7829, "choix": "siren:391289410", "confiance": "haute", "nom_propose": null, "raison": "Collège français d'ORL, nom identique, association active à Paris"}
 {"id": 7830, "choix": "aucun", "confiance": "basse", "nom_propose": null, "raison": "Sigle ACPA porté par des associations sans rapport santé"}
