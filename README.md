@@ -4,144 +4,87 @@ Outils open source pour exploiter [Transparence Santé](https://www.transparence
 liens d'intérêts entre l'industrie de santé et les acteurs de santé en France. Projet né au hackathon Data For Good
 Bordeaux au Wagon (24 novembre 2026).
 
+[![tests](https://github.com/thomaslabarriere/suivre-argent-labos/actions/workflows/tests.yml/badge.svg)](https://github.com/thomaslabarriere/suivre-argent-labos/actions/workflows/tests.yml)
+
 Deux chantiers :
 
 1. **Rattacher les structures sans identifiant.** 520 000 versements à des structures (hôpitaux, sociétés savantes,
-   associations, agences) n'ont ni SIREN ni RNA : 5,5 Md€ déclarés. La chaîne `00` à `14` retrouve leur identifiant
+   associations, agences) n'ont ni SIREN ni RNA : 5,5 Md€ déclarés. La chaîne `01` à `14` retrouve leur identifiant
    officiel dans SIRENE et le RNA, avec un arbitrage par IA contrôlé et un taux d'erreur mesuré.
 2. **Donner du contexte aux montants.** Les scripts `21` à `35` croisent Transparence Santé avec les remboursements de
    l'Assurance maladie, la base des médicaments, la HATVP, l'annuaire des médecins, les marchés publics, les essais
    cliniques et les experts de la HAS.
-
-**Le document complet (méthode, trouvailles, fiche par base, recommandations) : [docs/RAPPORT.md](docs/RAPPORT.md).**
-**Les onze constats principaux : [docs/A_RETENIR.md](docs/A_RETENIR.md).**
 
 ## Ce qu'on trouve
 
 - 6,4 Md€ sont comptés deux fois si l'on additionne les conventions et les rémunérations qui les exécutent.
   Tous les chiffres du projet sont nets.
 - 17 312 structures sans identifiant rattachées de façon fiable à leur SIREN ou RNA : 78 % des euros, avec
-  une erreur probable mesurée de 2 %.
+  une erreur probable mesurée de 2,0 %.
+- 36 % de l'argent net déclaré paie des prestataires (agences, CRO, informatique, conseil) ; hors prestataires, 8,2 Md€.
+- 35 déclarations de 10 M€ ou plus pèsent 10 % du total ; la plus grosse (445 M€) ressemble à une erreur de saisie.
 - 7,3 Md€ remboursés en 2025 (27 %) vont à des médicaments sans progrès thérapeutique selon la HAS (ASMR V).
 - Un spécialiste reçoit en moyenne 1 441 € par an des labos, un généraliste 222 €.
 - 1 % des professionnels de santé payés reçoivent 50 % des euros.
 - 212 paires hôpital × labo combinent versements et marchés publics de 2023 à 2026.
-- 36 % de l'argent net déclaré paie des prestataires (agences, CRO, informatique, conseil) ; hors prestataires, 8,2 Md€.
-- 35 déclarations de 10 M€ ou plus pèsent 10 % du total ; la plus grosse (445 M€) ressemble à une erreur de saisie.
 
-Résultats, y compris nominatifs : [`resultats/`](resultats/) (lire d'abord [`resultats/LISEZMOI.md`](resultats/LISEZMOI.md)).
-Rattachement de chaque structure : [`resultats/rattachement_structures.csv`](resultats/rattachement_structures.csv).
+## Les documents
 
-## Installation
+| Document | Contenu |
+|---|---|
+| [docs/A_RETENIR.md](docs/A_RETENIR.md) | les onze constats principaux, en une page |
+| [docs/FONCTIONNEMENT.md](docs/FONCTIONNEMENT.md) | comment marche chaque brique : ce qu'elle lit, produit, ses pièges, comment la réutiliser |
+| [docs/RAPPORT.md](docs/RAPPORT.md) | la méthode complète, une fiche par base de données, les recommandations et les suites possibles |
+| [resultats/LISEZMOI.md](resultats/LISEZMOI.md) | les fichiers de résultats, y compris nominatifs, et les précautions de lecture |
+| [docs/synthese.pdf](docs/synthese.pdf) | deux pages à faire circuler |
+
+## Les briques
+
+```
+ [1] Téléchargement ──> [2] Contrat sur les sources
+        |
+        +── [3] Rattachement des structures (01-08) ── [4] Arbitrage par IA ── [5] Mesure de l'erreur (10-14)
+        |
+        +── [6] Croisements (21-35), sur [0] le socle commun : vue nette, identité des personnes, groupes de labos
+        |
+ [7] Contrôles et tests ──> [8] Export ──> resultats/
+```
+
+Le détail de chaque brique est dans [docs/FONCTIONNEMENT.md](docs/FONCTIONNEMENT.md).
+
+## Démarrage
 
 Python 3.11 ou plus, `curl`, environ 15 Go de disque libre.
 
 ```bash
 python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
+.venv/bin/pip install -r requirements.txt -r requirements-dev.txt
+.venv/bin/python -m pytest -q                                 # 74 tests, sans données, 2 secondes
+
+.venv/bin/python scripts/telecharger.py                       # sources (≈ 11 Go) ; URL à jour via l'API data.gouv
+.venv/bin/python scripts/contrat_entrees.py                   # les sources ont-elles changé de forme ?
+./scripts/run_mensuel.sh                                      # chaîne de rattachement + compte rendu PDF
+for s in 21 22 23 24 26 27 28 29 30 31 32 33 34 35; do .venv/bin/python scripts/${s}_*.py; done
+.venv/bin/python scripts/99_exporter_public.py                # résultats publiés dans resultats/
+.venv/bin/python scripts/controle.py                          # contrôles avant publication ; ne rien publier s'il échoue
 ```
-
-## Données
-
-```bash
-.venv/bin/python scripts/telecharger.py                      # tout (≈ 11 Go)
-.venv/bin/python scripts/telecharger.py ts_autre sirene rna  # chaîne de rattachement seule (≈ 6 Go)
-.venv/bin/python scripts/telecharger.py --force ...          # retélécharger
-```
-
-Les URL de data.gouv.fr changent à chaque mise à jour : `telecharger.py` les résout par l'API data.gouv.
 
 **Open Medic se télécharge à la main** (le site génère un lien à jeton) :
 1. ouvrir https://open-data-assurance-maladie.ameli.fr/medicaments/index.php ;
 2. section « Bases complémentaires », année 2025, niveau CIP13 ;
 3. enregistrer `NB_2025_cip13.CSV.gz` et `NB_2025_cip13_age_sexe_spe.CSV.gz` dans `data/ext/openmedic/`.
 
-Les essais cliniques (`29`) et la composition des commissions de la HAS (`27`) sont récupérés par leurs scripts.
-
-## Chaîne de rattachement (chantier 1)
-
-```bash
-./scripts/run_mensuel.sh          # tout, puis le compte rendu PDF du mois écoulé
-```
-
-ou étape par étape (`.venv/bin/python scripts/<script>`) :
-
-| Script | Rôle |
-|---|---|
-| `01_regrouper.py` | regrouper les variantes de nom (nom normalisé + département) |
-| `02_referentiels.py` | préparer SIRENE et RNA |
-| `03_identifiants_caches.py` | identifiants écrits dans le texte (clé de Luhn) |
-| `04_rapprochement_exact.py` | nom + département, sigle, nom unique en France |
-| `05_bilan.py` | contrôle de cohérence |
-| `06_rapprochement_approx.py` | rapprochement approximatif (rapidfuzz) |
-| `07_file_arbitrage.py 5000` | les 5 000 plus gros cas douteux en lots pour l'IA |
-| `08_integrer_arbitrage.py` | contrôle et intégration des décisions, garde-fous homonymes |
-| `09_dirigeants.py`, `11_croisement_personnes.py` | dirigeants des sociétés, dirigeants payés à titre personnel |
-| `10_echantillon.py` | 100 cas pour un contrôle humain |
-| `12_test_verite.py`, `14_test_verite_ia.py` | mesure de l'erreur sans humain |
-| `13_rapport.py mois AAAA-MM-01` | compte rendu PDF |
-
-### Arbitrage
-
-`07` écrit `data/arbitrage/lot_NN.jsonl`. Chaque lot est confié à un modèle Claude avec
-[`CONSIGNES.md`](resultats/arbitrage/CONSIGNES.md), qui répond dans `decision_NN.jsonl` (une ligne par cas). Nous
-l'avons fait avec des sous-agents Claude Code (Haiku 5.5), puis une relecture à l'aveugle des cas hésitants par
-Sonnet 5.5 (`revlot_NN` → `revision_NN`). L'IA ne choisit que parmi des candidats trouvés dans les registres et
-n'écrit jamais de numéro. Un cas déjà arbitré et inchangé n'est jamais réarbitré (empreinte).
-
-Pour rejouer nos décisions sans IA : copier `resultats/arbitrage/*` dans `data/arbitrage/` avant `08`.
-
-## Croisements (chantier 2)
-
-Pré-requis : `telecharger.py` complet et Open Medic. Ordre : `21` avant `22`, `22` avant `30`, la chaîne de
-rattachement avant `28`.
-
-| Script | Question |
-|---|---|
-| `21_croisement_medicaments.py` | ce que la Sécu rembourse à chaque labo, face à ce qu'il verse |
-| `22_lobbying.py` | dépenses de lobbying (HATVP) des labos |
-| `23_elus_liens_labos.py` | labos cités dans les déclarations d'intérêts des élus |
-| `24_professionnels_elus.py` | argent versé aux professionnels ; élus parmi les bénéficiaires |
-| `26_asmr.py` | progrès thérapeutique (ASMR) de ce qui est remboursé |
-| `27_experts_has.py` | versements reçus par les experts des commissions de la HAS |
-| `28_marches_hopitaux.py` | hôpitaux qui reçoivent de l'argent d'un labo et lui passent des marchés |
-| `29_essais_cliniques.py` | essais cliniques industriels et conventions de recherche |
-| `30_marques_labos.py` | qui est qui : marque → labo → groupe |
-| `31_specialites_carte.py`, `32_carte.py` | euros par médecin, par spécialité et par département ; carte |
-| `33_anomalies.py` | déclarations invraisemblables (lignes géantes, hébergements, SIREN au lieu du RPPS) |
-| `34_prestataires.py` | séparer les prestataires (CRO, agences, grossistes) des bénéficiaires |
-| `35_elus_declarations.py` | élus payés : le labo est-il cité dans leur déclaration d'intérêts HATVP ? |
-| `99_exporter_public.py` | copie les résultats publiés dans `resultats/` |
-| `controle.py` | contrôle avant publication : reproductibilité, identités, doublons, montants nets, fichiers à jour ; échoue si une règle est violée |
-
-## Tests
-
-```bash
-.venv/bin/pip install -r requirements-dev.txt
-.venv/bin/python -m pytest -q              # 74 tests, 2 secondes, sans données réelles (aussi lancés par GitHub à chaque push)
-.venv/bin/python scripts/controle.py       # avant toute publication, sur les vraies données (environ 3 minutes)
-```
-
-- `tests/test_fonctions.py` : normalisation des noms, groupes de labos, clés de contrôle, départements, montants.
-- `tests/test_regressions.py` : un test par défaut déjà corrigé, sur un mini jeu fictif (`tests/donnees_test.py`) qui
-  reproduit chaque piège des vraies données (double compte, identifiants factices, homonymes, outre-mer...).
-- `tests/test_contrat.py` : le contrat d'entrée détecte un export tronqué, une colonne disparue, une catégorie nouvelle.
-- `scripts/contrat_entrees.py` : les sources téléchargées sont-elles conformes à `tests/reference_entrees.json` ?
-  À lancer après chaque téléchargement ; `--maj` après avoir vérifié un changement.
-- `scripts/chiffres_cles.py` : les chiffres cités dans les documents (`docs/chiffres_cles.json`) n'ont pas bougé.
-- `scripts/controle.py` : tout ce qui précède, plus reproductibilité, identités, doublons, montants nets recalculés,
-  recoupements entre fichiers, seuil d'erreur du rattachement (3 %), fichiers publiés à jour, absence de secret.
-  `out/controle_humain.csv` (100 noms à vérifier à la main) et `out/personnes_coupees.csv` (avertissement) en sortent.
+**Rejouer l'arbitrage sans IA :** copier `resultats/arbitrage/*` dans `data/arbitrage/` avant l'étape `08`.
 
 ## Organisation
 
 ```
-scripts/     code (commun.py : fonctions partagées)
+scripts/     code (commun.py : règles partagées)
 tests/       tests automatiques, mini jeu fictif, référence des sources
 data/        données téléchargées et base DuckDB de travail (non versionné)
 out/         sorties de travail (non versionné)
 resultats/   résultats publiés
-docs/        RAPPORT.md, A_RETENIR.md, chiffres_cles.json
+docs/        documents, chiffres_cles.json
 ```
 
 ## Précautions
