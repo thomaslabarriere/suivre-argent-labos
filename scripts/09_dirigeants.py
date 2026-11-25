@@ -53,6 +53,6 @@ JOIN final2 f ON f.identifiant2=d.siren
 JOIN lignes_net l ON l.struct_id=f.struct_id
 WHERE d.type_dirigeant='personne morale' AND (l.siren_declarant=d.siren_dirigeant
    OR norm(l.raison_sociale)=norm(d.denomination))
-GROUP BY ALL ORDER BY montant_du_labo DESC""")
+GROUP BY ALL ORDER BY montant_du_labo DESC, laboratoire, dirigeant""")
 print("\n== a) structure dirigée par le groupe d'un labo qui la paie")
 print(con.execute("SELECT * FROM croisement_groupe LIMIT 20").df().to_string())

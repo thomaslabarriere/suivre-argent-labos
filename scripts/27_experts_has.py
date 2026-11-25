@@ -168,7 +168,7 @@ for _, mb in M.iterrows():
     deb, fin = pd.Timestamp(mb.mandat_debut), pd.Timestamp(mb.mandat_fin) if mb.mandat_fin else pd.Timestamp("2100-01-01")
     inm = K[(K.dt >= deb) & (K.dt <= fin)]
     hc = K[K.lien != "convention"]
-    par_lab = K.groupby("labo").montant.sum().sort_values(ascending=False)
+    par_lab = K.groupby("labo").montant.sum().reset_index().sort_values(["montant", "labo"], ascending=[False, True]).set_index("labo").montant
     ans = K.groupby("an").montant.sum()
     r = {**base, "trouve_dans_ts": True, "qualite": qual, "nb_lignes": len(K), "total_recu": round(K.montant.sum()),
          "total_hors_convention": round(hc.montant.sum()),
@@ -180,17 +180,17 @@ for _, mb in M.iterrows():
          "pendant_mandat_hors_convention": round(inm[inm.lien != "convention"].montant.sum()), "pendant_mandat_nb_labos": inm.labo.nunique(),
          "montant_2023_2026": round(K[K.an >= 2023].montant.sum()),
          "rpps": " ; ".join(sorted(K.rpps.dropna().unique())), "professions_ts": " ; ".join(sorted(K.prof.dropna().unique())),
-         "villes_ts": " ; ".join(K.ville.dropna().str.upper().value_counts().head(3).index), "deps_ts": " ; ".join(sorted(set(K.dep) - {""})),
+         "villes_ts": " ; ".join((lambda vc: sorted(vc.index, key=lambda v: (-vc[v], v))[:3])(K.ville.dropna().str.upper().value_counts())), "deps_ts": " ; ".join(sorted(set(K.dep) - {""})),
          "nb_personnes_homonymes_ecartees": len(cls) - len(keep), "montant_homonymes_ecartes": round(D.montant.sum()) if len(D) else 0}
     for a in range(2012, 2027): r[f"an_{a}"] = round(ans.get(a, 0))
     res.append(r)
     dl = K.assign(pendant=(K.dt >= deb) & (K.dt <= fin)).groupby("labo").apply(lambda x: pd.Series(dict(
         total=round(x.montant.sum()), total_hors_convention=round(x[x.lien != "convention"].montant.sum()), nb_lignes=len(x),
         pendant_mandat=round(x[x.pendant].montant.sum()), premiere_annee=int(x.an.min()), derniere_annee=int(x.an.max()),
-        liens=" / ".join(sorted(x.lien.unique())))), include_groups=False).reset_index().sort_values("total", ascending=False)
+        liens=" / ".join(sorted(x.lien.unique())))), include_groups=False).reset_index().sort_values(["total", "labo"], ascending=[False, True])
     for c_, v in [("commission", mb.commission), ("nom", mb.nom), ("prenom", mb.prenom), ("qualite", qual)][::-1]: dl.insert(0, c_, v)
     det.append(dl)
-R = pd.DataFrame(res).sort_values("total_recu", ascending=False)
+R = pd.DataFrame(res).sort_values(["total_recu", "id"], ascending=[False, True])
 R.to_csv(OUT / "experts_has_versements.csv", index=False)
 pd.concat(det).to_csv(OUT / "experts_has_detail_labos.csv", index=False)
 f = R[R.trouve_dans_ts]

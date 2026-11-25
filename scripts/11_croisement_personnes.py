@@ -32,11 +32,11 @@ SELECT s.siren, s.structure, p.nom, p.prenoms, p.profession, s.laboratoire,
   round(p.recu_personnellement) AS recu_personnellement, p.nb_versements_perso, round(s.verse_a_la_structure) AS verse_a_la_structure,
   list_contains(p.deps_perso, s.dep_structure) AS dep_identique
 FROM perso p JOIN struct s USING (siren, labo)
-ORDER BY dep_identique DESC, verse_a_la_structure DESC""")
+ORDER BY dep_identique DESC, verse_a_la_structure DESC, s.siren, p.nom, p.prenoms, s.laboratoire, p.recu_personnellement""")
 con.execute("""CREATE OR REPLACE TABLE croisement_groupe AS
 SELECT siren_beneficiaire, min(f.nom_officiel) AS nom_beneficiaire, norm(laboratoire) AS labo, min(laboratoire) AS laboratoire,
   string_agg(DISTINCT dirigeant, ' ; ' ORDER BY dirigeant) AS dirigeant, max(montant_du_labo) AS montant_du_labo
-FROM croisement_groupe g LEFT JOIN final2 f ON f.identifiant2=g.siren_beneficiaire GROUP BY 1, 3 ORDER BY montant_du_labo DESC""")
+FROM croisement_groupe g LEFT JOIN final2 f ON f.identifiant2=g.siren_beneficiaire GROUP BY 1, 3 ORDER BY montant_du_labo DESC, labo""")
 print(con.execute("""SELECT count(*) lignes, count(DISTINCT siren) structures, count(DISTINCT nom||coalesce(prenoms,'')) personnes,
   count(*) FILTER (WHERE dep_identique) lignes_meme_dep, count(DISTINCT siren) FILTER (WHERE dep_identique) structures_meme_dep,
   count(DISTINCT siren) FILTER (WHERE dep_identique AND recu_personnellement>=5000) structures_meme_dep_5k FROM croisement_personnes""").df().to_string())

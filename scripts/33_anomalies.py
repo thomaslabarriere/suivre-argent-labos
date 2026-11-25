@@ -29,7 +29,7 @@ SELECT 'professionnel déclaré avec un SIREN (1 000 € ou plus)', {COLS} FROM 
   WHERE {PRS} AND regexp_matches(replace(coalesce(beneficiaire_identifiant,''), ' ', ''), '^[0-9]{{9}}$') AND montant >= 1000
 UNION ALL
 SELECT 'montant négatif', {COLS} FROM ts_net WHERE montant < 0
-ORDER BY anomalie, montant DESC""").df()
+ORDER BY anomalie, montant DESC, declarant, beneficiaire, prenom, date, identifiant, detail""").df()
 a.to_csv(RACINE / "out/anomalies_declarations.csv", index=False)
 
 tot = con.execute("SELECT sum(montant) FROM ts_net").fetchall()[0][0]

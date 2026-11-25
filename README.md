@@ -112,6 +112,7 @@ rattachement avant `28`.
 | `34_prestataires.py` | séparer les prestataires (CRO, agences, grossistes) des bénéficiaires |
 | `35_elus_declarations.py` | élus payés : le labo est-il cité dans leur déclaration d'intérêts HATVP ? |
 | `99_exporter_public.py` | copie les résultats publiés dans `resultats/` |
+| `controle.py` | contrôle avant publication : reproductibilité, identités, doublons, montants nets, fichiers à jour ; échoue si une règle est violée |
 
 ## Organisation
 
