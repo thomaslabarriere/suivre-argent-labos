@@ -25,7 +25,7 @@ PUBLIABLES = [
     "experts_has_versements.csv", "experts_has_detail_labos.csv",
     "croisement_dirigeants_professionnels.csv", "croisement_structures_dirigees_par_labo.csv",
     # contrôle qualité
-    "anomalies_declarations.csv", "test_verite.csv", "controle_100.csv", "journal_decisions.csv",
+    "anomalies_declarations.csv", "prestataires.csv", "elus_declarations_vs_versements.csv", "test_verite.csv", "controle_100.csv", "journal_decisions.csv",
 ]
 
 if __name__ == "__main__":

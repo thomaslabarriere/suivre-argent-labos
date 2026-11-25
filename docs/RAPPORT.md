@@ -54,6 +54,13 @@ fichiers de `resultats/` nomment des personnes à partir de données publiques (
 - **Les anomalies.** 35 lignes de 10 M€ ou plus pèsent 10 % de tout l'argent net déclaré. La plus grosse, 445 M€
   d'une seule convention vers un centre de lutte contre le cancer, ressemble à une erreur de saisie. 98 % des euros
   de rémunérations versés aux professionnels n'ont aucun motif déclaré [33].
+- **Les prestataires.** 4,6 Md€, 36 % de l'argent net déclaré, vont à des sociétés payées pour un service : agences
+  de communication, sociétés de recherche sous contrat, informatique, conseil, événementiel, grossistes. Hors
+  prestataires, il reste 8,2 Md€ versés aux soignants, hôpitaux, associations et sociétés savantes [34].
+- **Les élus et leurs déclarations.** Sur 129 élus qui portent le nom d'un soignant payé, 51 ont une déclaration
+  d'intérêts publiée ; 15 ont reçu des contrats de labos dans les cinq ans avant, et aucune déclaration ne nomme le
+  labo. Le principal cas (41,5 k€) correspond à un emploi salarié bien déclaré, sans nom d'employeur : la
+  comparaison ne révèle pas d'omission avérée [35].
 
 ---
 
@@ -374,6 +381,55 @@ Un contrôle de vraisemblance que la base n'applique pas. Détail ligne par lign
 Nos totaux nets gardent ces lignes : ce sont les montants déclarés. Retirer la seule ligne de 445 M€ ramène le total
 net de 12,77 à 12,33 Md€.
 
+### 5.13 Prestataires et bénéficiaires [34]
+
+Transparence Santé enregistre comme bénéficiaires des sociétés qui reçoivent le prix d'un service. Nous les
+classons par leur activité INSEE (APE), uniquement quand ce sont des sociétés commerciales, et par le nom pour les
+grandes sociétés de recherche clinique et les grossistes étrangers ou sans SIREN. Une association ou un organisme
+public de recherche reste un bénéficiaire.
+
+| Type de prestataire | M€ nets | Part du total |
+|---|---|---|
+| Communication, marketing, études | 1 434 | 11,2 % |
+| Recherche sous contrat (CRO) | 1 235 | 9,7 % |
+| Informatique, données | 749 | 5,9 % |
+| Conseil | 603 | 4,7 % |
+| Événementiel, congrès | 299 | 2,3 % |
+| Grossistes, répartiteurs | 234 | 1,8 % |
+| Voyage, hôtellerie, restauration | 27 | 0,2 % |
+| **Total** | **4 582** | **35,9 %** |
+
+Sur 12,77 Md€ nets déclarés de 2012 à 2026, 8,18 Md€ vont aux acteurs de santé eux-mêmes. Les premiers prestataires
+sont IQVIA (environ 560 M€, toutes entités), une société informatique payée 281 M€ par un seul labo, un grossiste et
+des agences média. Classement détaillé : `resultats/prestataires.csv` ; marquage ligne à ligne :
+`data/ext/prestataires.parquet`, pour filtrer n'importe quelle analyse.
+
+Limites : une CRO sans SIREN et hors de notre liste de noms reste comptée comme bénéficiaire ; la presse et les
+éditeurs de logiciels sont des catégories que la loi nomme expressément, mais ils figurent ici parmi les
+prestataires quand leur activité est commerciale ; le code APE décrit l'activité principale, pas chaque contrat.
+
+### 5.14 Élus payés et déclarations d'intérêts [35]
+
+Pour chaque élu qui porte le nom, le prénom et le département d'un soignant payé (script 24), nous lisons ses
+déclarations d'intérêts publiées en open data par la HATVP. Pour chaque groupe de labos qui l'a payé, nous
+cherchons le nom du groupe, et ses autres noms, dans tout le texte des déclarations. Une déclaration doit lister
+les activités rémunérées et de conseil des cinq années précédentes : nous comparons donc les rémunérations et
+conventions de ces cinq ans. Les avantages (repas, transport) n'ont pas à y figurer.
+
+- 129 élus, dont 51 avec au moins une déclaration publiée (les autres déclarations ne sont pas en open data).
+- 15 élus ont reçu des contrats de labos dans les cinq ans avant leur dernière déclaration : 24 paires élu × labo,
+  56,6 k€. Aucune des déclarations ne nomme le labo.
+- Le cas principal, une députée pharmacienne payée 41,5 k€ par un fabricant de génériques en 20 versements mensuels
+  de 2021 à 2023, a déclaré un emploi de pharmacienne salariée sur la même période, pour un salaire du même ordre ;
+  le nom de l'employeur est masqué dans la version publiée. C'est probablement le même revenu.
+- Les autres montants sont faibles (moins de 6 k€ par paire) : interventions ponctuelles qu'un élu peut considérer
+  comme incluses dans son activité médicale déclarée.
+
+**Conclusion honnête :** la comparaison est faisable et automatisée, mais elle ne révèle pas d'omission avérée. Elle
+devient réellement probante avec les déclarations non publiées en open data, et avec une réponse du déclarant.
+Fichier : `resultats/elus_declarations_vs_versements.csv` (colonnes `labo_cite_dans_declaration`,
+`activite_sante_declaree`, `conseil_declare_neant`, `personnes_meme_nom`).
+
 ---
 
 ## 6. Fiche par base de données
@@ -583,10 +639,10 @@ Ce que nous changerions dans Transparence Santé, par ordre d'impact :
 - Séries temporelles : effet des nouveaux médicaments (lancement) sur les versements aux spécialistes concernés.
 - Un filtre « vraisemblance » au chargement : lignes géantes, hébergements à six chiffres, SIREN à la place d'un
   RPPS, doublons exacts entre bénéficiaires (script 33 comme point de départ), avec des totaux « avec » et « sans ».
-- Séparer les prestataires (sociétés de recherche sous contrat, grossistes, agences) des bénéficiaires au sens de
-  la loi, pour des totaux comparables entre labos.
-- Confronter les élus bénéficiaires à leurs déclarations d'intérêts HATVP (script 23) : un élu payé par un labo
-  qui ne le déclare pas est l'information la plus forte que permettent ces bases, et nous ne l'avons pas mesurée.
+- Appliquer le marquage des prestataires (script 34) à toutes les analyses par labo, et l'affiner contrat par
+  contrat avec le motif déclaré.
+- Étendre la comparaison élus / déclarations (script 35) aux déclarations non publiées en open data, et aux experts
+  publics (DPI-Santé) si leur accès en masse est ouvert.
 
 **Recherche**
 
@@ -604,7 +660,7 @@ Voir le [README](../README.md). En résumé :
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python scripts/telecharger.py              # ≈ 11 Go ; Open Medic à la main (voir README)
 ./scripts/run_mensuel.sh                             # chaîne de rattachement complète
-for s in 21 22 23 24 26 27 28 29 30 31 32 33; do .venv/bin/python scripts/${s}_*.py; done
+for s in 21 22 23 24 26 27 28 29 30 31 32 33 34 35; do .venv/bin/python scripts/${s}_*.py; done
 .venv/bin/python scripts/99_exporter_public.py       # résultats publiés dans resultats/
 ```
 

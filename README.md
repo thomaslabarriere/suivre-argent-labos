@@ -14,7 +14,7 @@ Deux chantiers :
    cliniques et les experts de la HAS.
 
 **Le document complet (méthode, trouvailles, fiche par base, recommandations) : [docs/RAPPORT.md](docs/RAPPORT.md).**
-**Les dix constats principaux : [docs/A_RETENIR.md](docs/A_RETENIR.md).**
+**Les onze constats principaux : [docs/A_RETENIR.md](docs/A_RETENIR.md).**
 
 ## Ce qu'on trouve
 
@@ -26,6 +26,7 @@ Deux chantiers :
 - Un spécialiste reçoit en moyenne 1 441 € par an des labos, un généraliste 222 €.
 - 1 % des professionnels de santé payés reçoivent 51 % des euros.
 - 219 paires hôpital × labo combinent versements et marchés publics de 2023 à 2026.
+- 36 % de l'argent net déclaré paie des prestataires (agences, CRO, informatique, conseil) ; hors prestataires, 8,2 Md€.
 - 35 déclarations de 10 M€ ou plus pèsent 10 % du total ; la plus grosse (445 M€) ressemble à une erreur de saisie.
 
 Résultats, y compris nominatifs : [`resultats/`](resultats/) (lire d'abord [`resultats/LISEZMOI.md`](resultats/LISEZMOI.md)).
@@ -108,6 +109,8 @@ rattachement avant `28`.
 | `30_marques_labos.py` | qui est qui : marque → labo → groupe |
 | `31_specialites_carte.py`, `32_carte.py` | euros par médecin, par spécialité et par département ; carte |
 | `33_anomalies.py` | déclarations invraisemblables (lignes géantes, hébergements, SIREN au lieu du RPPS) |
+| `34_prestataires.py` | séparer les prestataires (CRO, agences, grossistes) des bénéficiaires |
+| `35_elus_declarations.py` | élus payés : le labo est-il cité dans leur déclaration d'intérêts HATVP ? |
 | `99_exporter_public.py` | copie les résultats publiés dans `resultats/` |
 
 ## Organisation

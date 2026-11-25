@@ -21,6 +21,8 @@ Sorties des scripts de `scripts/`, régénérées par `scripts/99_exporter_publi
 | `arbitrage/` | lots soumis à l'IA, ses décisions et consignes | 07, 08 |
 | `test_verite.csv`, `controle_100.csv`, `journal_decisions.csv` | mesure de l'erreur, échantillon de contrôle humain, journal de l'IA | 10, 12 |
 | `anomalies_declarations.csv` | déclarations invraisemblables | 33 |
+| `prestataires.csv` | bénéficiaires qui sont des prestataires (CRO, agences, grossistes...) | 34 |
+| `elus_declarations_vs_versements.csv` | élus payés : le labo est-il cité dans leur déclaration d'intérêts ? | 35 |
 | `professionnels_top.csv`, `professionnels_par_profession.csv` | 500 professionnels les mieux payés ; totaux par profession | 24 |
 | `elus_beneficiaires.csv`, `elus_liens_labos.csv` | élus parmi les bénéficiaires ; labos cités dans leurs déclarations | 23, 24 |
 | `experts_has_versements.csv`, `experts_has_detail_labos.csv` | membres des commissions de la HAS et versements reçus | 27 |
