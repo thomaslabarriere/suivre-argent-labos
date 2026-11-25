@@ -26,8 +26,8 @@ ent = con.execute("SELECT DISTINCT raison_sociale FROM ts_net").df()
 ent["groupe"] = ent.raison_sociale.map(groupe); con.register("ent", ent)
 G = con.execute("""SELECT e.groupe, string_agg(DISTINCT e.raison_sociale, ' / ') entites_declarantes, sum(montant) verse_total,
    sum(montant) FILTER (WHERE beneficiaire_categorie_code='PRS') verse_pro, sum(montant) FILTER (WHERE year(date)=2025) verse_2025,
-   count(DISTINCT beneficiaire_identifiant) FILTER (WHERE beneficiaire_categorie_code='PRS') professionnels_payes   -- distincts au niveau du groupe
-   FROM ts_net t JOIN ent e USING (raison_sociale) GROUP BY 1""").df().set_index("groupe")
+   count(DISTINCT p.personne) professionnels_payes   -- distincts au niveau du groupe (clé `personne`, commun.vue_professionnels)
+   FROM ts_net t JOIN ent e USING (raison_sociale) LEFT JOIN (SELECT id, personne FROM prs) p USING (id) GROUP BY 1""").df().set_index("groupe")
 G["entites_declarantes"] = G.entites_declarantes.str[:300]
 L = pd.read_csv(RACINE/"out/lobbying_groupes.csv").set_index("g")[["lobbying_2022_2025", "fiches"]]
 R = M.groupby("groupe").agg(rembourse_2025_groupe=("rembourse_2025", "sum"), marques=("marque", "nunique"))

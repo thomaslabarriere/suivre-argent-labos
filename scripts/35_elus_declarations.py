@@ -27,6 +27,7 @@ cle = lambda nom, prenom: " ".join(n(nom)) + "|" + (n(prenom) or [""])[0]
 ALIAS_TEXTE = {"JOHNSON": r"JOHNSON|JANSSEN|DEPUY|ETHICON", "MSD": r"MSD|MERCK SHARP", "GLAXOSMITHKLINE": r"GLAXO|GSK",
                "BRISTOL": r"BRISTOL|BMS", "LILLY": r"LILLY", "VIATRIS": r"VIATRIS|MYLAN", "SANOFI": r"SANOFI|AVENTIS|GENZYME"}
 SANTE = re.compile(r"PHARMACI|MEDECIN|CHIRURG|PRATICIEN|INFIRMI|KINESI|DENTIST|SAGE.FEMME|HOPITAL|HOSPITAL|CLINIQUE|CABINET MEDICAL")
+INVITATION = re.compile(r"(?i)manifestation|hospitalit|repas|transport|h[ée]bergement|inscription")
 GENERIQUE = re.compile(r"LABORATOIRE|PHARMA|INDUSTRI|CONFERENC|ORATEUR|EXPERTISE|CONSULT|FORMATION MEDICALE|ESSAI")
 
 # --- déclarations d'intérêts (DI, DIA) publiées
@@ -42,6 +43,7 @@ for _, el in ET.iterparse(RACINE / "data/ext/hatvp/declarations.xml", events=("e
         prof = el.find("activProfCinqDerniereDto")
         prof = unidecode.unidecode(" ".join((x.text or "") for x in prof.iter())).upper() if prof is not None else ""
         decl.append({"k": cle(el.findtext("general/declarant/nom"), el.findtext("general/declarant/prenom")),
+                     "naissance": el.findtext("general/declarant/dateNaissance") or "",  # sert à séparer les homonymes, jamais publié
                      "dep_decl": dep.group(1) if dep else None, "depot": pd.to_datetime((el.findtext("dateDepot") or "")[:10], dayfirst=True, errors="coerce"),
                      "qualite_decl": q, "texte": re.sub(r"\s+", " ", unidecode.unidecode(texte).upper()),
                      "activite_sante": bool(SANTE.search(prof)),
@@ -50,24 +52,29 @@ for _, el in ET.iterparse(RACINE / "data/ext/hatvp/declarations.xml", events=("e
 D = pd.DataFrame(decl)
 
 # --- élus bénéficiaires et leurs versements, ligne à ligne
+# Une ligne par élu × professionnel (clé `personne` du script 24, sans doublon).
 E = pd.read_csv(RACINE / "out/elus_beneficiaires.csv", dtype={"departement": str, "rpps": str})
-E["dep"] = E.departement.str.split(".").str[0].str.zfill(2)
+E = E.drop_duplicates(["nom", "prenom", "departement", "personne"])
+E["dep"] = E.departement
 E["k"] = [cle(a, b) for a, b in zip(E.nom, E.prenom)]
-E["kd"] = E.k + "|" + E.dep
 con = vues_ts(duckdb.connect())
-con.register("e", E[["kd", "rpps"]].drop_duplicates())
-con.execute("CREATE MACRO nn(x) AS regexp_replace(trim(regexp_replace(upper(strip_accents(coalesce(x,''))), '[^A-Z ]', ' ', 'g')), ' +', ' ', 'g')")
-V = con.execute("""SELECT e.kd, e.rpps, t.raison_sociale, t.lien_interet, t.montant, cast(coalesce(t.date, t.date_debut) AS DATE) d
-  FROM ts_net t JOIN e ON nn(t.identite) || '|' || split_part(nn(t.prenom), ' ', 1) || '|' || lpad(coalesce(t.dep_code,''),2,'0') = e.kd
-  WHERE t.beneficiaire_categorie_code = 'PRS'
-    AND (t.beneficiaire_identifiant = e.rpps OR (e.rpps IS NULL AND t.beneficiaire_identifiant IS NULL))""").df()
+con.register("e", E[["personne"]].drop_duplicates())
+V = con.execute("""SELECT personne, raison_sociale, lien_interet, motif_lien_interet motif, montant, cast(coalesce(date, date_debut) AS DATE) d
+  FROM prs WHERE personne IN (SELECT personne FROM e)""").df()
 V["groupe"] = V.raison_sociale.map(groupe_labo)
 V["d"] = pd.to_datetime(V.d)
 
 lignes = []
 for _, el in E.iterrows():
     dd = D[(D.k == el.k) & (D.dep_decl.isna() | (D.dep_decl == el.dep))]
-    v = V[(V.kd == el.kd) & ((V.rpps == el.rpps) if pd.notna(el.rpps) else V.rpps.isna())]
+    # Plusieurs dates de naissance = plusieurs déclarants homonymes : on ne garde que celui dont une déclaration
+    # porte le département de l'élu ; sans ce repère, la comparaison n'est pas faite.
+    ambigu = False
+    if dd.naissance.nunique() > 1:
+        bonnes = set(dd[dd.dep_decl == el.dep].naissance)
+        dd = dd[dd.naissance.isin(bonnes)] if len(bonnes) == 1 else dd.iloc[0:0]
+        ambigu = len(bonnes) != 1
+    v = V[V.personne == el.personne]
     texte = " ".join(dd.texte)
     fin = dd.depot.max() if len(dd) else pd.NaT
     for g, vg in v.groupby("groupe"):
@@ -75,12 +82,13 @@ for _, el in E.iterrows():
         autres = {cle_labo(r).split()[0] for r in vg.raison_sociale if cle_labo(r)}
         cite = bool(texte) and (re.search(rf"\b({motif})\b", texte) is not None
                                 or any(re.search(rf"\b{re.escape(a)}\b", texte) for a in autres if len(a) >= 4))
-        contrats = vg[vg.lien_interet.isin(["remuneration", "convention"])]
+        # Contrats à déclarer : rémunérations et conventions, hors invitations (congrès, hospitalité, transport).
+        contrats = vg[vg.lien_interet.isin(["remuneration", "convention"]) & ~vg.motif.fillna("").str.contains(INVITATION)]
         fen = contrats[(contrats.d <= fin) & (contrats.d > fin - pd.DateOffset(years=5))] if pd.notna(fin) else contrats.iloc[0:0]
         lignes.append({"nom": el.nom, "prenom": el.prenom, "departement": el.dep, "mandats": el.mandats, "rpps": el.rpps,
                        "personnes_meme_nom": el.personnes_meme_nom, "groupe_labo": g,
                        "labos_declarants": " ; ".join(sorted(set(vg.raison_sociale)))[:200],
-                       "declarations_publiees": len(dd), "derniere_declaration": fin.date() if pd.notna(fin) else None,
+                       "declarations_publiees": len(dd), "declarant_ambigu": ambigu, "derniere_declaration": fin.date() if pd.notna(fin) else None,
                        "conseil_declare_neant": bool(dd.sort_values("depot").conseil_neant.iloc[-1]) if len(dd) else None,
                        "contrats_5_ans_avant_declaration": round(fen.montant.sum()), "nb_contrats_5_ans": len(fen),
                        "contrats_apres_declaration": round(contrats[contrats.d > fin].montant.sum()) if pd.notna(fin) else None,
@@ -91,7 +99,6 @@ for _, el in E.iterrows():
 R = pd.DataFrame(lignes).sort_values(["contrats_5_ans_avant_declaration", "contrats_total", "nom", "groupe_labo"], ascending=[False, False, True, True])
 R.to_csv(RACINE / "out/elus_declarations_vs_versements.csv", index=False)
 
-el = R.groupby(["nom", "prenom", "departement", "rpps"], dropna=False)
 print(f"{len(D):,} déclarations d'intérêts publiées lues ; {E[['nom','prenom','dep']].drop_duplicates().shape[0]} élus "
       f"bénéficiaires, dont {R[R.declarations_publiees > 0][['nom','prenom','departement']].drop_duplicates().shape[0]} avec au moins une déclaration publiée")
 x = R[(R.declarations_publiees > 0) & (R.contrats_5_ans_avant_declaration > 0)]

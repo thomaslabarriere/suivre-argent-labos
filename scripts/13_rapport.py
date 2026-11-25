@@ -10,10 +10,10 @@ from reportlab.lib import colors
 from reportlab.lib.units import mm
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Image, PageBreak, KeepTogether
-from commun import connexion, RACINE
+from commun import connexion, RACINE, vue_lignes_net
 
 PER = sys.argv[1] if len(sys.argv) > 1 else "mois"
-con = connexion()
+con = vue_lignes_net(connexion())
 fin = dt.date.fromisoformat(sys.argv[2]) if len(sys.argv) > 2 else con.execute("SELECT max(date) FROM lignes WHERE date <= current_date").fetchone()[0]
 if PER == "mois":
     # une date en milieu ou début de mois désigne le mois entier (run_mensuel.sh passe AAAA-MM-01)
@@ -32,7 +32,7 @@ SELECT l.date, l.montant, l.raison_sociale AS labo, l.lien_interet, f.categorie,
   CASE WHEN f.statut2='fiable' THEN coalesce(f.nom_officiel, f.nom_declare) ELSE f.nom_declare END AS nom,
   f.statut2='fiable' AS identifie,
   CASE WHEN f.statut2='fiable' THEN f.identifiant2 ELSE 's'||f.struct_id END AS ent   -- une entité = un numéro officiel : les variantes d'un même hôpital s'additionnent
-FROM lignes l JOIN final2 f USING (struct_id)
+FROM lignes_net l JOIN final2 f USING (struct_id)
 WHERE f.categorie NOT IN ('Etudiant','Influenceur','Vétérinaire')""")   # pas de personnes physiques nommées
 def per(a, b): return f"date BETWEEN DATE '{a}' AND DATE '{b}'"
 P, PP, PA = per(deb, fin), per(prev_deb, prev_fin), per(*ia)

@@ -74,7 +74,48 @@ def vues_ts(con):
     con.execute(f"""CREATE OR REPLACE VIEW ts_net AS SELECT t.* FROM ts t
       ANTI JOIN read_parquet('{sql_chemin(LIEES)}') l
         ON t.lien_interet = 'convention' AND l.entreprise_id = t.entreprise_id AND l.identifiant_unique = t.identifiant_unique""")
+    vue_professionnels(con)
     return con
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Identité d'un professionnel de santé. Le champ identifiant contient aussi des valeurs factices ([SO], 0, NA,
+# 00000000000...) partagées par des milliers de personnes : s'en servir comme clé fusionnait ces personnes en une.
+# Un RPPS n'est retenu que s'il a 11 chiffres, commence par 10, respecte la clé de Luhn et ne porte pas plus de
+# 5 noms de famille différents ; sinon la personne est identifiée par nom + premier prénom + département normalisés.
+# ---------------------------------------------------------------------------------------------------------------
+RPPS_VALIDES = RACINE / "data/ext/rpps_valides.parquet"
+MACROS = """
+CREATE OR REPLACE MACRO nn(x) AS regexp_replace(trim(regexp_replace(upper(strip_accents(coalesce(x, ''))), '[^A-Z ]', ' ', 'g')), ' +', ' ', 'g');
+CREATE OR REPLACE MACRO dep_norm(x) AS CASE WHEN trim(x) ~ '^[0-9]$' THEN '0' || trim(x) WHEN trim(x) = '' THEN NULL ELSE upper(trim(x)) END;
+CREATE OR REPLACE MACRO chiffres(x) AS regexp_replace(coalesce(x, ''), '[^0-9]', '', 'g');
+"""
+
+
+def luhn(s):
+    t = 0
+    for k, c in enumerate(reversed(s)):
+        v = int(c) * (2 if k % 2 else 1)
+        t += v - 9 if v > 9 else v
+    return t % 10 == 0
+
+
+def vue_professionnels(con):
+    """Vue `prs` : lignes nettes vers des professionnels de santé, avec rpps (valide ou NULL), nom_n, prenom_n,
+    dep et la clé `personne`."""
+    con.execute(MACROS)
+    if not RPPS_VALIDES.exists():
+        d = con.execute("""SELECT chiffres(beneficiaire_identifiant) rpps, count(DISTINCT regexp_replace(nn(identite), ' ', '', 'g')) noms
+          FROM ts_net WHERE beneficiaire_categorie_code = 'PRS' AND chiffres(beneficiaire_identifiant) ~ '^10[0-9]{9}$' GROUP BY 1""").df()
+        d = d[d.rpps.map(luhn) & (d.noms <= 5)][["rpps"]].sort_values("rpps")
+        con.register("_rv", d)
+        con.execute(f"COPY _rv TO '{sql_chemin(RPPS_VALIDES)}'")
+        con.unregister("_rv")
+    con.execute(f"""CREATE OR REPLACE VIEW prs AS
+      SELECT t.*, v.rpps, nn(t.identite) nom_n, split_part(nn(t.prenom), ' ', 1) prenom_n, dep_norm(t.dep_code) dep,
+             coalesce(v.rpps, nn(t.identite) || '|' || split_part(nn(t.prenom), ' ', 1) || '|' || coalesce(dep_norm(t.dep_code), '')) personne
+      FROM ts_net t LEFT JOIN read_parquet('{sql_chemin(RPPS_VALIDES)}') v ON v.rpps = chiffres(t.beneficiaire_identifiant)
+      WHERE t.beneficiaire_categorie_code = 'PRS'""")
 
 
 # ---------------------------------------------------------------------------------------------------------------
@@ -129,3 +170,11 @@ def lire_openmedic(nom="NB_2025_cip13.CSV.gz"):
     if not f.exists():
         raise SystemExit(f"{f} manquant. Open Medic se télécharge à la main : voir README, section Données.")
     return pd.read_csv(f, sep=";", encoding="latin1", dtype=str)
+
+
+def vue_lignes_net(con):
+    """Sur la base de travail : vue temporaire `lignes_net`, les lignes « AUTRE » (structures) sans les conventions
+    déjà comptées par les versements qui les exécutent (même règle que `ts_net`)."""
+    vues_ts(con)
+    con.execute("CREATE OR REPLACE TEMP VIEW lignes_net AS SELECT l.* FROM lignes l SEMI JOIN ts_net t ON t.id = l.id")
+    return con

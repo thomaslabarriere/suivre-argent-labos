@@ -7,8 +7,9 @@ Sorties des scripts de `scripts/`, régénérées par `scripts/99_exporter_publi
 
 - Les données viennent de sources publiques : Transparence Santé, HATVP, HAS, registre des entreprises.
 - Un lien d'intérêt n'est pas une irrégularité : ces versements sont légaux et déclarés.
-- Les croisements par nom comportent des homonymes possibles. Regarder la colonne `qualite` (experts HAS) ou
-  `personnes_meme_nom` (élus), et vérifier chaque cas avant de le citer.
+- Les croisements par nom comportent des homonymes possibles. Regarder la colonne `qualite` (experts HAS ; aucun
+  total n'est donné pour un « homonyme possible »), `personnes_meme_nom` (élus) ; les dirigeants ne sont listés que
+  s'ils sont payés dans le département de leur structure. Vérifier chaque cas avant de le citer.
 - Un montant peut être une erreur du déclarant : voir `anomalies_declarations.csv`. Dans `professionnels_top.csv`,
   `dont_conventions_non_executees` isole les conventions sans versement déclaré (souvent un maximum prévu, pas une
   somme versée) et `alerte` signale les sociétés déclarées comme des personnes.

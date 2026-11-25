@@ -9,7 +9,7 @@ Deux chantiers :
 1. **Rattacher les structures sans identifiant.** 520 000 versements à des structures (hôpitaux, sociétés savantes,
    associations, agences) n'ont ni SIREN ni RNA : 5,5 Md€ déclarés. La chaîne `00` à `14` retrouve leur identifiant
    officiel dans SIRENE et le RNA, avec un arbitrage par IA contrôlé et un taux d'erreur mesuré.
-2. **Donner du contexte aux montants.** Les scripts `21` à `32` croisent Transparence Santé avec les remboursements de
+2. **Donner du contexte aux montants.** Les scripts `21` à `35` croisent Transparence Santé avec les remboursements de
    l'Assurance maladie, la base des médicaments, la HATVP, l'annuaire des médecins, les marchés publics, les essais
    cliniques et les experts de la HAS.
 
@@ -24,8 +24,8 @@ Deux chantiers :
   une erreur probable mesurée de 2 %.
 - 7,3 Md€ remboursés en 2025 (27 %) vont à des médicaments sans progrès thérapeutique selon la HAS (ASMR V).
 - Un spécialiste reçoit en moyenne 1 441 € par an des labos, un généraliste 222 €.
-- 1 % des professionnels de santé payés reçoivent 51 % des euros.
-- 219 paires hôpital × labo combinent versements et marchés publics de 2023 à 2026.
+- 1 % des professionnels de santé payés reçoivent 50 % des euros.
+- 212 paires hôpital × labo combinent versements et marchés publics de 2023 à 2026.
 - 36 % de l'argent net déclaré paie des prestataires (agences, CRO, informatique, conseil) ; hors prestataires, 8,2 Md€.
 - 35 déclarations de 10 M€ ou plus pèsent 10 % du total ; la plus grosse (445 M€) ressemble à une erreur de saisie.
 

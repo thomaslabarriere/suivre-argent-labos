@@ -43,12 +43,12 @@ fichiers de `resultats/` nomment des personnes à partir de données publiques (
 - **Qui les labos paient.** Un médecin spécialiste reçoit en moyenne 1 441 € par an, un généraliste 222 €, alors
   que les généralistes prescrivent 8,6 Md€ en ville contre 4,4 Md€ pour les spécialistes libéraux.
   L'écart tient en médiane (554 € contre 128 € parmi les médecins payés) : ce ne sont pas quelques cas extrêmes.
-- **La concentration.** 1 % des professionnels de santé payés reçoivent 51 % des euros versés aux professionnels.
+- **La concentration.** 1 % des professionnels de santé payés reçoivent 50 % des euros versés aux professionnels.
 - **Les experts de la HAS.** Les 42 membres des commissions qui évaluent médicaments et dispositifs, identifiés avec
-  certitude ou forte probabilité, ont reçu 323 k€ en quinze ans, dont 43 k€ pendant leur mandat actuel ;
+  certitude ou forte probabilité, ont reçu 324 k€ en quinze ans, dont 43 k€ pendant leur mandat actuel ;
   28 d'entre eux n'ont rien reçu pendant le mandat.
-- **Les marchés des hôpitaux.** De 2023 à 2026, 40 hôpitaux ont à la fois reçu de l'argent d'un labo et passé au
-  moins un marché public avec lui : 219 paires, 83 M€ de versements, 1 039 marchés.
+- **Les marchés des hôpitaux.** De 2023 à 2026, 39 hôpitaux ont à la fois reçu de l'argent d'un labo et passé au
+  moins un marché public avec lui : 212 paires, 83 M€ de versements, 1 025 marchés.
 - **Le lobbying.** 122 groupes qui versent de l'argent dans Transparence Santé sont aussi inscrits au registre des
   représentants d'intérêts. Ils déclarent 92 M€ de dépenses de lobbying sur 2022 à 2025.
 - **Les anomalies.** 35 lignes de 10 M€ ou plus pèsent 10 % de tout l'argent net déclaré. La plus grosse, 445 M€
@@ -57,10 +57,10 @@ fichiers de `resultats/` nomment des personnes à partir de données publiques (
 - **Les prestataires.** 4,6 Md€, 36 % de l'argent net déclaré, vont à des sociétés payées pour un service : agences
   de communication, sociétés de recherche sous contrat, informatique, conseil, événementiel, grossistes. Hors
   prestataires, il reste 8,2 Md€ versés aux soignants, hôpitaux, associations et sociétés savantes [34].
-- **Les élus et leurs déclarations.** Sur 129 élus qui portent le nom d'un soignant payé, 51 ont une déclaration
-  d'intérêts publiée ; 15 ont reçu des contrats de labos dans les cinq ans avant, et aucune déclaration ne nomme le
-  labo. Le principal cas (41,5 k€) correspond à un emploi salarié bien déclaré, sans nom d'employeur : la
-  comparaison ne révèle pas d'omission avérée [35].
+- **Les élus et leurs déclarations.** Sur 132 élus qui portent le nom d'un soignant payé, 54 ont une déclaration
+  d'intérêts publiée ; 10 ont reçu des contrats de labos dans les cinq ans avant, et aucune déclaration ne nomme le
+  labo. Le principal cas (41,5 k€) coïncide avec un emploi salarié déclaré, employeur masqué : la comparaison ne
+  révèle pas d'omission établie [35].
 
 ---
 
@@ -93,7 +93,7 @@ croiser la base avec d'autres données publiques pour donner du contexte aux mon
                                         |
          +------------------------------+-------------------------------+
          |                                                              |
- Chantier 1 : rattachement (00 à 14)                     Chantier 2 : croisements (21 à 32)
+ Chantier 1 : rattachement (00 à 14)                     Chantier 2 : croisements (21 à 35)
  DuckDB data/travail.duckdb                              DuckDB en mémoire sur les parquet annuels
  normalisation -> identifiants cachés ->                 vue ts_net (sans double compte)
  exact -> approximatif -> arbitrage IA ->                groupes de labos communs (commun.py)
@@ -103,9 +103,9 @@ croiser la base avec d'autres données publiques pour donner du contexte aux mon
                                         |
                         out/  (sorties complètes, nominatives, locales)
                                         |
-                    scripts/99_exporter_public.py  (refuse toute colonne nominative)
+                    scripts/99_exporter_public.py  (liste des fichiers publiés)  
                                         |
-                              resultats/  (agrégats publiés)
+                              resultats/  (résultats publiés)
 ```
 
 **Choix techniques.**
@@ -175,8 +175,8 @@ On ne peut pas contrôler 17 000 rattachements à la main. Nous avons donc fabri
 13 500 structures dont l'identifiant était écrit dans le texte. On efface cet identifiant, on rejoue les étapes 3 et
 4, et on compare au vrai numéro [12].
 
-- **Règles automatiques** (13 552 structures, 2,03 Md€) : 92,8 % de réponses identiques à la vérité (95,6 % des
-  euros). Les écarts se répartissent ainsi : même nom sous un autre numéro (doublon probable du registre, 77 cas),
+- **Règles automatiques** (13 552 structures, 2,03 Md€ ; 3 690 ont reçu une réponse) : parmi ces 3 690 réponses,
+  92,8 % sont identiques à la vérité (95,6 % des euros). Les écarts se répartissent ainsi : même nom sous un autre numéro (doublon probable du registre, 77 cas),
   numéro écrit par le labo qui semble faux alors que notre réponse colle au nom (114 cas), et **erreur probable de
   notre part : 73 cas sur 3 690 « fiables », soit 2,0 % des cas et 1,0 % des euros.**
 - **IA** (200 cas douteux de ce jeu, arbitrés sans voir la réponse) : 134 « aucun » justifiés (la bonne réponse
@@ -202,10 +202,11 @@ Seules les sociétés ont leurs dirigeants en données ouvertes (registre RNE, v
 Les associations, sociétés savantes et hôpitaux n'en ont pas. Deux croisements [09, 11] :
 
 - **Structure dirigée par le labo qui la paie.** Exemple type : le GERS, groupement d'intérêt économique de
-  statistiques de ventes administré par des laboratoires, qui a reçu 27,9 M€ de 27 d'entre eux. Ce n'est
+  statistiques de ventes administré par des laboratoires, qui a reçu 24,4 M€ nets de 27 d'entre eux. Ce n'est
   pas de l'influence : une partie des montants déclarés est de l'argent que l'industrie se verse à elle-même.
 - **Dirigeant payé aussi à titre personnel par le même labo** (correspondance nom + premier prénom, à vérifier une à
-  une). Résultats nominatifs : non publiés.
+  une). Montants nets des deux côtés ; seuls les cas où la personne est payée dans le département de la structure
+  sont publiés : 141 personnes, 77 structures (`resultats/croisement_dirigeants_professionnels.csv`).
 
 ---
 
@@ -293,12 +294,15 @@ bénéficiaires (10e aussi en moyenne hors 1 % les plus payés ; 13e en médiane
 
 ### 5.6 Professionnels de santé et concentration [24]
 
-1,33 Md€ nets versés à 809 855 professionnels de santé (2012 à 2026). Une personne est identifiée par son numéro
-RPPS / ADELI quand il est déclaré, sinon par nom + prénom + département. 1 % des bénéficiaires reçoivent 51 % des
-euros : une petite élite de leaders d'opinion, d'investigateurs et d'inventeurs (redevances).
+1,33 Md€ nets déclarés pour 778 116 professionnels de santé (2012 à 2026), dont 373 M€ de conventions qu'aucun
+versement ne vient exécuter (souvent des maxima). Une personne est identifiée par son RPPS quand il est valide
+(11 chiffres, clé de Luhn, pas plus de 5 noms différents), sinon par nom + premier prénom + département : les
+identifiants factices ([SO], 0, 00000000000...) fusionnaient sinon des milliers de personnes. 1 % des bénéficiaires
+reçoivent 50 % des euros ; la médiane est de 70 €, 1 858 personnes dépassent 100 000 €.
 
-Responsables publics : 129 élus de la liste HATVP portent les mêmes nom, prénom et département qu'un professionnel
-de santé payé (0,47 M€ au total). Pour 82 lignes, plusieurs numéros RPPS se cachent derrière la même identité :
+Responsables publics : 132 élus de la liste HATVP portent les mêmes nom, premier prénom et département qu'un
+professionnel de santé payé (160 professionnels, 0,48 M€ au total). Un déclarant HATVP sans département n'est jamais
+rapproché ; l'outre-mer est inclus. Pour 53 lignes, plusieurs professionnels distincts correspondent au même élu :
 homonymie certaine pour au moins l'un d'eux. Ces correspondances sont des pistes, pas des constats.
 
 ### 5.7 Lobbying [22]
@@ -322,8 +326,9 @@ Les membres de la Commission de la transparence (médicaments) et de la CNEDiMTS
 has-sante.fr. 64 membres, 48 retrouvés dans Transparence Santé. Après levée des homonymes (même RPPS sur plusieurs
 lignes, département de la page HAS, profession compatible) : 42 sûrs ou probables, 6 homonymes possibles écartés.
 
-- 323 k€ nets reçus en quinze ans par les 42, médiane 890 € par membre.
-- 43 k€ pendant le mandat en cours ; 28 membres n'ont rien reçu pendant le mandat.
+- 324 k€ nets reçus en quinze ans par les 42, médiane 890 € par membre. Un expert = une seule personne (un RPPS) :
+  deux RPPS différents ne sont jamais additionnés, et aucun total n'est publié pour un homonyme possible.
+- 43 k€ pendant le mandat en cours (35 k€ hors conventions) ; 28 membres n'ont rien reçu pendant le mandat.
 
 C'est une bonne nouvelle : les gardiens de l'évaluation sont peu payés par l'industrie, et la HAS gère leurs déports.
 DPI-Santé (les déclarations publiques d'intérêts) aurait permis de confronter déclaré et versé, mais le site impose un
@@ -342,9 +347,9 @@ conventions se fait par ville et par groupe, pas par établissement.
 Données essentielles de la commande publique (DECP) des hôpitaux, croisées avec les versements des mêmes labos aux
 mêmes hôpitaux. Fenêtre 2023 à 2026 (95 % des marchés retenus).
 
-- 219 paires hôpital × labo avec les deux flux, 40 hôpitaux, 61 labos.
+- 212 paires hôpital × labo avec les deux flux, 39 hôpitaux, 61 labos.
 - 83 M€ de versements nets reçus par ces hôpitaux de ces labos.
-- 1 039 marchés, dont 8 déclarés à 100 M€ ou plus. Hors ces 8, les marchés totalisent environ 2,1 Md€.
+- 1 025 marchés, dont 8 déclarés à 100 M€ ou plus. Hors ces 8, les marchés totalisent environ 2,05 Md€.
 
 Les montants DECP sont des **maxima** (souvent des plafonds d'accords-cadres), pas des dépenses. Ce cumul est légal et
 courant : un labo finance la recherche d'un CHU et lui vend aussi ses médicaments, après mise en concurrence. Ce qui
@@ -365,8 +370,8 @@ Un contrôle de vraisemblance que la base n'applique pas. Détail ligne par lign
   dont 348 M€ d'Abivax en 12 lignes : c'est le coût sous-traité d'essais cliniques, pas un lien d'intérêt au sens
   courant. Ces flux gonflent les totaux « versés aux acteurs de santé ».
 - **Des rémunérations sans motif.** 405,5 M€ de rémunérations versées aux professionnels de santé : 98,1 % des euros
-  (94 % des lignes) n'ont ni motif, ni texte libre, ni événement. Exemple : le premier bénéficiaire individuel de la
-  base reçoit 4,79 M€ en une seule ligne de rémunération, sans aucune explication.
+  (94 % des lignes) n'ont ni motif, ni texte libre, ni événement. Exemple : la plus grosse, 4,79 M€ en une ligne
+  vers le premier bénéficiaire individuel de la base, n'en porte aucun ; c'est au déclarant de le renseigner.
 - **Des hébergements impossibles.** 19 avantages « hospitalité, repas ou transport » de 20 000 € ou plus pour une
   seule personne, dont un « hébergement » de 1 307 280 € déclaré en 2023.
 - **Des sociétés déclarées comme personnes.** 77 364 lignes « professionnel de santé » portent un identifiant à
@@ -401,8 +406,8 @@ public de recherche reste un bénéficiaire.
 
 Sur 12,77 Md€ nets déclarés de 2012 à 2026, 8,18 Md€ vont aux acteurs de santé eux-mêmes. Les premiers prestataires
 sont IQVIA (environ 560 M€, toutes entités), une société informatique payée 281 M€ par un seul labo, un grossiste et
-des agences média. Classement détaillé : `resultats/prestataires.csv` ; marquage ligne à ligne :
-`data/ext/prestataires.parquet`, pour filtrer n'importe quelle analyse.
+des agences média. Classement détaillé : `resultats/prestataires.csv` ; marquage ligne à ligne
+régénéré par le script dans `data/ext/prestataires.parquet` (non versionné), pour filtrer n'importe quelle analyse.
 
 Limites : une CRO sans SIREN et hors de notre liste de noms reste comptée comme bénéficiaire ; la presse et les
 éditeurs de logiciels sont des catégories que la loi nomme expressément, mais ils figurent ici parmi les
@@ -416,12 +421,15 @@ cherchons le nom du groupe, et ses autres noms, dans tout le texte des déclarat
 les activités rémunérées et de conseil des cinq années précédentes : nous comparons donc les rémunérations et
 conventions de ces cinq ans. Les avantages (repas, transport) n'ont pas à y figurer.
 
-- 129 élus, dont 51 avec au moins une déclaration publiée (les autres déclarations ne sont pas en open data).
-- 15 élus ont reçu des contrats de labos dans les cinq ans avant leur dernière déclaration : 24 paires élu × labo,
-  56,6 k€. Aucune des déclarations ne nomme le labo.
+- 132 élus, dont 54 avec au moins une déclaration publiée (les autres déclarations ne sont pas en open data).
+  Quand plusieurs déclarants homonymes existent (dates de naissance différentes, jamais publiées), seul celui dont
+  une déclaration porte le département de l'élu est retenu.
+- 10 élus ont reçu des contrats de labos dans les cinq ans avant leur dernière déclaration (hors invitations à des
+  congrès et hospitalité) : 15 paires élu × labo, 53,6 k€. Aucune des déclarations ne nomme le labo.
 - Le cas principal, une députée pharmacienne payée 41,5 k€ par un fabricant de génériques en 20 versements mensuels
-  de 2021 à 2023, a déclaré un emploi de pharmacienne salariée sur la même période, pour un salaire du même ordre ;
-  le nom de l'employeur est masqué dans la version publiée. C'est probablement le même revenu.
+  de 2021 à 2023, a déclaré un emploi de pharmacienne salariée sur la même période, pour un montant du même ordre ;
+  l'employeur, masqué dans la version publiée, est décrit comme « Pharmacie ». Rien ne permet de dire si c'est le
+  même revenu : question à poser à l'intéressée et au déclarant.
 - Les autres montants sont faibles (moins de 6 k€ par paire) : interventions ponctuelles qu'un élu peut considérer
   comme incluses dans son activité médicale déclarée.
 
@@ -552,11 +560,11 @@ chiffres présentés pendant le hackathon. Ils sont corrigés ; voici ce qui a b
 | Chiffre | Présenté le 24/11 | Corrigé | Cause |
 |---|---|---|---|
 | Versés aux professionnels | 2,05 Md€ | 1,33 Md€ | double compte convention / rémunération |
-| Experts HAS, total | 470 k€ | 323 k€ | idem |
+| Experts HAS, total | 470 k€ | 324 k€ | idem, et un expert = une seule personne |
 | Experts HAS, pendant le mandat | 71 k€ | 43 k€ | idem |
 | Euros par généraliste | 283 € | 222 € | inscrits sans activité, classification des spécialités, vue nette |
 | Gironde, euros par médecin | 2 229 €, 9e sur 97 | 1 317 €, 10e sur 100 | idem, et outre-mer |
-| Marchés des hôpitaux | 312 paires, 218 M€, 8,8 Md€ | 219 paires, 83 M€, 1 039 marchés | plafonds répétés, fenêtre de temps, jointure dupliquée |
+| Marchés des hôpitaux | 312 paires, 218 M€, 8,8 Md€ | 212 paires, 83 M€, 1 025 marchés | plafonds répétés, fenêtre de temps, jointure dupliquée |
 | Lobbying | 137 groupes, 102 M€ | 122 groupes, 92 M€ | homonymes hors santé |
 | MSD | ratio aberrant (13 528 €) | 215 € | alias de groupe incohérent entre scripts |
 | Rattachement fiable | 78,0 % des euros | 78,3 % (4,32 Md€ bruts ; 78,6 % des euros nets) | candidats non déterministes, garde-fous élargis |
@@ -571,6 +579,22 @@ même RPPS. Or 32 220 RPPS portent au moins une ligne à un autre nom (erreur du
 apparaître sous le nom d'une autre personne. Le nom affiché est désormais la forme la plus fréquente, et tous les
 `any_value()` et `arg_max()` des scripts départagent les égalités de façon déterministe. Le classement sépare
 aussi les conventions sans versement (souvent des plafonds) et signale les sociétés déclarées comme personnes.
+
+Troisième passe (25 novembre, deux relectures indépendantes, l'une du code, l'autre de chaque chiffre) :
+
+- **Identifiants factices.** « [SO] », « 0 », « NA », « 00000000000 » servaient de clé personne : un « médecin »
+  du classement réunissait en fait des milliers de personnes. Une seule règle d'identité (`commun.vue_professionnels`)
+  sert désormais à tous les scripts : RPPS valide, sinon nom + premier prénom + département normalisés.
+- **Labo principal.** Une ligne au montant vide était choisie comme « plus gros versement » : le labo affiché était
+  parfois faux. C'est maintenant le labo qui a le plus versé au total.
+- **Experts de la HAS.** Plusieurs RPPS homonymes pouvaient être additionnés pour un même expert ; un seul est gardé,
+  et aucun total n'est publié pour un homonyme possible.
+- **Élus.** Les déclarants HATVP sans département étaient rapprochés de soignants sans département ; l'outre-mer
+  était exclu par une troncature du code département ; une même personne pouvait apparaître sur plusieurs lignes.
+- **Dirigeants et GERS.** Les montants venaient de l'API publique, donc bruts ; ils sont recalculés en net
+  (le GERS passe de 27,9 à 24,4 M€) et le premier prénom doit correspondre exactement (JEAN n'attrape plus JEANNE).
+- **Prestataires.** Un SIREN mal formé n'est plus tronqué au hasard ; États étrangers et organisations
+  internationales ne sont plus classés comme sociétés.
 
 ---
 

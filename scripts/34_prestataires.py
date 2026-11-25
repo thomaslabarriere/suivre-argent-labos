@@ -8,7 +8,7 @@ soignants et aux hôpitaux gonfle les totaux et fausse les comparaisons entre la
 Classement d'un bénéficiaire personne morale, dans cet ordre :
 1. son nom contient celui d'une grande CRO ou d'un grand grossiste (liste NOMS, utile pour les sociétés étrangères) ;
 2. sinon, s'il a un SIREN (déclaré, ou retrouvé par la chaîne de rattachement), son activité principale INSEE (APE)
-   et sa catégorie juridique : seules les sociétés commerciales (catégorie 5xxx ou étrangère 3xxx) sont classées
+   et sa catégorie juridique : seules les sociétés commerciales (catégorie 5xxx, ou société étrangère 31xx) sont classées
    prestataires ; une association ou un établissement public de recherche (APE 72.19Z) reste un bénéficiaire.
 Les professionnels de santé, étudiants, établissements FINESS ne sont jamais des prestataires ici.
 Limite assumée : une CRO déclarée sans SIREN et absente de NOMS reste comptée comme bénéficiaire.
@@ -41,16 +41,19 @@ con.execute(f"""CREATE TABLE cl AS
 WITH b AS (
   SELECT t.id, t.montant, t.identite, t.beneficiaire_categorie_code cat,
          upper(strip_accents(coalesce(t.identite, ''))) nom,
-         CASE WHEN t.beneficiaire_type_code = 'SIREN' THEN left(regexp_replace(t.beneficiaire_identifiant, '[^0-9]', '', 'g'), 9)
-              WHEN f.identifiant2 ~ '^[0-9]{{9}}$' THEN f.identifiant2 END siren
+         -- SIREN déclaré (9 chiffres, ou SIRET de 14 chiffres) seulement s'il existe dans SIRENE ; sinon celui
+         -- retrouvé par la chaîne de rattachement. Un identifiant mal formé n'est jamais tronqué au hasard.
+         coalesce(u.siren, CASE WHEN f.identifiant2 ~ '^[0-9]{{9}}$' THEN f.identifiant2 END) siren
   FROM ts_net t
+  LEFT JOIN w.ref_ul u ON t.beneficiaire_type_code = 'SIREN' AND u.siren = CASE length(chiffres(t.beneficiaire_identifiant))
+       WHEN 9 THEN chiffres(t.beneficiaire_identifiant) WHEN 14 THEN left(chiffres(t.beneficiaire_identifiant), 9) END
   LEFT JOIN w.lignes l ON l.id = t.id
   LEFT JOIN w.final2 f ON f.struct_id = l.struct_id AND f.statut2 = 'fiable'
   WHERE t.beneficiaire_categorie_code NOT IN ('PRS', 'ETU', 'VET', 'INF') AND t.beneficiaire_type_code <> 'FINESS'),
 n AS (SELECT b.*, u.ape, u.cat_juridique, u.denomination FROM b LEFT JOIN w.ref_ul u USING (siren))
 SELECT id, montant, identite, cat, siren, ape, cat_juridique, denomination,
   CASE {cas_nom}
-       WHEN cast(n.cat_juridique AS VARCHAR) ~ '^[35]' THEN CASE {cas_ape} END
+       WHEN cast(n.cat_juridique AS VARCHAR) ~ '^(5|31)' THEN CASE {cas_ape} END
   END AS type_prestataire
 FROM n""")
 con.execute(f"COPY (SELECT id, type_prestataire FROM cl WHERE type_prestataire IS NOT NULL) TO '{sql_chemin(RACINE / 'data/ext/prestataires.parquet')}'")

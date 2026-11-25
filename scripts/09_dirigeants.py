@@ -5,9 +5,9 @@ puis deux croisements :
 Les associations et hôpitaux n'ont pas de dirigeants dans les données ouvertes : on le signale, sans inventer."""
 import json, sys, time, urllib.request, urllib.parse
 import pandas as pd
-from commun import connexion, RACINE
+from commun import connexion, RACINE, vue_lignes_net
 N = int(sys.argv[1]) if len(sys.argv) > 1 else 1500
-con = connexion()
+con = vue_lignes_net(connexion())
 cache_f = RACINE/"data"/"dirigeants_cache.json"
 cache = json.loads(cache_f.read_text()) if cache_f.exists() else {}
 def get(url, essais=5):
@@ -50,7 +50,7 @@ SELECT f.identifiant2 AS siren_beneficiaire, min(f.nom_officiel) nom_beneficiair
   l.raison_sociale AS laboratoire, round(sum(l.montant)) AS montant_du_labo
 FROM (SELECT DISTINCT siren, denomination, siren_dirigeant, type_dirigeant FROM dirigeants) d   -- un dirigeant aux qualités multiples ne double pas les montants
 JOIN final2 f ON f.identifiant2=d.siren
-JOIN lignes l ON l.struct_id=f.struct_id
+JOIN lignes_net l ON l.struct_id=f.struct_id
 WHERE d.type_dirigeant='personne morale' AND (l.siren_declarant=d.siren_dirigeant
    OR norm(l.raison_sociale)=norm(d.denomination))
 GROUP BY ALL ORDER BY montant_du_labo DESC""")

@@ -108,22 +108,21 @@ print(len(M), "membres écrits :", M.commission.value_counts().to_dict())
 # ---------- Transparence Santé
 # Vue nette (commun.vues_ts) : une convention exécutée par des rémunérations ou avantages liés n'est pas recomptée.
 con = vues_ts(duckdb.connect())
-con.execute("""CREATE MACRO nn(x) AS trim(regexp_replace(upper(strip_accents(coalesce(x,''))), '[^A-Z0-9]+', ' ', 'g'))""")
 M["nom_c"] = M.nom.str.upper().map(lambda s: re.sub(r"[^A-Z0-9]", "", __import__("unidecode").unidecode(s)))
 M["pre_n"] = M.prenom.map(lambda s: re.sub(r"[^A-Z0-9]+", " ", __import__("unidecode").unidecode(s).upper()).strip())
 con.register("m", M[["id", "nom_c", "pre_n"]])
-P = "ts_net"
+# Vue `prs` (commun.vue_professionnels) : rpps = RPPS valide ou NULL (les identifiants factices ne regroupent personne).
 T = con.execute(f"""
- WITH t AS (SELECT replace(nn(identite),' ','') nom_c, nn(prenom) pre_t, identite, prenom, beneficiaire_identifiant rpps, profession_libelle prof,
-        dep_code dep, ville, raison_sociale labo, lien_interet lien, montant, coalesce(date, date_debut::TIMESTAMPTZ) d, id ligne
-      FROM {P} WHERE beneficiaire_categorie_code='PRS' AND montant IS NOT NULL)
+ WITH t AS (SELECT replace(nn(identite),' ','') nom_c, nn(prenom) pre_t, identite, prenom, rpps, profession_libelle prof,
+        dep, ville, raison_sociale labo, lien_interet lien, montant, cast(coalesce(date, date_debut) AS DATE) d, id ligne
+      FROM prs WHERE montant IS NOT NULL)
  SELECT m.id mid, t.* FROM t JOIN m ON t.nom_c=m.nom_c
    AND (t.pre_t=m.pre_n OR split_part(t.pre_t,' ',1)=split_part(m.pre_n,' ',1))""").df()
 print(len(T), "lignes TS avec même nom (et prénom compatible)")
-T["an"] = pd.to_datetime(T.d, utc=True).dt.year
-T["dt"] = pd.to_datetime(T.d, utc=True).dt.tz_localize(None)
+T["dt"] = pd.to_datetime(T.d)
+T["an"] = T.dt.dt.year
 T["dep"] = T.dep.fillna("").astype(str).str.strip()
-T["cluster"] = T.rpps.fillna("").astype(str).where(T.rpps.notna(), "noid|" + T.dep)
+T["cluster"] = T.rpps.where(T.rpps.notna(), "noid|" + T.dep)
 
 def prof_ok(spec, prof):
     s, p = spec.lower(), (prof or "").lower()
@@ -152,9 +151,19 @@ for _, mb in M.iterrows():
             lvl = "probable" if (has_id and len(c) >= 2 and ncl_rpps == 1) else "homonyme possible"
         if not pok: lvl = {"sûre": "probable", "probable": "homonyme possible"}.get(lvl, lvl)
         cls.append((key, lvl, c))
-    keep = [x for x in cls if x[1] != "homonyme possible"] or cls
-    qual = max((x[1] for x in keep), key=RANK.get)
-    K = pd.concat([x[2] for x in keep]); D = pd.concat([x[2] for x in cls if x not in keep]) if len(keep) < len(cls) else T.iloc[0:0]
+    # Une seule personne par expert : le meilleur groupe (qualité, RPPS, montant). On n'additionne jamais deux RPPS
+    # différents ; seuls s'y ajoutent les versements sans RPPS valide du même département. Si aucun groupe n'est sûr
+    # ou probable, aucun total n'est publié : on ne peut pas dire à qui sont ces versements.
+    cands = [x for x in cls if x[1] != "homonyme possible"]
+    if not cands:
+        res.append({**base, "trouve_dans_ts": True, "qualite": "homonyme possible", "nb_personnes_homonymes_ecartees": len(cls),
+                    "montant_homonymes_ecartes": round(g.montant.sum())}); continue
+    best = max(cands, key=lambda x: (RANK[x[1]], x[2].rpps.notna().all(), x[2].montant.sum(), x[0]))
+    deps_best = set(best[2].dep) - {""}
+    keep = [best] + [x for x in cands if x is not best and x[0].startswith("noid|") and best[2].rpps.notna().all()
+                     and x[0].split("|", 1)[1] in deps_best]
+    qual = best[1]
+    K = pd.concat([x[2] for x in keep]); D = pd.concat([x[2] for x in cls if not any(x is y for y in keep)]) if len(keep) < len(cls) else T.iloc[0:0]
     K = K.drop_duplicates("ligne")
     deb, fin = pd.Timestamp(mb.mandat_debut), pd.Timestamp(mb.mandat_fin) if mb.mandat_fin else pd.Timestamp("2100-01-01")
     inm = K[(K.dt >= deb) & (K.dt <= fin)]

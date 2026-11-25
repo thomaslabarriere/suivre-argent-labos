@@ -111,12 +111,12 @@ con.execute(f"CREATE TABLE labos_k AS SELECT *, {cle_sql('raison_sociale')} AS c
 con.execute("DELETE FROM labos_k WHERE cle IN (%s)" % ",".join(f"'{w}'" for w in INTERDITS))
 # libellé du groupe : la raison sociale la plus lourde parmi celles qui déclarent un SIREN français (sinon ROCHE CANADA l'emporte sur ROCHE SAS)
 con.execute("""CREATE TABLE labo_groupes AS SELECT cle,
-   coalesce(arg_max(raison_sociale, (total_ts, raison_sociale)) FILTER (WHERE siren IS NOT NULL), arg_max(raison_sociale, (total_ts, raison_sociale))) AS labo, sum(total_ts) AS total_ts
+   coalesce(arg_max(raison_sociale, (total_ts, raison_sociale)) FILTER (WHERE siren IS NOT NULL AND total_ts IS NOT NULL), arg_max(raison_sociale, (total_ts, raison_sociale)) FILTER (WHERE total_ts IS NOT NULL)) AS labo, sum(total_ts) AS total_ts
    FROM labos_k WHERE cle IS NOT NULL GROUP BY cle""")
 # un SIREN peut porter plusieurs raisons sociales de clés différentes : on garde UNE clé, celle qui pèse le plus en euros
 n_multi = con.execute("""SELECT count(*) FROM (SELECT siren FROM labos_k WHERE siren IS NOT NULL AND cle IS NOT NULL
    GROUP BY siren HAVING count(DISTINCT cle)>1)""").fetchone()[0]
-con.execute("""CREATE TABLE labo_siren AS SELECT siren, arg_max(cle, (total_ts, cle)) AS cle FROM
+con.execute("""CREATE TABLE labo_siren AS SELECT siren, arg_max(cle, (total_ts, cle)) FILTER (WHERE total_ts IS NOT NULL) AS cle FROM
    (SELECT siren, cle, sum(total_ts) total_ts FROM labos_k WHERE siren IS NOT NULL AND cle IS NOT NULL GROUP BY ALL) GROUP BY siren""")
 n_multi_apres = con.execute("SELECT count(*) FROM (SELECT siren FROM labo_siren GROUP BY siren HAVING count(*)>1)").fetchone()[0]
 
