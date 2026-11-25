@@ -33,8 +33,13 @@ Lu sur https://www.eurosfordocs.fr/data le 25 novembre 2026 (dernière actualit�
 
 1. Lire, dans l'ordre : ce fichier, [FONCTIONNEMENT.md](FONCTIONNEMENT.md) (les briques), puis
    [RAPPORT.md](RAPPORT.md) sections 7 et 8 (pièges et défauts déjà corrigés).
-2. Les données locales (`data/`, ≈ 10 Go) sont peut-être encore sur la machine d'origine. Sinon :
-   `scripts/telecharger.py`, puis Open Medic à la main (voir README).
+2. Les grosses données ont été supprimées le 25 novembre 2026 pour libérer 10 Go. Sur la machine d'origine, `data/`
+   ne garde que ce qui ne se retélécharge pas (28 Mo) : décisions de l'IA (`arbitrage/`, et sa sauvegarde d'avant
+   migration), test de vérité figé (`test_verite/`), caches des dirigeants et des personnes (appels d'API évités),
+   Open Medic (téléchargé à la main), essais cliniques, composition des commissions HAS, contours des départements.
+   Avant toute relance : `scripts/telecharger.py` (≈ 10 Go), puis toute la chaîne depuis `01`. La base de travail
+   `travail.duckdb` et les caches dérivés (`conventions_liees`, `rpps_valides`, `prestataires`) se recréent seuls.
+   Les décisions de l'IA sont aussi publiées dans `resultats/arbitrage/`.
 3. Après tout nouveau téléchargement : `scripts/contrat_entrees.py`. S'il échoue, une source a changé de forme :
    regarder quoi avant de relancer quoi que ce soit, puis `--maj` si le changement est légitime.
 4. Relancer la chaîne (README, section Démarrage), puis `scripts/chiffres_cles.py` : les écarts disent ce qui a
