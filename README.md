@@ -32,6 +32,7 @@ Deux chantiers :
 
 | Document | Contenu |
 |---|---|
+| [docs/ETAT_DU_PROJET.md](docs/ETAT_DU_PROJET.md) | où en est le projet (clôturé le 25 novembre 2026), comment le reprendre, ce qui reste ouvert |
 | [docs/A_RETENIR.md](docs/A_RETENIR.md) | les onze constats principaux, en une page |
 | [docs/FONCTIONNEMENT.md](docs/FONCTIONNEMENT.md) | comment marche chaque brique : ce qu'elle lit, produit, ses pièges, comment la réutiliser |
 | [docs/RAPPORT.md](docs/RAPPORT.md) | la méthode complète, une fiche par base de données, les recommandations et les suites possibles |

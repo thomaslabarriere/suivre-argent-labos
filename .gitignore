@@ -1,22 +1,24 @@
-# Secrets
+# Secrets (clé API Anthropic réservée au jour du hackathon)
 .env
 .env.*
 
-# Données téléchargées et base de travail (plusieurs Go, contenu public mais nominatif)
+# Données téléchargées et base de travail (≈ 10 Go, se régénèrent avec scripts/telecharger.py)
 data/
 
-# Sorties brutes : contiennent des noms de personnes physiques, jamais publiées.
-# Seuls les agrégats de resultats/ sont versionnés (voir scripts/99_exporter_public.py).
+# Sorties de travail. Les fichiers publiés sont copiés dans resultats/ par scripts/99_exporter_public.py.
 out/
+
+# Notes locales pour reprendre le projet avec Claude Code (consignes personnelles, non publiées)
+CLAUDE.md
 
 # Python
 .venv/
 __pycache__/
 *.pyc
 .DS_Store
+.pytest_cache/
 
-# Rapport PDF des nouvelles bases : il cite des personnes physiques et ses chiffres sont écrits en dur.
-# Remplacé, pour la publication, par docs/RAPPORT.md (agrégats seulement).
+# Ancien rapport PDF du 24/11 : chiffres écrits en dur, devenus faux après la revue. Remplacé par docs/.
 scripts/25_rapport_nouvelles_bases.py
 # Sauvegardes locales
 data/arbitrage.sauvegarde*/

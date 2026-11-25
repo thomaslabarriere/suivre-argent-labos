@@ -668,6 +668,13 @@ Ce que nous changerions dans Transparence Santé, par ordre d'impact :
 - Étendre la comparaison élus / déclarations (script 35) aux déclarations non publiées en open data, et aux experts
   publics (DPI-Santé) si leur accès en masse est ouvert.
 
+**Rapprochement avec Euros For Docs**
+
+Euros For Docs (eurosfordocs.fr) fait déjà, et parfois mieux, deux de nos briques : la réattribution des RPPS aux
+soignants déclarés sans numéro, et le double compte, où ils retirent de la convention les seuls montants liés (nous
+retirons toute la convention). Nos apports propres sont le rattachement des structures, les croisements, la
+séparation des prestataires, les anomalies et les tests. Détail : [ETAT_DU_PROJET.md](ETAT_DU_PROJET.md).
+
 **Recherche**
 
 - Mesurer si les versements précèdent les hausses de prescription d'un produit, par spécialité et département
