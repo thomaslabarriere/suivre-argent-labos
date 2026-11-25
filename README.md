@@ -114,14 +114,34 @@ rattachement avant `28`.
 | `99_exporter_public.py` | copie les résultats publiés dans `resultats/` |
 | `controle.py` | contrôle avant publication : reproductibilité, identités, doublons, montants nets, fichiers à jour ; échoue si une règle est violée |
 
+## Tests
+
+```bash
+.venv/bin/pip install -r requirements-dev.txt
+.venv/bin/python -m pytest -q              # 74 tests, 2 secondes, sans données réelles (aussi lancés par GitHub à chaque push)
+.venv/bin/python scripts/controle.py       # avant toute publication, sur les vraies données (environ 3 minutes)
+```
+
+- `tests/test_fonctions.py` : normalisation des noms, groupes de labos, clés de contrôle, départements, montants.
+- `tests/test_regressions.py` : un test par défaut déjà corrigé, sur un mini jeu fictif (`tests/donnees_test.py`) qui
+  reproduit chaque piège des vraies données (double compte, identifiants factices, homonymes, outre-mer...).
+- `tests/test_contrat.py` : le contrat d'entrée détecte un export tronqué, une colonne disparue, une catégorie nouvelle.
+- `scripts/contrat_entrees.py` : les sources téléchargées sont-elles conformes à `tests/reference_entrees.json` ?
+  À lancer après chaque téléchargement ; `--maj` après avoir vérifié un changement.
+- `scripts/chiffres_cles.py` : les chiffres cités dans les documents (`docs/chiffres_cles.json`) n'ont pas bougé.
+- `scripts/controle.py` : tout ce qui précède, plus reproductibilité, identités, doublons, montants nets recalculés,
+  recoupements entre fichiers, seuil d'erreur du rattachement (3 %), fichiers publiés à jour, absence de secret.
+  `out/controle_humain.csv` (100 noms à vérifier à la main) et `out/personnes_coupees.csv` (avertissement) en sortent.
+
 ## Organisation
 
 ```
 scripts/     code (commun.py : fonctions partagées)
+tests/       tests automatiques, mini jeu fictif, référence des sources
 data/        données téléchargées et base DuckDB de travail (non versionné)
 out/         sorties de travail (non versionné)
 resultats/   résultats publiés
-docs/        RAPPORT.md, A_RETENIR.md
+docs/        RAPPORT.md, A_RETENIR.md, chiffres_cles.json
 ```
 
 ## Précautions

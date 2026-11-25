@@ -536,7 +536,7 @@ LANSOPRAZOLE BGR,BIOGARAN,BIOGARAN,lansoprazole,2,générique,,6753463.07,oui,14
 TETRAVAC-ACELLULAIRE,SANOFI,SANOFI WINTHROP INDUSTRIE,anatoxine diphtérique + anatoxine tétanique + antigène de bordetella pertussis : anatoxine + antigène de bordetella pert,1,,V,6745452.17,oui,1310471663.0,227649660.0,7555000.0
 VENLAFAXINE BIPHAR,VIATRIS,VIATRIS MEDICAL,chlorhydrate de venlafaxine + venlafaxine,2,,V,6745066.49,oui,504737653.0,91595697.0,1100000.0
 PROPIONATE DE FLUTICASONE/SALMETEROL BIOGARAN AIRMASTER,BIOGARAN,BIOGARAN,propionate de fluticasone + salmétérol + xinafoate de salmétérol,3,,V,6692342.36,oui,14552216.0,2172162.0,1700000.0
-ENOXAPARINE BECAT,LABORATORIOS,LABORATORIOS FARMACEUTICOS ROVI (ESPAGNE),énoxaparine sodique,5,,V,6691645.31,oui,1250.0,,
+ENOXAPARINE BECAT,FARMACEUTICOS,LABORATORIOS FARMACEUTICOS ROVI (ESPAGNE),énoxaparine sodique,5,,V,6691645.31,oui,1250.0,,
 OVITRELLE,MERCK,MERCK EUROPE (PAYS-BAS),choriogonadotropine alfa,2,,V,6678454.71,oui,46204681.0,8455797.0,1100000.0
 IMATINIB SANDOZ,SANDOZ,SANDOZ,imatinib + mésilate d'imatinib,2,générique,,6672909.369999999,oui,27908745.0,4553648.0,837500.0
 BISOPROLOL TEVA SANTE,TEVA,TEVA SANTE,fumarate de bisoprolol,6,générique,,6670140.43,oui,20579526.0,4335544.0,37500.0
@@ -1070,7 +1070,7 @@ RACECADOTRIL VIATRIS,BIOPROJET,BIOPROJET,racécadotril,1,générique,,2543366.26
 TAHOR,VIATRIS,VIATRIS UP,atorvastatine + atorvastatine calcique trihydratée,6,,I,2538361.38,oui,504737653.0,91595697.0,1100000.0
 AMLODIPINE ARROW,ARROW,ARROW GENERIQUES,amlodipine + bésilate d'amlodipine,2,générique,,2532521.19,oui,133274435.0,23578269.0,
 ONYTEC,ALMIRALL,ALMIRALL (ESPAGNE),ciclopirox,1,,V,2532310.37,oui,16444368.0,4154699.0,
-ENOXAPARINE CRUSIA,LABORATORIOS,LABORATORIOS FARMACEUTICOS ROVI (ESPAGNE),énoxaparine sodique,5,,V,2522036.94,oui,1250.0,,
+ENOXAPARINE CRUSIA,FARMACEUTICOS,LABORATORIOS FARMACEUTICOS ROVI (ESPAGNE),énoxaparine sodique,5,,V,2522036.94,oui,1250.0,,
 CELLUVISC,ABBVIE,ABBVIE,carmellose sodique,1,,V,2515159.5300000003,oui,246910755.0,66348644.0,3675000.0
 PERINDOPRIL TEVA SANTE,TEVA,TEVA SANTE,périndopril + périndopril tert-butylamine,3,générique,,2510061.1100000003,oui,20579526.0,4335544.0,37500.0
 AMOXICILLINE ARROW LAB,ARROW,ARROW GENERIQUES,amoxicilline + amoxicilline trihydratée,2,générique,V,2503903.4899999998,oui,133274435.0,23578269.0,
@@ -4761,7 +4761,7 @@ PANTOPRAZOLE VIATRIS CONSEIL,VIATRIS,VIATRIS SANTE,pantoprazole + pantoprazole s
 XUVENIOL,EG,EG LABO - LABORATOIRES EUROGENERICS,diosmine,1,,,0.0,oui,425518.0,328391.0,
 SILDENAFIL QUIVER,ARROW,ARROW GENERIQUES,citrate de sildénafil + sildénafil,1,générique,V,0.0,oui,133274435.0,23578269.0,
 SILDENAFIL EVOLUGEN,EVOLUPHARM,EVOLUPHARM,citrate de sildénafil + sildénafil,2,générique,,0.0,oui,,,
-PANTOPRAZOLE REIG JOFRE,LABORATORIO,LABORATORIO REIG JOFRE (ESPAGNE),pantoprazole + pantoprazole sodique sesquihydraté,1,générique,,0.0,oui,,,
+PANTOPRAZOLE REIG JOFRE,REIG,LABORATORIO REIG JOFRE (ESPAGNE),pantoprazole + pantoprazole sodique sesquihydraté,1,générique,,0.0,oui,,,
 TCAPS,IBSA,IBSA PHARMA SAS,lévothyroxine sodique + lévothyroxine sodique anhydre,14,,V,0.0,oui,7490678.0,2153660.0,
 TECARTUS,KITE,KITE PHARMA EU (PAYS-BAS),cellules autologues cd3+ transduites anti-cd19,1,,III,0.0,oui,,,
 PANTOPRAZOLE ARROW CONSEIL,ARROW,ARROW GENERIQUES,pantoprazole + pantoprazole sodique sesquihydraté,1,générique,,0.0,oui,133274435.0,23578269.0,
@@ -5237,7 +5237,7 @@ OPUVIZ,SAMSUNG,SAMSUNG BIOEPIS NL (PAYS-BAS),aflibercept,2,,,0.0,oui,1398887.0,4
 STORINYL,BOIRON,BOIRON,dulcamara pour préparations homéopathiques + ferrum phosphoricum pour préparations homéopathiques + hydrastis canadensis,1,,,0.0,oui,23688006.0,4647485.0,700000.0
 OR NATIF BOIRON,BOIRON,BOIRON,or natif pour préparations homéopathiques,1,,,0.0,oui,23688006.0,4647485.0,700000.0
 STODALINE SANS SUCRE,BOIRON,BOIRON,antimonium tartaricum pour préparations homéopathiques + bryonia pour préparations homéopathiques + coccus cacti pour pr,1,,,0.0,oui,23688006.0,4647485.0,700000.0
-SUGAMMADEX REIG JOFRE,LABORATORIO,LABORATORIO REIG JOFRE (ESPAGNE),sugammadex + sugammadex sodique,1,générique,,0.0,oui,,,
+SUGAMMADEX REIG JOFRE,REIG,LABORATORIO REIG JOFRE (ESPAGNE),sugammadex + sugammadex sodique,1,générique,,0.0,oui,,,
 STODAL,BOIRON,BOIRON,antimonium tartaricum pour préparations homéopathiques + bryonia pour préparations homéopathiques + coccus cacti pour pr,2,,,0.0,oui,23688006.0,4647485.0,700000.0
 ZVOGRA,STADA,STADA ARZNEIMITTEL AG,dénosumab,1,,,0.0,oui,,,
 SUGAMMADEX MYLAN,VIATRIS,MYLAN PHARMACEUTICALS (IRLANDE),sugammadex + sugammadex sodique,1,générique,,0.0,oui,504737653.0,91595697.0,1100000.0
@@ -5312,7 +5312,7 @@ ZEFYLTI,CURATEQ,CURATEQ BIOLOGICS (MALTE),filgrastim,2,,,0.0,oui,,,
 TAHOR,DIFARMED,DIFARMED (ESPAGNE),atorvastatine + atorvastatine calcique trihydratée,2,,,0.0,non,,,
 PALONOSETRON KALCEKS,AS,AS KALCEKS (LETTONIE),palonosétron + palonosétron (chlorhydrate de),1,générique,,0.0,oui,,,
 SIXMO,MOLTENI,MOLTENI & ALITTI,buprénorphine + chlorhydrate de buprénorphine,1,,V,0.0,non,,,
-PALONOSETRON REIG JOFRE,LABORATORIO,LABORATORIO REIG JOFRE (ESPAGNE),chlorhydrate de palonosétron + palonosétron,1,générique,,0.0,oui,,,
+PALONOSETRON REIG JOFRE,REIG,LABORATORIO REIG JOFRE (ESPAGNE),chlorhydrate de palonosétron + palonosétron,1,générique,,0.0,oui,,,
 PAMIDRONATE DE SODIUM HOSPIRA,PFIZER,PFIZER HOLDING FRANCE,pamidronate de sodium,3,,V,0.0,oui,507487027.0,118334496.0,2000000.0
 SIVEXTRO,MSD,MERCK SHARP & DOHME (PAYS-BAS),phosphate de tédizolid,1,,V,0.0,oui,336015370.0,63084629.0,3680000.0
 TALMANCO,VIATRIS,VIATRIS (IRLANDE),tadalafil,1,générique,V,0.0,oui,504737653.0,91595697.0,1100000.0
@@ -5385,7 +5385,7 @@ SURRENINE BOIRON,BOIRON,BOIRON,surrenine pour préparations homéopathiques,1,,,
 SORBITOL DELALANDE,ZENTIVA,ZENTIVA FRANCE,sorbitol,1,,,0.0,oui,19523870.0,3515848.0,
 SURRENINE WELEDA,WELEDA,WELEDA,surrenine pour préparations homéopathiques,1,,,0.0,oui,204876.0,16887.0,5000.0
 OXYBATE DE SODIUM KALCEKS,AS,AS KALCEKS (LETTONIE),oxybate de sodium,1,générique,V,0.0,oui,,,
-OXYBATE DE SODIUM REIG JOFRE,LABORATORIO,LABORATORIO REIG JOFRE (ESPAGNE),oxybate de sodium,1,générique,V,0.0,oui,,,
+OXYBATE DE SODIUM REIG JOFRE,REIG,LABORATORIO REIG JOFRE (ESPAGNE),oxybate de sodium,1,générique,V,0.0,oui,,,
 SUSTIVA,BRISTOL,BRISTOL-MYERS SQUIBB PHARMA (IRLANDE),éfavirenz,3,,V,0.0,non,329376478.0,68936356.0,1800000.0
 OXYBOLDINE,COOPER,COOPER (ABRÉGÉ DE COOPERATION PHARMACEUTIQUE FRANCAISE),boldine + dihydrogénophosphate de sodium anhydre + sulfate de sodium anhydre,1,,,0.0,oui,962582.0,626129.0,
 OXYBOLDINE CITRON SANS SUCRE,COOPER,COOPER (ABRÉGÉ DE COOPERATION PHARMACEUTIQUE FRANCAISE),boldine + dihydrogénophosphate de sodium anhydre + sulfate de sodium anhydre,1,,,0.0,oui,962582.0,626129.0,
@@ -6111,7 +6111,7 @@ POMALIDOMIDE EUGIA,EUGIA,EUGIA PHARMA (MALTA) (MALTE),pomalidomide,4,générique
 RILMENIDINE SUN,SUN,SUN PHARMA FRANCE,dihydrogénophosphate de rilménidine + rilménidine,1,,,0.0,non,970131.0,160472.0,212500.0
 TRAZIMERA,PFIZER,PFIZER EUROPE MA EEIG (BELGIQUE),trastuzumab,2,,V,0.0,oui,507487027.0,118334496.0,2000000.0
 TRECONDI,MEDAC,MEDAC GESELLSCHAFT FUR KLINISCHE SPEZIALPRAPARATE (ALLEMAGNE),tréosulfan,2,,V,0.0,oui,5394236.0,1163264.0,
-POMALIDOMIDE REIG JOFRE,LABORATORIO,LABORATORIO REIG JOFRE (ESPAGNE),pomalidomide,4,générique,,0.0,oui,,,
+POMALIDOMIDE REIG JOFRE,REIG,LABORATORIO REIG JOFRE (ESPAGNE),pomalidomide,4,générique,,0.0,oui,,,
 VIDPREVTYN BETA,SANOFI,SANOFI PASTEUR,protéine spike recombinante du sars-cov-2 - souche b.1.351,1,,,0.0,non,1310471663.0,227649660.0,7555000.0
 TREPOSUVI,ORPHA,ORPHA DEVEL HANDELS & VERTRIEBS,tréprostinil + tréprostinil sodique,4,générique,,0.0,oui,,,
 POMALIDOMIDE STRAGEN,STRAGEN,STRAGEN-FRANCE,pomalidomide,4,générique,,0.0,oui,41128.0,10915.0,
@@ -6129,7 +6129,7 @@ PODOPHYLLINUM BOIRON,BOIRON,BOIRON,podophyllinum pour préparations homéopathiq
 PODOPHYLLUM PELTATUM BOIRON,BOIRON,BOIRON,podophyllum peltatum pour préparations homéopathiques,1,,,0.0,oui,23688006.0,4647485.0,700000.0
 PODOPHYLLUM PELTATUM LEHNING,LEHNING,LEHNING,podophyllum peltatum pour préparations homéopathiques,1,,,0.0,oui,443.0,,
 POLARAMINE,BAYER,BAYER HEALTHCARE,maléate de dexchlorphéniramine,1,,V,0.0,oui,224609609.0,44299964.0,2050000.0
-POLARAMINE,LABORATORIOS,LABORATORIOS FARMACEUTICOS ROVI (ESPAGNE),maléate de dexchlorphéniramine,1,,,0.0,oui,1250.0,,
+POLARAMINE,FARMACEUTICOS,LABORATORIOS FARMACEUTICOS ROVI (ESPAGNE),maléate de dexchlorphéniramine,1,,,0.0,oui,1250.0,,
 RISEDRONATE ALTER,ALTER,LABORATOIRES ALTER,risédronate monosodique anhydre + risédronate monosodique hémipentahydraté,1,,,0.0,non,,,
 POLISTES ALBEY VENIN DE GUÊPE,STALLERGENES,STALLERGENES,venin de guêpe poliste,2,,V,0.0,oui,57400077.0,10109275.0,
 POLLENS BOIRON,BOIRON,BOIRON,pollens pour préparations homéopathiques,1,,,0.0,oui,23688006.0,4647485.0,700000.0
@@ -6224,7 +6224,7 @@ VIOLA TRICOLOR BOIRON,BOIRON,BOIRON,viola tricolor pour préparations homéopath
 VIOLA TRICOLOR LEHNING,LEHNING,LEHNING,viola tricolor pour préparations homéopathiques,1,,,0.0,oui,443.0,,
 RODULOS,LEHNING,LEHNING,arnica montana pour préparations homéopathiques + aurum muriaticum pour préparations homéopathiques + avena sativa pour ,1,,,0.0,non,443.0,,
 VIPERA REDI BOIRON,BOIRON,BOIRON,vipera redi pour préparations homéopathiques,1,,,0.0,oui,23688006.0,4647485.0,700000.0
-PIPERACILLINE/TAZOBACTAM REIG JOFRE,LABORATORIO,LABORATORIO REIG JOFRE (ESPAGNE),pipéracilline + pipéracilline sodique + tazobactam + tazobactam sodique,2,générique,,0.0,oui,,,
+PIPERACILLINE/TAZOBACTAM REIG JOFRE,REIG,LABORATORIO REIG JOFRE (ESPAGNE),pipéracilline + pipéracilline sodique + tazobactam + tazobactam sodique,2,générique,,0.0,oui,,,
 TOPIRAMATE ACCORD,ACCORD,ACCORD HEALTHCARE FRANCE,topiramate,4,,,0.0,non,8595250.0,905594.0,5000.0
 ROCURONIUM VIATRIS,VIATRIS,VIATRIS SANTE,bromure de rocuronium,1,générique,V,0.0,oui,504737653.0,91595697.0,1100000.0
 ROCURONIUM NORIDEM,NORIDEM,NORIDEM,bromure de rocuronium,1,générique,,0.0,oui,,,
@@ -6443,7 +6443,7 @@ CHLORHEXIDINE ALCOOLIQUE GILBERT HEALTHCARE,GILBERT,LABORATOIRES GILBERT,alcool 
 CALENDULA OFFICINALIS TEINTURE MERE WELEDA,WELEDA,WELEDA,calendula officinalis pour préparations homéopathiques,1,,,0.0,oui,204876.0,16887.0,5000.0
 CHLORAPREP COLORE,BECTON,BECTON DICKINSON FRANCE,alcool isopropylique + gluconate de chlorhexidine,1,,V,0.0,oui,31005330.0,4103066.0,1000000.0
 CARTILAGE DE CONJUGAISON BOIRON,BOIRON,BOIRON,cartilage de conjugaison pour préparations homéopathiques,1,,,0.0,oui,23688006.0,4647485.0,700000.0
-CARTIFIT,LABORATORIO,LABORATORIO REIG JOFRE (ESPAGNE),chlorhydrate de glucosamine + sulfate de chondroïtine,1,,,0.0,oui,,,
+CARTIFIT,REIG,LABORATORIO REIG JOFRE (ESPAGNE),chlorhydrate de glucosamine + sulfate de chondroïtine,1,,,0.0,oui,,,
 CAROMINTHE,LEHNING,LEHNING,absinthium pour préparations homéopathiques + collinsonia canadensis pour préparations homéopathiques + lupulinum pour p,1,,,0.0,oui,443.0,,
 CARMYNE,SERB,SERB,indigotine,1,,III,0.0,oui,6149906.0,2116393.0,
 CARMUSTINE MEDAC,MEDAC,MEDAC GESELLSCHAFT FUR KLINISCHE SPEZIALPRAPARATE (ALLEMAGNE),carmustine,1,,V,0.0,oui,5394236.0,1163264.0,
@@ -6479,7 +6479,7 @@ CASPOFUNGINE TILLOMED,TILLOMED,TILLOMED PHARMA (ALLEMAGNE),acétate de caspofung
 CASPOFUNGINE SUN,SUN,SUN PHARMACEUTICAL INDUSTRIES EUROPE (PAYS BAS),caspofungine (acétate de) + caspofungine base,2,générique,V,0.0,oui,970131.0,160472.0,212500.0
 CARVEDILOL ZENTIVA,ZENTIVA,ZENTIVA FRANCE,carvédilol,1,,,0.0,non,19523870.0,3515848.0,
 CASPOFUNGINE STRAGEN,STRAGEN,STRAGEN-FRANCE,acétate de caspofungine + caspofungine base,2,générique,V,0.0,oui,41128.0,10915.0,
-CASPOFUNGINE LORIEN,LABORATORIOS,LABORATORIOS LORIEN (ESPAGNE),acétate de caspofungine + caspofungine,2,générique,V,0.0,oui,1250.0,,
+CASPOFUNGINE LORIEN,LORIEN,LABORATORIOS LORIEN (ESPAGNE),acétate de caspofungine + caspofungine,2,générique,V,0.0,oui,,,
 CASPOFUNGINE HIKMA,HIKMA,HIKMA FARMACEUTICA (PORTUGAL),acétate de caspofungine + caspofungine,2,générique,V,0.0,oui,117200.0,25553.0,
 CASPOFUNGINE FRESENIUS KABI,FRESENIUS,FRESENIUS KABI FRANCE,acétate de caspofungine + caspofungine,2,,V,0.0,non,22316457.0,3498916.0,92500.0
 CASGEVY,VERTEX,VERTEX PHARMACEUTICALS (EUROPE) LIMITED,exagamglogène autotemcel,1,,IV,0.0,oui,37689007.0,8494372.0,5250000.0
@@ -6824,13 +6824,13 @@ DYSPORT,IPSEN,IPSEN PHARMA,toxine botulinique type a,2,,V,0.0,oui,83308613.0,138
 DYRUPEG,CURATEQ,CURATEQ BIOLOGICS (MALTE),pegfilgrastim,1,,,0.0,oui,,,
 DYNEXANGIVAL,KREUSSLER,KREUSSLER & CO ALLEMAGNE,chlorhydrate de lidocaïne,1,,,0.0,oui,2500594.0,278560.0,
 DYNASTAT,PFIZER,PFIZER EUROPE MA EEIG (BELGIQUE),parécoxib + parécoxib sodique,1,,,0.0,non,507487027.0,118334496.0,2000000.0
-DIMETHYL FUMARATE NEURAXPHARM,LABORATORIOS,LABORATORIOS LESVI (ESPAGNE),fumarate de diméthyle,2,,,0.0,non,1250.0,,
+DIMETHYL FUMARATE NEURAXPHARM,LESVI,LABORATORIOS LESVI (ESPAGNE),fumarate de diméthyle,2,,,0.0,non,,,
 DIMETHYL FUMARATE EG LABO,EG,EG LABO - LABORATOIRES EUROGENERICS,fumarate de diméthyle,2,générique,,0.0,oui,425518.0,328391.0,
 DIMETHYL FUMARATE ACCORD,ACCORD,ACCORD HEALTHCARE (ESPAGNE),fumarate de diméthyle,2,générique,,0.0,oui,8595250.0,905594.0,5000.0
 DAFALGANCAPS,UPSA,UPSA,paracétamol,2,,,0.0,oui,2801221.0,448398.0,537500.0
 DALFEINE,UPSA,UPSA,caféine + paracétamol,1,,,0.0,oui,2801221.0,448398.0,537500.0
 DALBAVANCINE ZENTIVA,ZENTIVA,ZENTIVA FRANCE,chlorhydrate de dalbavancine + dalbavancine,1,générique,,0.0,oui,19523870.0,3515848.0,
-DALBAVANCINE REIG JOFRE,LABORATORIO,LABORATORIO REIG JOFRE (ESPAGNE),chlorhydrate de dalbavancine + dalbavancine,1,générique,,0.0,oui,,,
+DALBAVANCINE REIG JOFRE,REIG,LABORATORIO REIG JOFRE (ESPAGNE),chlorhydrate de dalbavancine + dalbavancine,1,générique,,0.0,oui,,,
 DALBAVANCINE ACCORD,ACCORD,ACCORD HEALTHCARE FRANCE,chlorhydrate de dalbavancine + dalbavancine,1,générique,,0.0,oui,8595250.0,905594.0,5000.0
 DAFLON,SERVIER,LES LABORATOIRES SERVIER,diosmine + fraction flavonoïque purifiée micronisée + hespéridine,2,,,0.0,oui,143875916.0,25282660.0,2250000.0
 DAFLON,DIFARMED,DIFARMED (ESPAGNE),diosmine + fraction flavonoïque purifiée micronisée + hespéridine,1,,,0.0,oui,,,
@@ -7055,7 +7055,7 @@ ANACARDIUM ORIENTALE BOIRON,BOIRON,BOIRON,anacardium orientale pour préparation
 ANACARDIUM OCCIDENTALE BOIRON,BOIRON,BOIRON,anacardium occidentale pour préparations homéopathiques,1,,,0.0,oui,23688006.0,4647485.0,700000.0
 AMYLMETACRESOL/ALCOOL DICHLOROBENZYLIQUE/LIDOCAINE BIOGARAN CONSEIL,BIOGARAN,BIOGARAN,"alcool dichloro-2,4 benzylique + amylmétacrésol + chlorhydrate de lidocaïne monohydraté + lidocaïne",1,,,0.0,oui,14552216.0,2172162.0,1700000.0
 AMYLMETACRESOL/ALCOOL DICHLOROBENZYLIQUE BIOGARAN CONSEIL,BIOGARAN,BIOGARAN,alcool dichlorobenzylique + amylmétacrésol,1,générique,,0.0,oui,14552216.0,2172162.0,1700000.0
-AMOXICILLINE/ACIDE CLAVULANIQUE REIG JOFRE,LABORATORIO,LABORATORIO REIG JOFRE (ESPAGNE),acide clavulanique + amoxicilline + amoxicilline sodique + clavulanate de potassium,2,générique,,0.0,oui,,,
+AMOXICILLINE/ACIDE CLAVULANIQUE REIG JOFRE,REIG,LABORATORIO REIG JOFRE (ESPAGNE),acide clavulanique + amoxicilline + amoxicilline sodique + clavulanate de potassium,2,générique,,0.0,oui,,,
 AMYLIUM NITROSUM LEHNING,LEHNING,LEHNING,amylium nitrosum pour préparations homéopathiques,1,,,0.0,oui,443.0,,
 AMYLIUM NITROSUM BOIRON,BOIRON,BOIRON,amylium nitrosum pour préparations homéopathiques,1,,,0.0,oui,23688006.0,4647485.0,700000.0
 AMYGDALES BOIRON,BOIRON,BOIRON,amygdales pour préparations homéopathiques,1,,,0.0,oui,23688006.0,4647485.0,700000.0
@@ -7687,7 +7687,7 @@ ARUM TRIPHYLLUM BOIRON,BOIRON,BOIRON,arum triphyllum pour préparations homéopa
 ARUM MACULATUM BOIRON,BOIRON,BOIRON,arum maculatum pour préparations homéopathiques,1,,,0.0,oui,23688006.0,4647485.0,700000.0
 ARUM DRACUNCULUS BOIRON,BOIRON,BOIRON,arum dracunculus pour préparations homéopathiques,1,,,0.0,oui,23688006.0,4647485.0,700000.0
 ARTISS,BAXTER,BAXTER,aprotinine + chlorure de calcium dihydraté + fibrinogène humain + thrombine humaine,1,,V,0.0,oui,4120441.0,560101.0,162500.0
-ARTINIBSA,LABORATORIOS,LABORATORIOS INIBSA,adrénaline + chlorhydrate d'articaïne + tartrate d'adrénaline,2,,V,0.0,oui,1250.0,,
+ARTINIBSA,INIBSA,LABORATORIOS INIBSA,adrénaline + chlorhydrate d'articaïne + tartrate d'adrénaline,2,,V,0.0,oui,,,
 ARTICADENT,DENTSPLY,DENTSPLY SIRONA FRANCE,adrénaline + chlorhydrate d'articaïne + tartrate d'adrénaline,2,,,0.0,non,4876921.0,676922.0,
 ARTEX,SERVIER,LES LABORATOIRES SERVIER,tertatolol (chlorhydrate de),1,,,0.0,non,143875916.0,25282660.0,2250000.0
 ARTESUNATE AMIVAS,AMIVAS,AMIVAS IRELAND (IRLANDE),artésunate,1,,III,0.0,oui,,,
@@ -7862,7 +7862,7 @@ LIERRE GRIMPANT VIATRIS CONSEIL SANS SUCRE,VIATRIS,VIATRIS SANTE,extrait sec de 
 LIERRE GRIMPANT PHYTOCLARIX SANS SUCRE,COOPER,COOPER (ABRÉGÉ DE COOPERATION PHARMACEUTIQUE FRANCAISE),extrait sec de feuille de lierre grimpant,1,,,0.0,non,962582.0,626129.0,
 LIPIODOL ULTRA-FLUIDE,GUERBET,GUERBET,iode + oeillette (huile d') (esters éthyliques des acides gras iodés de l'),1,,IV,0.0,oui,8786779.0,1032209.0,225000.0
 LIPTRUZET,DIFARMED,DIFARMED (ESPAGNE),atorvastatine + atorvastatine calcique trihydratée + ézétimibe,2,,,0.0,non,,,
-LONCARTI,LABORATORIOS,LABORATORIOS INIBSA,adrénaline + chlorhydrate d'articaïne + tartrate d'adrénaline,2,,,0.0,oui,1250.0,,
+LONCARTI,INIBSA,LABORATORIOS INIBSA,adrénaline + chlorhydrate d'articaïne + tartrate d'adrénaline,2,,,0.0,oui,,,
 LOBELIA INFLATA BOIRON,BOIRON,BOIRON,lobelia inflata pour préparations homéopathiques,1,,,0.0,oui,23688006.0,4647485.0,700000.0
 LOMUSTINE MEDAC,MEDAC,MEDAC GESELLSCHAFT FUR KLINISCHE SPEZIALPRAPARATE (ALLEMAGNE),lomustine,1,,V,0.0,oui,5394236.0,1163264.0,
 LOLIUM TEMULENTUM BOIRON,BOIRON,BOIRON,lolium temulentum pour préparations homéopathiques,1,,,0.0,oui,23688006.0,4647485.0,700000.0
@@ -8120,7 +8120,7 @@ LIBRAX,DIFARMED,DIFARMED (ESPAGNE),chlordiazépoxide + clidinium (bromure de),1,
 LIBMELDY,ORCHARD,ORCHARD THERAPEUTICS (NETHERLANDS) (PAYS-BAS),population enrichie en cellules cd34+ autologues contenant des cellules souches et progénitrices hématopoïétiques  trans,1,,III,0.0,oui,654940.0,167106.0,
 LEVULOSE HYPERTONIQUE BIOSEDRA,FRESENIUS,FRESENIUS KABI FRANCE,lévulose,1,,,0.0,oui,22316457.0,3498916.0,92500.0
 LEVULOSE BIOSEDRA,FRESENIUS,FRESENIUS KABI FRANCE,fructose,1,,,0.0,oui,22316457.0,3498916.0,92500.0
-LEVOSIMENDAN REIG JOFRE,LABORATORIO,LABORATORIO REIG JOFRE (ESPAGNE),lévosimendan,1,,,0.0,oui,,,
+LEVOSIMENDAN REIG JOFRE,REIG,LABORATORIO REIG JOFRE (ESPAGNE),lévosimendan,1,,,0.0,oui,,,
 LEVOSIMENDAN KALCEKS,AS,AS KALCEKS (LETTONIE),lévosimendan,1,,V,0.0,oui,,,
 LEVOSIMENDAN KABI,FRESENIUS,FRESENIUS KABI FRANCE,lévosimendan,1,,V,0.0,non,22316457.0,3498916.0,92500.0
 LEVOSIMENDAN ALTAN,ALTAN,ALTAN PHARMACEUTICALS (ESPAGNE),lévosimendan,1,,V,0.0,oui,,,
@@ -8392,7 +8392,7 @@ MICROLAX BEBE SORBITOL CITRATE ET LAURILSULFOACETATE DE SODIUM,KENVUE,KENVUE FRA
 MICAFUNGINE VIATRIS,VIATRIS,VIATRIS SANTE,micafungine + micafungine sodique,2,générique,V,0.0,oui,504737653.0,91595697.0,1100000.0
 MILRINONE MEDAC,MEDAC,MEDAC,milrinone,1,,V,0.0,non,5394236.0,1163264.0,
 MILRINONE TILLOMED,TILLOMED,TILLOMED PHARMA (ALLEMAGNE),milrinone,1,générique,,0.0,oui,,,
-MICAFUNGINE REIG JOFRE,LABORATORIO,LABORATORIO REIG JOFRE (ESPAGNE),micafungine + micafungine sodique,2,générique,,0.0,oui,,,
+MICAFUNGINE REIG JOFRE,REIG,LABORATORIO REIG JOFRE (ESPAGNE),micafungine + micafungine sodique,2,générique,,0.0,oui,,,
 MIOREL,FARMACEUTICO,FARMACEUTICO SIT,thiocolchicoside,2,générique,,0.0,oui,,,
 MITOXANTRONE ACCORD,ACCORD,ACCORD HEALTHCARE FRANCE,chlorhydrate de mitoxantrone + mitoxantrone,1,générique,V,0.0,oui,8595250.0,905594.0,5000.0
 MITOMYCINE SUBSTIPHARM,SUBSTIPHARM,SUBSTIPHARM,mitomycine c,1,générique,V,0.0,oui,10548967.0,2208958.0,

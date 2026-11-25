@@ -37,10 +37,10 @@ print(a.groupby("anomalie").montant.agg(["size", "sum"]).assign(pct_total_net=la
 print("\nplus grosses lignes :")
 print(a[a.anomalie.str.startswith("ligne")].head(10)[["declarant", "beneficiaire", "lien_interet", "motif", "montant", "date"]].to_string())
 
-r = con.execute(f"""SELECT count(*), sum(montant), sum(montant) FILTER (WHERE {SANS_MOTIF}), count(*) FILTER (WHERE {SANS_MOTIF})
+r = con.execute(f"""SELECT count(*), coalesce(sum(montant), 0), coalesce(sum(montant) FILTER (WHERE {SANS_MOTIF}), 0), count(*) FILTER (WHERE {SANS_MOTIF})
   FROM ts_net WHERE {PRS} AND lien_interet = 'remuneration'""").fetchall()[0]
 print(f"\nrémunérations de professionnels : {r[1]/1e6:.1f} M€ en {r[0]:,} lignes ; sans aucun motif : "
-      f"{r[2]/1e6:.1f} M€ ({100*r[2]/r[1]:.1f} % des euros, {100*r[3]/r[0]:.1f} % des lignes)")
-s = con.execute(f"""SELECT count(*), sum(montant) FROM ts_net
+      f"{r[2]/1e6:.1f} M€ ({100*r[2]/max(r[1], 1):.1f} % des euros, {100*r[3]/max(r[0], 1):.1f} % des lignes)")
+s = con.execute(f"""SELECT count(*), coalesce(sum(montant), 0) FROM ts_net
   WHERE {PRS} AND regexp_matches(replace(coalesce(beneficiaire_identifiant,''), ' ', ''), '^[0-9]{{9}}$')""").fetchall()[0]
 print(f"professionnels déclarés avec un SIREN : {s[0]:,} lignes, {s[1]/1e6:.1f} M€")

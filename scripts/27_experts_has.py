@@ -12,7 +12,7 @@ et les dispositifs (CNEDiMTS) reçoivent-ils de l'argent des laboratoires ?
 Sorties : out/experts_has_versements.csv (1 ligne/membre), out/experts_has_detail_labos.csv (membre x labo).
 Un lien d'intérêt n'est pas une irrégularité : les membres déclarent leurs liens, la HAS gère les déports.
 Montants nets : une convention exécutée par des rémunérations ou avantages liés (convention_liee) n'est comptée qu'une fois."""
-import re, pandas as pd, duckdb
+import os, re, pandas as pd, duckdb
 from commun import RACINE, vues_ts
 OUT = RACINE / "out"; HAS = RACINE / "data/ext/has"; HAS.mkdir(parents=True, exist_ok=True)
 
@@ -101,6 +101,8 @@ rows = [dict(commission="CT", prenom=p, nom=n, role=r, specialite=s, dep_has=d, 
 rows += [dict(commission="CNEDiMTS", prenom=p, nom=n, role=r, specialite=s, dep_has=d, mandat_debut=C0, mandat_fin=C1, source_url=U_CN)
          for p, n, r, s, d in CN]
 M = pd.DataFrame(rows)
+if os.environ.get("SUIVRE_MEMBRES_HAS"):   # tests : liste fictive de membres, pour ne jamais associer un vrai nom à de faux montants
+    M = pd.read_csv(os.environ["SUIVRE_MEMBRES_HAS"], dtype=str).fillna("")
 M.insert(0, "id", range(1, len(M) + 1))
 M.to_csv(HAS / "membres_commissions.csv", index=False)
 print(len(M), "membres écrits :", M.commission.value_counts().to_dict())

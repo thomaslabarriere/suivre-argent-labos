@@ -1,0 +1,187 @@
+{
+ "total brut déclaré": {
+  "valeur": 19162982689.0,
+  "texte": "19,2 Md€",
+  "source": "ts"
+ },
+ "total net": {
+  "valeur": 12766012046.0,
+  "texte": "12,77 Md€",
+  "source": "ts_net"
+ },
+ "double compte": {
+  "valeur": 6396970643.0,
+  "texte": "6,4 Md€",
+  "source": "ts - ts_net"
+ },
+ "plus grosse ligne": {
+  "valeur": 444947450.0,
+  "texte": "444 947 450 €",
+  "source": "33"
+ },
+ "part de la plus grosse ligne": {
+  "valeur": 3.4854067848025907,
+  "texte": "3,5 %",
+  "source": "33"
+ },
+ "lignes de 10 M€ ou plus": {
+  "valeur": 35.0,
+  "texte": "35 lignes",
+  "source": "33"
+ },
+ "part des lignes de 10 M€ ou plus": {
+  "valeur": 10.273039335028056,
+  "texte": "10,3 %",
+  "source": "33"
+ },
+ "rémunérations aux professionnels": {
+  "valeur": 405517269.0,
+  "texte": "405,5 M€",
+  "source": "33"
+ },
+ "rémunérations sans motif": {
+  "valeur": 397689571.0,
+  "texte": "398 M€",
+  "source": "33"
+ },
+ "part des rémunérations sans motif": {
+  "valeur": 98.06970045460629,
+  "texte": "98,1 %",
+  "source": "33"
+ },
+ "plus gros hébergement": {
+  "valeur": 1307280.0,
+  "texte": "1 307 280 €",
+  "source": "33"
+ },
+ "avantages d'hospitalité de 20 000 € ou plus": {
+  "valeur": 19.0,
+  "texte": "19 avantages",
+  "source": "33"
+ },
+ "professionnels payés": {
+  "valeur": 778116.0,
+  "texte": "778 116",
+  "source": "24"
+ },
+ "médiane par professionnel": {
+  "valeur": 70.0,
+  "texte": "70 €",
+  "source": "24"
+ },
+ "professionnels au-dessus de 100 000 €": {
+  "valeur": 1858.0,
+  "texte": "1 858",
+  "source": "24"
+ },
+ "part du 1 % le mieux payé": {
+  "valeur": 50.344515660753224,
+  "texte": "50 %",
+  "source": "24"
+ },
+ "conventions non exécutées des professionnels": {
+  "valeur": 373477321.0,
+  "texte": "373 M€",
+  "source": "24"
+ },
+ "prestataires": {
+  "valeur": 4580882869.0,
+  "texte": "4,6 Md€",
+  "source": "34"
+ },
+ "hors prestataires": {
+  "valeur": 8185129177.0,
+  "texte": "8,2 Md€",
+  "source": "34"
+ },
+ "remboursé ASMR V": {
+  "valeur": 7336292598.91,
+  "texte": "7,3 Md€",
+  "source": "26"
+ },
+ "part ASMR V": {
+  "valeur": 26.7,
+  "texte": "26,7 %",
+  "source": "26"
+ },
+ "euros par spécialiste": {
+  "valeur": 1441.0,
+  "texte": "1 441 €",
+  "source": "31"
+ },
+ "euros par généraliste": {
+  "valeur": 222.0,
+  "texte": "222 €",
+  "source": "31"
+ },
+ "Gironde, euros par médecin": {
+  "valeur": 1317.0,
+  "texte": "1 317 €",
+  "source": "31"
+ },
+ "élus bénéficiaires": {
+  "valeur": 132.0,
+  "texte": "132 élus",
+  "source": "24"
+ },
+ "élus avec déclaration publiée": {
+  "valeur": 54.0,
+  "texte": "54 élus",
+  "source": "35"
+ },
+ "experts HAS retrouvés": {
+  "valeur": 42.0,
+  "texte": "42 membres",
+  "source": "27"
+ },
+ "experts HAS, pendant le mandat": {
+  "valeur": 43245.0,
+  "texte": "43 k€",
+  "source": "27"
+ },
+ "experts HAS payés pendant le mandat": {
+  "valeur": 14.0,
+  "texte": "14 ont reçu",
+  "source": "27"
+ },
+ "dirigeants payés à titre personnel": {
+  "valeur": 141.0,
+  "texte": "141 dirigeants",
+  "source": "11"
+ },
+ "GERS, net": {
+  "valeur": 24374904.0,
+  "texte": "24,4 M€",
+  "source": "09"
+ },
+ "groupes lobbyistes": {
+  "valeur": 122.0,
+  "texte": "122 groupes",
+  "source": "22"
+ },
+ "lobbying 2022 à 2025": {
+  "valeur": 91792500.0,
+  "texte": "92 M€",
+  "source": "22"
+ },
+ "paires hôpital × labo": {
+  "valeur": 212.0,
+  "texte": "212 paires",
+  "source": "28"
+ },
+ "hôpitaux": {
+  "valeur": 39.0,
+  "texte": "39 hôpitaux",
+  "source": "28"
+ },
+ "structures rattachées de façon fiable": {
+  "valeur": 17312.0,
+  "texte": "17 312",
+  "source": "08"
+ },
+ "erreur probable du rattachement": {
+  "valeur": 1.978319783197832,
+  "texte": "2,0 %",
+  "source": "12"
+ }
+}

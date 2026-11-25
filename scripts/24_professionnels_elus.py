@@ -54,13 +54,17 @@ h["k"] = h.nom.map(n) + "|" + h.prenom.map(lambda x: (n(x).split() or [""])[0]) 
 h = h.sort_values(["k", "nom", "prenom"]).groupby("k").agg(nom=("nom", "first"), prenom=("prenom", "first"), departement=("dep", "first"),
     mandats=("qualite", lambda s: " ; ".join(sorted(set(s.dropna())))[:300])).reset_index()
 con.register("h", h)
-el = con.execute("""SELECT h.nom, h.prenom, h.departement, h.mandats, min(b.profession_libelle) profession, min(b.rpps) rpps,
-  b.personne, round(sum(b.montant)) euros, count(*) versements, count(DISTINCT b.raison_sociale) labos,
+# Le rapprochement se fait sur le nom et le département, mais le total est celui de la personne entière (toutes les
+# lignes de son RPPS), comme dans le script 35.
+el = con.execute("""WITH m AS (SELECT DISTINCT h.nom, h.prenom, h.departement, h.mandats, b.personne
+    FROM prs b JOIN h ON h.k = b.nom_n || '|' || b.prenom_n || '|' || b.dep)
+SELECT m.nom, m.prenom, m.departement, m.mandats, min(b.profession_libelle) profession, min(b.rpps) rpps,
+  m.personne, round(sum(b.montant)) euros, count(*) versements, count(DISTINCT b.raison_sociale) labos,
   arg_max(b.raison_sociale, (b.montant, b.raison_sociale)) FILTER (WHERE b.montant IS NOT NULL) plus_gros_versement_de,
   min(year(b.date)) premiere_annee, max(year(b.date)) derniere_annee
-FROM prs b JOIN h ON h.k = b.nom_n || '|' || b.prenom_n || '|' || b.dep
-GROUP BY h.nom, h.prenom, h.departement, h.mandats, b.personne
-ORDER BY euros DESC, h.nom, h.prenom, h.departement, b.personne""").df()
+FROM m JOIN prs b USING (personne)
+GROUP BY m.nom, m.prenom, m.departement, m.mandats, m.personne
+ORDER BY euros DESC, m.nom, m.prenom, m.departement, m.personne""").df()
 # plusieurs professionnels distincts derrière un même élu : au moins l'un d'eux est un homonyme
 el["personnes_meme_nom"] = el.groupby(["nom", "prenom", "departement"]).nom.transform("size")
 el.to_csv(RACINE/"out/elus_beneficiaires.csv", index=False)

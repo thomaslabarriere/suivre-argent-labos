@@ -686,7 +686,8 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 ./scripts/run_mensuel.sh                             # chaîne de rattachement complète
 for s in 21 22 23 24 26 27 28 29 30 31 32 33 34 35; do .venv/bin/python scripts/${s}_*.py; done
 .venv/bin/python scripts/99_exporter_public.py       # résultats publiés dans resultats/
-.venv/bin/python scripts/controle.py                 # 35 contrôles ; ne rien publier s'il échoue
+.venv/bin/python -m pytest -q                       # 74 tests sans données réelles
+.venv/bin/python scripts/controle.py                 # tous les contrôles sur les vraies données ; ne rien publier s'il échoue
 ```
 
 Durée sur un portable récent : environ 15 minutes hors téléchargement. Mémoire : DuckDB est limité à 8 Go.

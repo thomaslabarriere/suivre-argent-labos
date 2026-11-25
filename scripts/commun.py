@@ -1,6 +1,7 @@
 """Fonctions partagées : connexion DuckDB, normalisation des noms, empreinte des cas d'arbitrage."""
-import duckdb, hashlib, json, pathlib
-RACINE = pathlib.Path(__file__).resolve().parent.parent
+import duckdb, hashlib, json, os, pathlib
+# SUIVRE_RACINE permet de faire tourner les scripts sur un autre dossier (les tests utilisent un mini jeu de données).
+RACINE = pathlib.Path(os.environ.get("SUIVRE_RACINE") or pathlib.Path(__file__).resolve().parent.parent)
 DB = RACINE / "data" / "travail.duckdb"
 for _d in ["data/raw", "data/ref", "data/ext", "data/tmp", "data/arbitrage", "data/test_verite", "out"]:
     (RACINE / _d).mkdir(parents=True, exist_ok=True)
@@ -21,6 +22,11 @@ def connexion():
     con = duckdb.connect(str(DB))
     con.execute("SET memory_limit='8GB'; SET preserve_insertion_order=false;")
     con.execute(f"SET temp_directory='{sql_chemin(RACINE/'data'/'tmp')}'")
+    return macros_structures(con)
+
+
+def macros_structures(con):
+    """Macros SQL de normalisation des structures : norm, dep, sigle, sans_parentheses."""
     mots = "|".join(MOTS_VIDES)
     # norm(nom) : majuscules, sans accents, sans ponctuation, sans mots vides, espaces simples.
     con.execute(f"""CREATE OR REPLACE MACRO norm(s) AS
@@ -127,7 +133,7 @@ def vue_professionnels(con):
 import re as _re
 from unidecode import unidecode as _unidecode
 
-STOP_LABO = (r"\b(SAS|SASU|SA|SARL|SNC|SE|GMBH|AG|BV|NV|LTD|LIMITED|INC|SPA|SL|PLC|FRANCE|FRANCAISE|LABORATOIRES?|LABS?"
+STOP_LABO = (r"\b(SAS|SASU|SA|SARL|SNC|SE|GMBH|AG|BV|NV|LTD|LIMITED|INC|SPA|SL|PLC|FRANCE|FRANCAISE|LABORATOIRES?|LABORATORI(ES|OS|O|UM)|LABOS?|LABS?"
              r"|PHARMA(CEUTICALS?|CEUTIQUE|CEUTIQUES)?|HEALTHCARE|SANTE|GROUPE?|EUROPE|INTERNATIONAL|HOLDING|DEUTSCHLAND"
              r"|IRELAND|BELGIUM|THE|ET|DE|DU|DES|LA|LE|LES|AND|CO|COMPANY|S|A|L)\b")
 ALIAS_GROUPE = {"ELI": "LILLY", "GLAXO": "GLAXOSMITHKLINE", "GSK": "GLAXOSMITHKLINE", "JANSSEN": "JOHNSON", "JNJ": "JOHNSON",
